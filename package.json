@@ -1,0 +1,13 @@
+{
+    "private": true,
+    "scripts": {
+        "build:css": "npx @tailwindcss/cli -i ./assets/css/src/theme-source.css -o ./assets/css/theme.css --minify",
+        "dev:css": "npx @tailwindcss/cli -i ./assets/css/src/theme-source.css -o ./assets/css/theme.css --watch",
+        "build": "npm run build:css"
+    },
+    "devDependencies": {
+        "@tailwindcss/cli": "^4.3.3",
+        "@tailwindcss/forms": "^0.5.11",
+        "tailwindcss": "^4.3.3"
+    }
+}
