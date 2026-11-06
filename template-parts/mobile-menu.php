@@ -67,7 +67,7 @@ $mmPhoto      = \BandabouTheme\PhotoHero::image(0);
                             <?php echo Heroicon::outline('chat-bubble-oval-left', 'w-5 h-5'); ?><?php echo esc_html($mmCtaLabel); ?>
                         </a>
                     <?php endif; ?>
-                    <a href="<?php echo esc_url($mmAccountUrl); ?>" class="inline-flex h-13 items-center justify-center gap-2 rounded-full border border-white/45 px-7 bg-white/10 text-base font-semibold text-white no-underline backdrop-blur-sm transition hover:bg-white/20">
+                    <a href="<?php echo esc_url($mmAccountUrl); ?>" class="hidden h-13 items-center md:inline-flex justify-center gap-2 rounded-full border border-white/45 px-7 bg-white/10 text-base font-semibold text-white no-underline backdrop-blur-sm transition hover:bg-white/20">
                         <?php echo Heroicon::solid('user-circle', 'w-5 h-5'); ?><?php esc_html_e('My hub', 'contabai-bandabou-theme'); ?>
                     </a>
                 </div>

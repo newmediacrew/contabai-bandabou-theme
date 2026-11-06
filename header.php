@@ -85,14 +85,14 @@ if (get_option('bandabou_topbar_enabled', '0') === '1') {
                 </a></span>
             <?php endif; ?>
 
-            <span class="hidden md:inline-flex"><a href="<?php echo esc_url($accountUrl); ?>" title="<?php esc_attr_e('My hub', 'contabai-bandabou-theme'); ?>" aria-label="<?php esc_attr_e('My hub', 'contabai-bandabou-theme'); ?>" class="bandabou-header-icon">
+            <a href="<?php echo esc_url($accountUrl); ?>" title="<?php esc_attr_e('My hub', 'contabai-bandabou-theme'); ?>" aria-label="<?php esc_attr_e('My hub', 'contabai-bandabou-theme'); ?>" class="bandabou-header-icon">
                 <?php echo Heroicon::solid('user-circle', 'w-5 h-5'); ?>
-            </a></span>
+            </a>
 
             <?php if ($ctaShow) : ?>
-                <a href="<?php echo esc_url($ctaUrl); ?>" title="<?php echo esc_attr($ctaLabel); ?>" aria-label="<?php echo esc_attr($ctaLabel); ?>" class="bandabou-header-icon">
+                <span class="hidden md:inline-flex"><a href="<?php echo esc_url($ctaUrl); ?>" title="<?php echo esc_attr($ctaLabel); ?>" aria-label="<?php echo esc_attr($ctaLabel); ?>" class="bandabou-header-icon">
                     <?php echo Heroicon::outline('chat-bubble-oval-left', 'w-5 h-5'); ?>
-                </a>
+                </a></span>
             <?php endif; ?>
 
             <?php get_template_part('template-parts/mobile-menu', null, ['brandName' => $brandName, 'brandPayoff' => $brandPayoff, 'brandLogo' => $brandLogo, 'ctaShow' => $ctaShow, 'ctaLabel' => $ctaLabel, 'ctaUrl' => $ctaUrl, 'accountUrl' => $accountUrl]); ?>
