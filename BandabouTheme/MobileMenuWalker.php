@@ -36,7 +36,7 @@ class MobileMenuWalker extends \Walker_Nav_Menu
     {
         $classes = empty($item->classes) ? [] : (array) $item->classes;
         $hasChildren = in_array('menu-item-has-children', $classes, true);
-        $current = in_array('current-menu-item', $classes, true);
+        $current = in_array('current-menu-item', $classes, true) && ! str_contains((string) $item->url, '#');
         $title = esc_html(apply_filters('the_title', $item->title, $item->ID));
         $href = ! empty($item->url) ? ' href="' . esc_url($item->url) . '"' : '';
 
@@ -54,7 +54,7 @@ class MobileMenuWalker extends \Walker_Nav_Menu
             return;
         }
 
-        $big = 'contabai-display text-4xl font-semibold leading-tight';
+        $big = 'contabai-display text-4xl font-semibold leading-tight lg:text-6xl';
         if ($hasChildren) {
             $output .= '<li x-data="{ open: false }">'
                 . '<button type="button" x-on:click="open = ! open" x-bind:aria-expanded="open" class="flex w-full items-center justify-between py-2.5 text-left text-white/85 ' . $big . '">'

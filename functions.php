@@ -1,6 +1,6 @@
 <?php
 
-use BandabouTheme\Heroicon;
+use BandabouTheme\DefaultMenu;
 use BandabouTheme\ThemeSettings\ThemeSettings;
 use BandabouTheme\ThemeUpdater;
 
@@ -53,6 +53,9 @@ add_action('init', function () {
     register_nav_menus(['header_navigation' => esc_html__('Header navigation', 'contabai-bandabou-theme')]);
 });
 
+add_action('after_switch_theme', [DefaultMenu::class, 'create']);
+add_action('admin_init', [DefaultMenu::class, 'create']);
+
 add_action('wp_enqueue_scripts', function () {
     wp_enqueue_style('contabai-bandabou-theme-css', get_template_directory_uri() . '/assets/css/theme.css', [], '1');
 });
@@ -73,12 +76,5 @@ if (class_exists(ThemeSettings::class)) {
 if (class_exists(ThemeUpdater::class)) {
     new ThemeUpdater();
 }
-
-add_filter('nav_menu_item_title', function ($title, $item) {
-    if (in_array('menu-item-has-children', $item->classes, true)) {
-        $title .= Heroicon::outline('chevron-down', 'w-4 h-4');
-    }
-    return $title;
-}, 10, 2);
 
 add_filter('get_the_archive_title_prefix', '__return_empty_string');

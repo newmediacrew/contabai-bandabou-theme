@@ -47,25 +47,11 @@
 .bandabou-logo { flex: none; width: auto; height: 42px; transition: height .25s ease; }
 .bandabou-brand { font-family: var(--theme-heading-font, var(--theme-font)), Georgia, serif; font-size: 21px; font-weight: 700; line-height: 1; white-space: nowrap; color: var(--heading-color, #0B4F6C); }
 .bandabou-payoff { font-size: 10px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; white-space: nowrap; color: var(--eyebrow-color, #0B6E6C); }
-.bandabou-header-cta { justify-content: center; width: 44px; height: 44px; font-size: 15px; }
 .bandabou-header-icon { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border: 1px solid #DCCDB2; border-radius: 9999px; color: var(--heading-color, #0B4F6C); background: transparent; transition: background-color .15s ease; }
 .bandabou-header-icon:hover { background: #F4EADA; }
-.bandabou-lang { display: flex; gap: 2px; padding: 3px; border: 1px solid #DCCDB2; border-radius: 9999px; font-size: 13px; font-weight: 600; }
-.bandabou-lang-item { padding: 5px 11px; border-radius: 9999px; color: var(--heading-color, #0B4F6C); }
-.bandabou-lang-item.is-active { background: var(--heading-color, #0B4F6C); color: #fff; }
 .bandabou-lang-menu { position: absolute; right: 0; top: 100%; z-index: 50; display: flex; flex-direction: column; gap: 2px; min-width: 4.5rem; margin: .5rem 0 0; padding: .25rem; list-style: none; border: 1px solid #EADFCB; border-radius: 1rem; background: #fff; box-shadow: 0 14px 34px rgba(6, 38, 54, .16); }
 .bandabou-lang-menu a { display: block; padding: 7px 12px; border-radius: .75rem; color: var(--heading-color, #0B4F6C); font-size: 13px; font-weight: 600; text-align: center; text-decoration: none; }
 .bandabou-lang-menu a:hover, .bandabou-lang-menu a.is-active { background: #F4EADA; }
-.bandabou-nav-list { display: flex; align-items: center; gap: 4px; margin: 0; padding: 6px; list-style: none; border: 1px solid #EADFCB; border-radius: 9999px; background: #FBF5EA; font-size: 15px; font-weight: 600; white-space: nowrap; }
-.bandabou-nav-list .menu-item { position: relative; margin: 0; padding: 0; }
-.bandabou-nav-list a { display: inline-flex; align-items: center; gap: .25rem; padding: 9px 16px; border-radius: 9999px; color: var(--heading-color, #0B4F6C); text-decoration: none; transition: background-color .15s ease, color .15s ease; }
-.bandabou-nav-list a:hover { background: #fff; }
-.bandabou-nav-list > .current-menu-item > a { background: #fff; color: var(--heading-color, #0B4F6C); box-shadow: 0 4px 12px rgba(6, 38, 54, .18); }
-.bandabou-nav-list a svg { transition: transform .15s ease; }
-.bandabou-nav-list a[aria-expanded="true"] svg { transform: rotate(180deg); }
-.bandabou-nav-list .sub-menu { position: absolute; left: 0; top: 100%; z-index: 50; min-width: 12rem; margin: .5rem 0 0; padding: .25rem; list-style: none; border: 1px solid #EADFCB; border-radius: 1rem; background: #fff; box-shadow: 0 14px 34px rgba(6, 38, 54, .16); }
-.bandabou-nav-list .sub-menu a { display: block; color: var(--heading-color, #0B4F6C); }
-.bandabou-nav-list .sub-menu a:hover { background: #F4EADA; }
 
 .bandabou-header.is-overlay { margin-bottom: calc(-1 * var(--bandabou-header-h, 86px)); }
 .bandabou-header.is-overlay:not(.is-scrolled) { background: transparent; border-color: transparent; }
@@ -74,26 +60,17 @@
 .bandabou-header.is-overlay:not(.is-scrolled) .bandabou-payoff { color: #FFE3A8; }
 .bandabou-header.is-overlay:not(.is-scrolled) .bandabou-header-icon { border-color: rgba(255, 255, 255, .45); background: rgba(255, 255, 255, .16); color: #fff; backdrop-filter: blur(14px); }
 .bandabou-header.is-overlay:not(.is-scrolled) .bandabou-header-icon:hover { background: rgba(255, 255, 255, .26); }
-.bandabou-header.is-overlay:not(.is-scrolled) .bandabou-lang { border-color: rgba(255, 255, 255, .45); background: rgba(255, 255, 255, .12); backdrop-filter: blur(14px); }
-.bandabou-header.is-overlay:not(.is-scrolled) .bandabou-lang-item { color: #fff; }
-.bandabou-header.is-overlay:not(.is-scrolled) .bandabou-lang-item.is-active { background: #fff; color: var(--heading-color, #0B4F6C); }
-.bandabou-header.is-overlay:not(.is-scrolled) .bandabou-nav-list { border-color: rgba(255, 255, 255, .4); background: rgba(255, 255, 255, .16); backdrop-filter: blur(14px); box-shadow: 0 10px 30px rgba(6, 38, 54, .25); }
-.bandabou-header.is-overlay:not(.is-scrolled) .bandabou-nav-list > .menu-item > a { color: #fff; }
-.bandabou-header.is-overlay:not(.is-scrolled) .bandabou-nav-list > .menu-item > a:hover { background: rgba(255, 255, 255, .18); }
-.bandabou-header.is-overlay:not(.is-scrolled) .bandabou-nav-list > .current-menu-item > a { background: #fff; color: var(--heading-color, #0B4F6C); }
 
 @media (min-width: 48rem) {
     .bandabou-header-inner { padding-inline: 2rem; }
     .bandabou-logo { height: 52px; }
     .bandabou-brand { font-size: 26px; }
-    .bandabou-header-cta { width: auto; padding-inline: 1rem; }
 }
 @media (min-width: 64rem) {
     .bandabou-header-inner { gap: 1.25rem; padding-block: 1.375rem; }
     .bandabou-logo { height: var(--logo-height, 58px); }
     .bandabou-brand { font-size: 29px; }
     .bandabou-payoff { font-size: 11px; letter-spacing: .22em; }
-    .bandabou-header-cta { height: 46px; padding-inline: 1.125rem; }
 }
 .bandabou-header.is-scrolled .bandabou-logo { height: 42px; }
 @media (prefers-reduced-motion: reduce) {

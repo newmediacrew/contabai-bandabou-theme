@@ -75,19 +75,6 @@ if (get_option('bandabou_topbar_enabled', '0') === '1') {
             <?php endif; ?>
         </a>
 
-        <nav class="bandabou-nav hidden lg:block" aria-label="<?php esc_attr_e('Main menu', 'contabai-bandabou-theme'); ?>">
-            <?php
-            wp_nav_menu([
-                'theme_location' => 'header_navigation',
-                'container'      => false,
-                'depth'          => 2,
-                'fallback_cb'    => [\BandabouTheme\DefaultMenu::class, 'desktop'],
-                'walker'         => new \BandabouTheme\DropdownWalker(),
-                'items_wrap'     => '<ul class="bandabou-nav-list">%3$s</ul>',
-            ]);
-            ?>
-        </nav>
-
         <div class="flex shrink-0 items-center gap-2 lg:gap-2.5">
             <div class="hidden md:block"><?php get_template_part('template-parts/language-switch'); ?></div>
 
@@ -103,9 +90,8 @@ if (get_option('bandabou_topbar_enabled', '0') === '1') {
             </a></span>
 
             <?php if ($ctaShow) : ?>
-                <a href="<?php echo esc_url($ctaUrl); ?>" title="<?php echo esc_attr($ctaLabel); ?>" aria-label="<?php echo esc_attr($ctaLabel); ?>" class="bandabou-cta bandabou-header-cta">
-                    <?php echo Heroicon::render('whatsapp', 'brands', 'w-[18px] h-[18px]'); ?>
-                    <span class="hidden md:inline"><?php echo esc_html($ctaLabel); ?></span>
+                <a href="<?php echo esc_url($ctaUrl); ?>" title="<?php echo esc_attr($ctaLabel); ?>" aria-label="<?php echo esc_attr($ctaLabel); ?>" class="bandabou-header-icon">
+                    <?php echo Heroicon::outline('chat-bubble-oval-left', 'w-5 h-5'); ?>
                 </a>
             <?php endif; ?>
 
