@@ -1,0 +1,806 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: contabai-bandabou-theme\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "100% width"
+msgstr "100% breedte"
+
+msgid "A private pool at every villa"
+msgstr "Privézwembad bij elke villa"
+
+msgid "A question about the villa, your arrival or a tip for a beach? Just send a message."
+msgstr "Een vraag over de villa, de aankomst of een tip voor een strand? Stuur een appje."
+
+msgid "About Bandabou"
+msgstr "Over Bandabou"
+
+msgid "About Bandabou & Fontein"
+msgstr "Over Bandabou & Fontein"
+
+msgid "About Fontein"
+msgstr "Over Fontein"
+
+msgid "Address"
+msgstr "Adres"
+
+msgid "Advanced"
+msgstr "Geavanceerd"
+
+msgid "All %d photos"
+msgstr "Alle %d foto's"
+
+msgid "All on Villapark Fontein, all with their own pool. Choose the villa that suits your group."
+msgstr "Allemaal op Villapark Fontein, allemaal met eigen zwembad. Kies de villa die bij jouw gezelschap past."
+
+msgid "All villas"
+msgstr "Alle villa's"
+
+msgid "Always"
+msgstr "Altijd"
+
+msgid "Angled soft"
+msgstr "Schuin zacht"
+
+msgid "Arrival"
+msgstr "Aankomst"
+
+msgid "Ask about the options"
+msgstr "Vraag naar de mogelijkheden"
+
+msgid "Auto"
+msgstr "Automatisch"
+
+msgid "Back to home"
+msgstr "Terug naar home"
+
+msgid "Background"
+msgstr "Achtergrond"
+
+msgid "Background animation"
+msgstr "Achtergrondanimatie"
+
+msgid "Badge 1 icon"
+msgstr "Badge 1-pictogram"
+
+msgid "Badge 1 icon color"
+msgstr "Badge 1-pictogramkleur"
+
+msgid "Badge 1 text"
+msgstr "Badge 1-tekst"
+
+msgid "Badge 2 icon"
+msgstr "Badge 2-pictogram"
+
+msgid "Badge 2 icon color"
+msgstr "Badge 2-pictogramkleur"
+
+msgid "Badge 2 text"
+msgstr "Badge 2-tekst"
+
+msgid "Badge 3 icon"
+msgstr "Badge 3-pictogram"
+
+msgid "Badge 3 icon color"
+msgstr "Badge 3-pictogramkleur"
+
+msgid "Badge 3 text"
+msgstr "Badge 3-tekst"
+
+msgid "Bandabou & Fontein"
+msgstr "Bandabou & Fontein"
+
+msgid "Bandabou is the green, hilly west of the island. Here you will find hiking trails through Christoffelpark, small bays with clear water and beaches like Cas Abou, Grote Knip and Playa Lagun, where you can snorkel straight from the shore."
+msgstr "Bandabou is het groene, heuvelachtige westen van het eiland. Hier vind je wandelpaden door het Christoffelpark, kleine baaien met helder water en stranden als Cas Abou, Grote Knip en Playa Lagun, waar je zo vanaf het strand kunt snorkelen."
+
+msgid "Bandabou Theme"
+msgstr "Bandabou Theme"
+
+msgid "Base font size"
+msgstr "Basislettergrootte"
+
+msgid "Beaches nearby"
+msgstr "Stranden in de buurt"
+
+msgid "Body font"
+msgstr "Bodylettertype"
+
+msgid "Body text color"
+msgstr "Tekstkleur"
+
+msgid "Bold"
+msgstr "Vet"
+
+msgid "Bold, italic and links are kept; the top bar is a single line, so paragraphs and lists are not."
+msgstr "Vet, cursief en links blijven behouden; de bovenbalk is één regel, dus alinea's en lijsten niet."
+
+msgid "Book"
+msgstr "Reserveer"
+
+msgid "Booked directly with us"
+msgstr "Rechtstreeks bij ons geboekt"
+
+msgid "Bottom center"
+msgstr "Onder midden"
+
+msgid "Bottom left"
+msgstr "Linksonder"
+
+msgid "Bottom right"
+msgstr "Rechtsonder"
+
+msgid "Bottom to top"
+msgstr "Van beneden naar boven"
+
+msgid "Branding"
+msgstr "Branding"
+
+msgid "Breadcrumbs"
+msgstr "Broodkruimels"
+
+msgid "Breathe"
+msgstr "Ademen"
+
+msgid "Call-to-action button"
+msgstr "Call-to-action-knop"
+
+msgid "Carefully furnished villas on Villapark Fontein, with views over the hills and the Caribbean Sea. You book directly with us, the local Bandabou Curaçao team."
+msgstr "Zorgvuldig ingerichte villa's op Villapark Fontein, met uitzicht over de heuvels en de Caribische Zee. Je boekt rechtstreeks bij ons, het lokale team van Bandabou Curaçao."
+
+msgid "Center"
+msgstr "Midden"
+
+msgid "Chats"
+msgstr "Chats"
+
+msgid "Check availability"
+msgstr "Bekijk beschikbaarheid"
+
+msgid "Check now"
+msgstr "Nu controleren"
+
+msgid "Check-in"
+msgstr "Inchecken"
+
+msgid "Check-out"
+msgstr "Uitchecken"
+
+msgid "Choose file"
+msgstr "Bestand kiezen"
+
+msgid "City"
+msgstr "Stad"
+
+msgid "Classic editor"
+msgstr "Klassieke editor"
+
+msgid "Close"
+msgstr "Sluiten"
+
+msgid "Color"
+msgstr "Kleur"
+
+msgid "Column %d icon"
+msgstr "Pictogram van kolom %d"
+
+msgid "Column %d icon color"
+msgstr "Pictogramkleur van kolom %d"
+
+msgid "Column %d text"
+msgstr "Tekst van kolom %d"
+
+msgid "Column %d title"
+msgstr "Titel van kolom %d"
+
+msgid "Compare all villas"
+msgstr "Vergelijk alle villa's"
+
+msgid "Contact"
+msgstr "Contact"
+
+msgid "Contact form"
+msgstr "Contactformulier"
+
+msgid "Contain"
+msgstr "Passend"
+
+msgid "Content opacity"
+msgstr "Dekking inhoud"
+
+msgid "Cool off whenever you like, with sun loungers and a covered porch for the hottest hours."
+msgstr "Verkoeling wanneer je wilt, met ligbedden en een overdekte porch voor de warmste uren."
+
+msgid "Cover"
+msgstr "Vullend"
+
+msgid "Covered porch of Villa Moreno with a view over green Bandabou"
+msgstr "Overdekte porch van Villa Moreno met uitzicht over het groene Bandabou"
+
+msgid "Crossfade only"
+msgstr "Alleen crossfade"
+
+msgid "CTA label"
+msgstr "CTA-label"
+
+msgid "CTA URL"
+msgstr "CTA-URL"
+
+msgid "Departure"
+msgstr "Vertrek"
+
+msgid "Deposit"
+msgstr "Borg"
+
+msgid "Deposit, settled after your stay"
+msgstr "Borg, verrekend na je verblijf"
+
+msgid "Development mode"
+msgstr "Ontwikkelmodus"
+
+msgid "Development mode is on (Advanced tab), so updates are switched off."
+msgstr "De ontwikkelmodus staat aan (tabblad Geavanceerd), dus updates zijn uitgeschakeld."
+
+msgid "Development mode is on, so this update is not installed."
+msgstr "De ontwikkelmodus staat aan, dus deze update wordt niet geïnstalleerd."
+
+msgid "Diagonal"
+msgstr "Diagonaal"
+
+msgid "Diagonal drift"
+msgstr "Diagonale beweging"
+
+msgid "Do you own a home in Bandabou?"
+msgstr "Heb je zelf een woning in Bandabou?"
+
+msgid "Dual tone"
+msgstr "Duotoon"
+
+msgid "E.g. Villa Cuchita, 12 to 19 January"
+msgstr "Bijv. Villa Cuchita, 12 t/m 19 januari"
+
+msgid "Email"
+msgstr "E-mail"
+
+msgid "Enable"
+msgstr "Inschakelen"
+
+msgid "Extra bold"
+msgstr "Extra vet"
+
+msgid "Eyebrow"
+msgstr "Bovenkopje"
+
+msgid "Eyebrow color"
+msgstr "Bovenkopkleur"
+
+msgid "Facebook"
+msgstr "Facebook"
+
+msgid "Free parking at the villa"
+msgstr "Gratis parkeren bij de villa"
+
+msgid "from %s"
+msgstr "vanaf %s"
+
+msgid "Gated villa park"
+msgstr "Afgesloten villapark"
+
+msgid "GitHub answered with HTTP %d."
+msgstr "GitHub antwoordde met HTTP %d."
+
+msgid "GitHub is not reachable: %s"
+msgstr "GitHub is niet bereikbaar: %s"
+
+msgid "GitHub refused the request (rate limit). Try again later."
+msgstr "GitHub weigerde het verzoek (limiet bereikt). Probeer het later opnieuw."
+
+msgid "GitHub sent an unexpected answer."
+msgstr "GitHub stuurde een onverwacht antwoord."
+
+msgid "Good to know"
+msgstr "Goed om te weten"
+
+msgid "Gradient"
+msgstr "Verloop"
+
+msgid "Guests"
+msgstr "Gasten"
+
+msgid "Header navigation"
+msgstr "Headernavigatie"
+
+msgid "Heading"
+msgstr "Kop"
+
+msgid "Heading color"
+msgstr "Kopkleur"
+
+msgid "Heading font"
+msgstr "Kop-lettertype"
+
+msgid "Heading line height"
+msgstr "Regelhoogte kop"
+
+msgid "Heading weight"
+msgstr "Kopdikte"
+
+msgid "Help during your stay"
+msgstr "Hulp tijdens je verblijf"
+
+msgid "Hero"
+msgstr "Hero"
+
+msgid "Hiking and snorkelling"
+msgstr "Wandelen & snorkelen"
+
+msgid "Home"
+msgstr "Home"
+
+msgid "If something goes wrong, we sort it out. Cleaning during your stay is available on request."
+msgstr "Gaat er iets mis, dan regelen wij het. Tussentijdse schoonmaak is op aanvraag mogelijk."
+
+msgid "Image"
+msgstr "Afbeelding"
+
+msgid "Information"
+msgstr "Informatie"
+
+msgid "Instagram"
+msgstr "Instagram"
+
+msgid "Installed version"
+msgstr "Geïnstalleerde versie"
+
+msgid "Ken Burns — zoom in"
+msgstr "Ken Burns — inzoomen"
+
+msgid "Ken Burns — zoom out"
+msgstr "Ken Burns — uitzoomen"
+
+msgid "Language"
+msgstr "Taal"
+
+msgid "Last check"
+msgstr "Laatste controle"
+
+msgid "Last error"
+msgstr "Laatste fout"
+
+msgid "Latest release"
+msgstr "Nieuwste release"
+
+msgid "Leave empty to use the Bandabou logo."
+msgstr "Laat leeg om het Bandabou-logo te gebruiken."
+
+msgid "Left"
+msgstr "Links"
+
+msgid "Left center"
+msgstr "Links midden"
+
+msgid "Left to right"
+msgstr "Van links naar rechts"
+
+msgid "Line height"
+msgstr "Regelhoogte"
+
+msgid "Link color"
+msgstr "Linkkleur"
+
+msgid "Link underline"
+msgstr "Link-onderstreping"
+
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+msgid "List your home?"
+msgstr "Ook verhuren?"
+
+msgid "Local team in Julianadorp"
+msgstr "Lokaal team in Julianadorp"
+
+msgid "Location"
+msgstr "Ligging"
+
+msgid "Logo"
+msgstr "Logo"
+
+msgid "Logo height"
+msgstr "Logohoogte"
+
+msgid "Main menu"
+msgstr "Hoofdmenu"
+
+msgid "Map: %s"
+msgstr "Kaart: %s"
+
+msgid "Medium"
+msgstr "Gemiddeld"
+
+msgid "Menu"
+msgstr "Menu"
+
+msgid "Mesh subtle"
+msgstr "Subtiele mesh"
+
+msgid "Message"
+msgstr "Bericht"
+
+msgid "min. %d nights"
+msgstr "min. %d nachten"
+
+msgid "My hub"
+msgstr "Mijn hub"
+
+msgid "Name"
+msgstr "Naam"
+
+msgid "Never"
+msgstr "Nooit"
+
+msgid "News"
+msgstr "Nieuws"
+
+msgid "Next"
+msgstr "Volgende"
+
+msgid "No booking platform in between: you arrange everything directly with the team that knows the villas."
+msgstr "Geen boekingsplatform ertussen: je regelt alles direct met het team dat de villa's kent."
+
+msgid "No posts found."
+msgstr "Geen berichten gevonden."
+
+msgid "No release published yet."
+msgstr "Nog geen release gepubliceerd."
+
+msgid "No repeat"
+msgstr "Niet herhalen"
+
+msgid "None"
+msgstr "Geen"
+
+msgid "Normal"
+msgstr "Normaal"
+
+msgid "Number of slides"
+msgstr "Aantal slides"
+
+msgid "On arrival you are welcomed in person by our local team in Bandabou."
+msgstr "Bij aankomst word je persoonlijk ontvangen door ons lokale team in Bandabou."
+
+msgid "On hover"
+msgstr "Bij hover"
+
+msgid "Our team hands you the key and shows you the villa. Check-in from 15:00, check-out until 11:00."
+msgstr "Ons team geeft de sleutel en laat je de villa zien. Inchecken vanaf 15:00, uitchecken tot 11:00."
+
+msgid "Our villas"
+msgstr "Onze villa's"
+
+msgid "Our villas are on Villapark Fontein: a quiet, gated park on a hill, with wide views and a Caribbean sunset from your own terrace in the evening."
+msgstr "Onze villa's liggen op Villapark Fontein: een rustig, afgesloten park op een heuvel, met wijds uitzicht en 's avonds een Caribische zonsondergang vanaf je eigen terras."
+
+msgid "Overlay color"
+msgstr "Overlay-kleur"
+
+msgid "Overlay opacity"
+msgstr "Overlay-dekking"
+
+msgid "Owner, Bandabou Curaçao"
+msgstr "Eigenaar, Bandabou Curaçao"
+
+msgid "Page not found"
+msgstr "Pagina niet gevonden"
+
+msgid "Pan down"
+msgstr "Naar beneden pannen"
+
+msgid "Pan left"
+msgstr "Naar links pannen"
+
+msgid "Pan right"
+msgstr "Naar rechts pannen"
+
+msgid "Pan up"
+msgstr "Naar boven pannen"
+
+msgid "Paragraph spacing"
+msgstr "Alinea-afstand"
+
+msgid "Payoff"
+msgstr "Slogan"
+
+msgid "Personal contact, from booking to departure"
+msgstr "Persoonlijk contact, van boeking tot vertrek"
+
+msgid "Phone"
+msgstr "Telefoon"
+
+msgid "Pick a date"
+msgstr "Kies een datum"
+
+msgid "Position"
+msgstr "Positie"
+
+msgid "Powered by Contabai"
+msgstr "Powered by Contabai"
+
+msgid "Previous"
+msgstr "Vorige"
+
+msgid "Privacy"
+msgstr "Privacy"
+
+msgid "Privacy page slug"
+msgstr "Slug van de privacypagina"
+
+msgid "Privacy policy"
+msgstr "Privacybeleid"
+
+msgid "Question via the website"
+msgstr "Vraag via de website"
+
+msgid "Question? WhatsApp us"
+msgstr "Vraag? WhatsApp ons"
+
+msgid "Questions? We are happy to help"
+msgstr "Vragen? We helpen je graag"
+
+msgid "Quick answers on WhatsApp"
+msgstr "Snel antwoord via WhatsApp"
+
+msgid "Radial"
+msgstr "Radiaal"
+
+msgid "Read the full description"
+msgstr "Lees de volledige beschrijving"
+
+msgid "Relaxed"
+msgstr "Ruim"
+
+msgid "Release %1$s has no %2$s."
+msgstr "Release %1$s heeft geen %2$s."
+
+msgid "Release notes"
+msgstr "Release-opmerkingen"
+
+msgid "Release tag %s is not a valid version."
+msgstr "Releasetag %s is geen geldige versie."
+
+msgid "Remove"
+msgstr "Verwijderen"
+
+msgid "Repeat"
+msgstr "Herhalen"
+
+msgid "Repeat all"
+msgstr "Alles herhalen"
+
+msgid "Repeat horizontal"
+msgstr "Horizontaal herhalen"
+
+msgid "Repeat vertical"
+msgstr "Verticaal herhalen"
+
+msgid "Restore default design"
+msgstr "Standaardontwerp herstellen"
+
+msgid "Restore the default design and typography? Your own colours and fonts will be replaced."
+msgstr "Standaardontwerp en typografie herstellen? Je eigen kleuren en lettertypen worden vervangen."
+
+msgid "Right"
+msgstr "Rechts"
+
+msgid "Right center"
+msgstr "Rechts midden"
+
+msgid "Section eyebrow color"
+msgstr "Bovenkopkleur secties"
+
+msgid "See our other villas too"
+msgstr "Bekijk ook onze andere villa's"
+
+msgid "Semibold"
+msgstr "Halfvet"
+
+msgid "Send message"
+msgstr "Verstuur bericht"
+
+msgid "Send us a message or WhatsApp us directly. We usually reply the same day."
+msgstr "Stuur ons een bericht of app ons direct. We reageren meestal dezelfde dag."
+
+msgid "Sets the colours, fonts, typography, background and hero look back to the theme's default design. Texts, logo, menus, links and all other settings stay as they are."
+msgstr "Zet de kleuren, lettertypen, typografie, achtergrond en de look van de hero terug naar het standaardontwerp van het thema. Teksten, logo, menu's, links en alle andere instellingen blijven zoals ze zijn."
+
+msgid "Settings saved."
+msgstr "Instellingen opgeslagen."
+
+msgid "Show all %d amenities"
+msgstr "Toon alle %d voorzieningen"
+
+msgid "Show brand text"
+msgstr "Merktekst tonen"
+
+msgid "Show hero on homepage"
+msgstr "Hero op de homepage tonen"
+
+msgid "Show less"
+msgstr "Toon minder"
+
+msgid "Show top bar"
+msgstr "Bovenbalk tonen"
+
+msgid "Shows the cover photos of random listings in the hero instead of the stock photos."
+msgstr "Toont de omslagfoto's van willekeurige accommodaties in de hero in plaats van de stockfoto's."
+
+msgid "Site name"
+msgstr "Sitenaam"
+
+msgid "Size"
+msgstr "Grootte"
+
+msgid "Socials"
+msgstr "Sociale media"
+
+msgid "Soft fade"
+msgstr "Zachte overgang"
+
+msgid "Static (no motion)"
+msgstr "Statisch (geen beweging)"
+
+msgid "Status"
+msgstr "Status"
+
+msgid "Sticky header"
+msgstr "Vastgezette koptekst"
+
+msgid "Subheading"
+msgstr "Subkop"
+
+msgid "Subheading color"
+msgstr "Subkopkleur"
+
+msgid "Switches off theme updates from GitHub. Turn ON for a local development site that is a git checkout. Leave OFF in production."
+msgstr "Schakelt thema-updates vanaf GitHub uit. Zet AAN voor een lokale ontwikkelsite die een git-checkout is. Laat UIT in productie."
+
+msgid "Tell us what you are looking for"
+msgstr "Vertel ons wat je zoekt"
+
+msgid "Terms and conditions"
+msgstr "Algemene voorwaarden"
+
+msgid "Terms of service"
+msgstr "Servicevoorwaarden"
+
+msgid "Terms page slug"
+msgstr "Slug van de voorwaardenpagina"
+
+msgid "Text alignment"
+msgstr "Tekstuitlijning"
+
+msgid "Text color"
+msgstr "Tekstkleur"
+
+msgid "The default design and typography are restored."
+msgstr "Het standaardontwerp en de typografie zijn hersteld."
+
+msgid "The quiet west side of Curaçao"
+msgstr "De rustige westkant van Curaçao"
+
+msgid "Theme color"
+msgstr "Themakleur"
+
+msgid "This page does not exist (anymore). Our villas are still here."
+msgstr "Deze pagina bestaat niet (meer). Onze villa's zijn er nog wel."
+
+msgid "Three stop"
+msgstr "Drie stops"
+
+msgid "Tight"
+msgstr "Krap"
+
+msgid "TikTok"
+msgstr "TikTok"
+
+msgid "Top bar"
+msgstr "Bovenbalk"
+
+msgid "Top center"
+msgstr "Boven midden"
+
+msgid "Top left"
+msgstr "Linksboven"
+
+msgid "Top right"
+msgstr "Rechtsboven"
+
+msgid "Top to bottom"
+msgstr "Van boven naar beneden"
+
+msgid "Type"
+msgstr "Type"
+
+msgid "Typography"
+msgstr "Typografie"
+
+msgid "until %s"
+msgstr "tot %s"
+
+msgid "Update available"
+msgstr "Update beschikbaar"
+
+msgid "Updates"
+msgstr "Updates"
+
+msgid "Use listing cover photos"
+msgstr "Omslagfoto's van accommodaties gebruiken"
+
+msgid "Villa and period"
+msgstr "Villa en periode"
+
+msgid "Villapark Fontein · Bandabou · Curaçao"
+msgstr "Villapark Fontein · Bandabou · Curaçao"
+
+msgid "Villas"
+msgstr "Villa's"
+
+msgid "Villas in one peaceful place"
+msgstr "Villa's op één rustige plek"
+
+msgid "We know every villa and every little beach in Bandabou. That personal contact makes the difference for our guests. Ayo, see you soon on Curaçao!"
+msgstr "We kennen elke villa en elk strandje in Bandabou. Dat persoonlijke contact maakt het verschil voor onze gasten. Ayo, tot snel op Curaçao!"
+
+msgid "We live on the island and are there for you, from the key handover to your departure."
+msgstr "We wonen op het eiland en zijn er voor je, van de sleuteloverdracht tot je vertrek."
+
+msgid "We take care of rentals and management: from the photos and the guests to cleaning and maintenance. You enjoy the income."
+msgstr "Wij verzorgen de verhuur en het beheer: van de foto's en de gasten tot de schoonmaak en het onderhoud. Jij geniet van de opbrengst."
+
+msgid "We welcome you ourselves"
+msgstr "We ontvangen je zelf"
+
+msgid "Welcome to the most beautiful side of the island."
+msgstr "Welkom aan de mooiste kant van het eiland."
+
+msgid "What this villa offers"
+msgstr "Wat deze villa biedt"
+
+msgid "WhatsApp us"
+msgstr "WhatsApp ons"
+
+msgid "Which villa and period?"
+msgstr "Welke villa en periode?"
+
+msgid "Why Bandabou Curaçao"
+msgstr "Waarom Bandabou Curaçao"
+
+msgid "Why book with us"
+msgstr "Waarom bij ons boeken"
+
+msgid "X"
+msgstr "X"
+
+msgid "You are not allowed to do this."
+msgstr "Je hebt geen toestemming om dit te doen."
+
+msgid "You book directly with Bandabou Curaçao. After your request you will receive the confirmation and payment details from us."
+msgstr "Je reserveert rechtstreeks bij Bandabou Curaçao. Na je aanvraag ontvang je de bevestiging en de betaalgegevens van ons."
+
+msgid "you@example.com"
+msgstr "jij@voorbeeld.nl"
+
+msgid "Your name"
+msgstr "Je naam"
+
+msgid "Your trusted partner for an unforgettable stay on Curaçao."
+msgstr "Jouw vertrouwde partner voor een onvergetelijk verblijf op Curaçao."
+
+msgid "Your villa in peaceful Bandabou"
+msgstr "Jouw villa in het rustige Bandabou"
+
+msgid "YouTube"
+msgstr "YouTube"

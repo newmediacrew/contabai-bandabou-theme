@@ -55,6 +55,14 @@ $mmPhoto      = \BandabouTheme\PhotoHero::image(0);
                     ?>
                 </div>
 
+                <?php $mmLanguages = \BandabouTheme\Languages::links(); ?>
+                <?php if ($mmLanguages !== []) : ?>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <?php foreach ($mmLanguages as $mmLanguage) : ?>
+                            <a href="<?php echo esc_url($mmLanguage['url']); ?>" hreflang="<?php echo esc_attr(strtolower($mmLanguage['code'])); ?>" class="inline-flex h-10 min-w-11 items-center justify-center rounded-full border border-white/35 px-3 text-sm font-semibold no-underline <?php echo $mmLanguage['current'] ? 'bg-white text-[#0B4F6C]' : 'bg-white/10 text-white'; ?>"><?php echo esc_html($mmLanguage['code']); ?></a>
+                        <?php endforeach; ?>
+                    </div>
+                <?php endif; ?>
                 <div class="mt-6 flex flex-col gap-2.5">
                     <?php if ($mmCtaShow) : ?>
                         <a href="<?php echo esc_url($mmCtaUrl); ?>" class="bandabou-cta h-13 justify-center text-base">

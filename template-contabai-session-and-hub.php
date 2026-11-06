@@ -1,5 +1,9 @@
 <?php
 /* Template Name: Contabai Session & Hub (blank, centered) */
+
+$sessionLogo = (string) get_option('bandabou_logo', '');
+$sessionLogo = $sessionLogo !== '' ? $sessionLogo : get_theme_file_uri('assets/img/logo.webp');
+$sessionName = (string) get_option('bandabou_site_name', 'Bandabou Curaçao');
 ?>
 <!doctype html>
 <html lang="<?php echo esc_attr(substr(get_locale(), 0, 2)); ?>">
@@ -11,6 +15,10 @@
 <body class="min-h-screen text-neutral-900 antialiased">
 <div class="grid grid-cols-1 min-h-screen place-items-center px-4 py-10">
     <div class="w-full min-w-0">
+        <a href="<?php echo esc_url(home_url()); ?>" class="mb-8 flex items-center justify-center gap-3 no-underline">
+            <img src="<?php echo esc_url($sessionLogo); ?>" alt="" class="h-[52px] w-auto">
+            <span class="bandabou-brand"><?php echo esc_html($sessionName); ?></span>
+        </a>
         <?php while (have_posts()) : the_post(); ?>
             <?php the_content(); ?>
         <?php endwhile; ?>

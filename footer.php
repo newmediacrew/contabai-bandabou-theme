@@ -53,7 +53,8 @@ foreach ($socialDefs as $def) {
 ?>
 </main>
 
-<div aria-hidden="true" class="mt-16 leading-[0]">
+<?php $villaPage = (bool) get_query_var('contabai_listing_id'); ?>
+<div aria-hidden="true" class="<?php echo $villaPage ? 'bg-bandabou-sand ' : (is_front_page() ? '' : 'mt-16 '); ?>leading-[0]">
     <svg viewBox="0 0 1440 70" preserveAspectRatio="none" width="100%" height="70" class="block"><path d="M0 38 C 260 70 520 6 780 30 S 1220 66 1440 24 V70 H0 Z" fill="rgba(15,163,163,0.45)"></path><path d="M0 50 C 300 20 600 76 900 46 S 1280 30 1440 44 V70 H0 Z" fill="#0B5A6E"></path></svg>
 </div>
 <footer class="bandabou-footer">

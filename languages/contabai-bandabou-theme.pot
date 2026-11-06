@@ -1,0 +1,805 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: contabai-bandabou-theme\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "100% width"
+msgstr ""
+
+msgid "A private pool at every villa"
+msgstr ""
+
+msgid "A question about the villa, your arrival or a tip for a beach? Just send a message."
+msgstr ""
+
+msgid "About Bandabou"
+msgstr ""
+
+msgid "About Bandabou & Fontein"
+msgstr ""
+
+msgid "About Fontein"
+msgstr ""
+
+msgid "Address"
+msgstr ""
+
+msgid "Advanced"
+msgstr ""
+
+msgid "All %d photos"
+msgstr ""
+
+msgid "All on Villapark Fontein, all with their own pool. Choose the villa that suits your group."
+msgstr ""
+
+msgid "All villas"
+msgstr ""
+
+msgid "Always"
+msgstr ""
+
+msgid "Angled soft"
+msgstr ""
+
+msgid "Arrival"
+msgstr ""
+
+msgid "Ask about the options"
+msgstr ""
+
+msgid "Auto"
+msgstr ""
+
+msgid "Back to home"
+msgstr ""
+
+msgid "Background"
+msgstr ""
+
+msgid "Background animation"
+msgstr ""
+
+msgid "Badge 1 icon"
+msgstr ""
+
+msgid "Badge 1 icon color"
+msgstr ""
+
+msgid "Badge 1 text"
+msgstr ""
+
+msgid "Badge 2 icon"
+msgstr ""
+
+msgid "Badge 2 icon color"
+msgstr ""
+
+msgid "Badge 2 text"
+msgstr ""
+
+msgid "Badge 3 icon"
+msgstr ""
+
+msgid "Badge 3 icon color"
+msgstr ""
+
+msgid "Badge 3 text"
+msgstr ""
+
+msgid "Bandabou & Fontein"
+msgstr ""
+
+msgid "Bandabou is the green, hilly west of the island. Here you will find hiking trails through Christoffelpark, small bays with clear water and beaches like Cas Abou, Grote Knip and Playa Lagun, where you can snorkel straight from the shore."
+msgstr ""
+
+msgid "Bandabou Theme"
+msgstr ""
+
+msgid "Base font size"
+msgstr ""
+
+msgid "Beaches nearby"
+msgstr ""
+
+msgid "Body font"
+msgstr ""
+
+msgid "Body text color"
+msgstr ""
+
+msgid "Bold"
+msgstr ""
+
+msgid "Bold, italic and links are kept; the top bar is a single line, so paragraphs and lists are not."
+msgstr ""
+
+msgid "Book"
+msgstr ""
+
+msgid "Booked directly with us"
+msgstr ""
+
+msgid "Bottom center"
+msgstr ""
+
+msgid "Bottom left"
+msgstr ""
+
+msgid "Bottom right"
+msgstr ""
+
+msgid "Bottom to top"
+msgstr ""
+
+msgid "Branding"
+msgstr ""
+
+msgid "Breadcrumbs"
+msgstr ""
+
+msgid "Breathe"
+msgstr ""
+
+msgid "Call-to-action button"
+msgstr ""
+
+msgid "Carefully furnished villas on Villapark Fontein, with views over the hills and the Caribbean Sea. You book directly with us, the local Bandabou Curaçao team."
+msgstr ""
+
+msgid "Center"
+msgstr ""
+
+msgid "Chats"
+msgstr ""
+
+msgid "Check availability"
+msgstr ""
+
+msgid "Check now"
+msgstr ""
+
+msgid "Check-in"
+msgstr ""
+
+msgid "Check-out"
+msgstr ""
+
+msgid "Choose file"
+msgstr ""
+
+msgid "City"
+msgstr ""
+
+msgid "Classic editor"
+msgstr ""
+
+msgid "Close"
+msgstr ""
+
+msgid "Color"
+msgstr ""
+
+msgid "Column %d icon"
+msgstr ""
+
+msgid "Column %d icon color"
+msgstr ""
+
+msgid "Column %d text"
+msgstr ""
+
+msgid "Column %d title"
+msgstr ""
+
+msgid "Compare all villas"
+msgstr ""
+
+msgid "Contact"
+msgstr ""
+
+msgid "Contact form"
+msgstr ""
+
+msgid "Contain"
+msgstr ""
+
+msgid "Content opacity"
+msgstr ""
+
+msgid "Cool off whenever you like, with sun loungers and a covered porch for the hottest hours."
+msgstr ""
+
+msgid "Cover"
+msgstr ""
+
+msgid "Covered porch of Villa Moreno with a view over green Bandabou"
+msgstr ""
+
+msgid "Crossfade only"
+msgstr ""
+
+msgid "CTA label"
+msgstr ""
+
+msgid "CTA URL"
+msgstr ""
+
+msgid "Departure"
+msgstr ""
+
+msgid "Deposit"
+msgstr ""
+
+msgid "Deposit, settled after your stay"
+msgstr ""
+
+msgid "Development mode"
+msgstr ""
+
+msgid "Development mode is on (Advanced tab), so updates are switched off."
+msgstr ""
+
+msgid "Development mode is on, so this update is not installed."
+msgstr ""
+
+msgid "Diagonal"
+msgstr ""
+
+msgid "Diagonal drift"
+msgstr ""
+
+msgid "Do you own a home in Bandabou?"
+msgstr ""
+
+msgid "Dual tone"
+msgstr ""
+
+msgid "E.g. Villa Cuchita, 12 to 19 January"
+msgstr ""
+
+msgid "Email"
+msgstr ""
+
+msgid "Enable"
+msgstr ""
+
+msgid "Extra bold"
+msgstr ""
+
+msgid "Eyebrow"
+msgstr ""
+
+msgid "Eyebrow color"
+msgstr ""
+
+msgid "Facebook"
+msgstr ""
+
+msgid "Free parking at the villa"
+msgstr ""
+
+msgid "from %s"
+msgstr ""
+
+msgid "Gated villa park"
+msgstr ""
+
+msgid "GitHub answered with HTTP %d."
+msgstr ""
+
+msgid "GitHub is not reachable: %s"
+msgstr ""
+
+msgid "GitHub refused the request (rate limit). Try again later."
+msgstr ""
+
+msgid "GitHub sent an unexpected answer."
+msgstr ""
+
+msgid "Good to know"
+msgstr ""
+
+msgid "Gradient"
+msgstr ""
+
+msgid "Guests"
+msgstr ""
+
+msgid "Header navigation"
+msgstr ""
+
+msgid "Heading"
+msgstr ""
+
+msgid "Heading color"
+msgstr ""
+
+msgid "Heading font"
+msgstr ""
+
+msgid "Heading line height"
+msgstr ""
+
+msgid "Heading weight"
+msgstr ""
+
+msgid "Help during your stay"
+msgstr ""
+
+msgid "Hero"
+msgstr ""
+
+msgid "Hiking and snorkelling"
+msgstr ""
+
+msgid "Home"
+msgstr ""
+
+msgid "If something goes wrong, we sort it out. Cleaning during your stay is available on request."
+msgstr ""
+
+msgid "Image"
+msgstr ""
+
+msgid "Information"
+msgstr ""
+
+msgid "Instagram"
+msgstr ""
+
+msgid "Installed version"
+msgstr ""
+
+msgid "Ken Burns — zoom in"
+msgstr ""
+
+msgid "Ken Burns — zoom out"
+msgstr ""
+
+msgid "Language"
+msgstr ""
+
+msgid "Last check"
+msgstr ""
+
+msgid "Last error"
+msgstr ""
+
+msgid "Latest release"
+msgstr ""
+
+msgid "Leave empty to use the Bandabou logo."
+msgstr ""
+
+msgid "Left"
+msgstr ""
+
+msgid "Left center"
+msgstr ""
+
+msgid "Left to right"
+msgstr ""
+
+msgid "Line height"
+msgstr ""
+
+msgid "Link color"
+msgstr ""
+
+msgid "Link underline"
+msgstr ""
+
+msgid "LinkedIn"
+msgstr ""
+
+msgid "List your home?"
+msgstr ""
+
+msgid "Local team in Julianadorp"
+msgstr ""
+
+msgid "Location"
+msgstr ""
+
+msgid "Logo"
+msgstr ""
+
+msgid "Logo height"
+msgstr ""
+
+msgid "Main menu"
+msgstr ""
+
+msgid "Map: %s"
+msgstr ""
+
+msgid "Medium"
+msgstr ""
+
+msgid "Menu"
+msgstr ""
+
+msgid "Mesh subtle"
+msgstr ""
+
+msgid "Message"
+msgstr ""
+
+msgid "min. %d nights"
+msgstr ""
+
+msgid "My hub"
+msgstr ""
+
+msgid "Name"
+msgstr ""
+
+msgid "Never"
+msgstr ""
+
+msgid "News"
+msgstr ""
+
+msgid "Next"
+msgstr ""
+
+msgid "No booking platform in between: you arrange everything directly with the team that knows the villas."
+msgstr ""
+
+msgid "No posts found."
+msgstr ""
+
+msgid "No release published yet."
+msgstr ""
+
+msgid "No repeat"
+msgstr ""
+
+msgid "None"
+msgstr ""
+
+msgid "Normal"
+msgstr ""
+
+msgid "Number of slides"
+msgstr ""
+
+msgid "On arrival you are welcomed in person by our local team in Bandabou."
+msgstr ""
+
+msgid "On hover"
+msgstr ""
+
+msgid "Our team hands you the key and shows you the villa. Check-in from 15:00, check-out until 11:00."
+msgstr ""
+
+msgid "Our villas"
+msgstr ""
+
+msgid "Our villas are on Villapark Fontein: a quiet, gated park on a hill, with wide views and a Caribbean sunset from your own terrace in the evening."
+msgstr ""
+
+msgid "Overlay color"
+msgstr ""
+
+msgid "Overlay opacity"
+msgstr ""
+
+msgid "Owner, Bandabou Curaçao"
+msgstr ""
+
+msgid "Page not found"
+msgstr ""
+
+msgid "Pan down"
+msgstr ""
+
+msgid "Pan left"
+msgstr ""
+
+msgid "Pan right"
+msgstr ""
+
+msgid "Pan up"
+msgstr ""
+
+msgid "Paragraph spacing"
+msgstr ""
+
+msgid "Payoff"
+msgstr ""
+
+msgid "Personal contact, from booking to departure"
+msgstr ""
+
+msgid "Phone"
+msgstr ""
+
+msgid "Pick a date"
+msgstr ""
+
+msgid "Position"
+msgstr ""
+
+msgid "Powered by Contabai"
+msgstr ""
+
+msgid "Previous"
+msgstr ""
+
+msgid "Privacy"
+msgstr ""
+
+msgid "Privacy page slug"
+msgstr ""
+
+msgid "Privacy policy"
+msgstr ""
+
+msgid "Question via the website"
+msgstr ""
+
+msgid "Question? WhatsApp us"
+msgstr ""
+
+msgid "Questions? We are happy to help"
+msgstr ""
+
+msgid "Quick answers on WhatsApp"
+msgstr ""
+
+msgid "Radial"
+msgstr ""
+
+msgid "Read the full description"
+msgstr ""
+
+msgid "Relaxed"
+msgstr ""
+
+msgid "Release %1$s has no %2$s."
+msgstr ""
+
+msgid "Release notes"
+msgstr ""
+
+msgid "Release tag %s is not a valid version."
+msgstr ""
+
+msgid "Remove"
+msgstr ""
+
+msgid "Repeat"
+msgstr ""
+
+msgid "Repeat all"
+msgstr ""
+
+msgid "Repeat horizontal"
+msgstr ""
+
+msgid "Repeat vertical"
+msgstr ""
+
+msgid "Restore default design"
+msgstr ""
+
+msgid "Restore the default design and typography? Your own colours and fonts will be replaced."
+msgstr ""
+
+msgid "Right"
+msgstr ""
+
+msgid "Right center"
+msgstr ""
+
+msgid "Section eyebrow color"
+msgstr ""
+
+msgid "See our other villas too"
+msgstr ""
+
+msgid "Semibold"
+msgstr ""
+
+msgid "Send message"
+msgstr ""
+
+msgid "Send us a message or WhatsApp us directly. We usually reply the same day."
+msgstr ""
+
+msgid "Sets the colours, fonts, typography, background and hero look back to the theme's default design. Texts, logo, menus, links and all other settings stay as they are."
+msgstr ""
+
+msgid "Settings saved."
+msgstr ""
+
+msgid "Show all %d amenities"
+msgstr ""
+
+msgid "Show brand text"
+msgstr ""
+
+msgid "Show hero on homepage"
+msgstr ""
+
+msgid "Show less"
+msgstr ""
+
+msgid "Show top bar"
+msgstr ""
+
+msgid "Shows the cover photos of random listings in the hero instead of the stock photos."
+msgstr ""
+
+msgid "Site name"
+msgstr ""
+
+msgid "Size"
+msgstr ""
+
+msgid "Socials"
+msgstr ""
+
+msgid "Soft fade"
+msgstr ""
+
+msgid "Static (no motion)"
+msgstr ""
+
+msgid "Status"
+msgstr ""
+
+msgid "Sticky header"
+msgstr ""
+
+msgid "Subheading"
+msgstr ""
+
+msgid "Subheading color"
+msgstr ""
+
+msgid "Switches off theme updates from GitHub. Turn ON for a local development site that is a git checkout. Leave OFF in production."
+msgstr ""
+
+msgid "Tell us what you are looking for"
+msgstr ""
+
+msgid "Terms and conditions"
+msgstr ""
+
+msgid "Terms of service"
+msgstr ""
+
+msgid "Terms page slug"
+msgstr ""
+
+msgid "Text alignment"
+msgstr ""
+
+msgid "Text color"
+msgstr ""
+
+msgid "The default design and typography are restored."
+msgstr ""
+
+msgid "The quiet west side of Curaçao"
+msgstr ""
+
+msgid "Theme color"
+msgstr ""
+
+msgid "This page does not exist (anymore). Our villas are still here."
+msgstr ""
+
+msgid "Three stop"
+msgstr ""
+
+msgid "Tight"
+msgstr ""
+
+msgid "TikTok"
+msgstr ""
+
+msgid "Top bar"
+msgstr ""
+
+msgid "Top center"
+msgstr ""
+
+msgid "Top left"
+msgstr ""
+
+msgid "Top right"
+msgstr ""
+
+msgid "Top to bottom"
+msgstr ""
+
+msgid "Type"
+msgstr ""
+
+msgid "Typography"
+msgstr ""
+
+msgid "until %s"
+msgstr ""
+
+msgid "Update available"
+msgstr ""
+
+msgid "Updates"
+msgstr ""
+
+msgid "Use listing cover photos"
+msgstr ""
+
+msgid "Villa and period"
+msgstr ""
+
+msgid "Villapark Fontein · Bandabou · Curaçao"
+msgstr ""
+
+msgid "Villas"
+msgstr ""
+
+msgid "Villas in one peaceful place"
+msgstr ""
+
+msgid "We know every villa and every little beach in Bandabou. That personal contact makes the difference for our guests. Ayo, see you soon on Curaçao!"
+msgstr ""
+
+msgid "We live on the island and are there for you, from the key handover to your departure."
+msgstr ""
+
+msgid "We take care of rentals and management: from the photos and the guests to cleaning and maintenance. You enjoy the income."
+msgstr ""
+
+msgid "We welcome you ourselves"
+msgstr ""
+
+msgid "Welcome to the most beautiful side of the island."
+msgstr ""
+
+msgid "What this villa offers"
+msgstr ""
+
+msgid "WhatsApp us"
+msgstr ""
+
+msgid "Which villa and period?"
+msgstr ""
+
+msgid "Why Bandabou Curaçao"
+msgstr ""
+
+msgid "Why book with us"
+msgstr ""
+
+msgid "X"
+msgstr ""
+
+msgid "You are not allowed to do this."
+msgstr ""
+
+msgid "You book directly with Bandabou Curaçao. After your request you will receive the confirmation and payment details from us."
+msgstr ""
+
+msgid "you@example.com"
+msgstr ""
+
+msgid "Your name"
+msgstr ""
+
+msgid "Your trusted partner for an unforgettable stay on Curaçao."
+msgstr ""
+
+msgid "Your villa in peaceful Bandabou"
+msgstr ""
+
+msgid "YouTube"
+msgstr ""

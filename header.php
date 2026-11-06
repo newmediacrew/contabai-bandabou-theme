@@ -60,7 +60,7 @@ if (get_option('bandabou_topbar_enabled', '0') === '1') {
 </div>
 <?php endif; ?>
 
-<header class="bandabou-header<?php echo $overlayHeader ? ' is-overlay' : ''; ?><?php echo $stickyHeader ? ' is-sticky' : ''; ?>"
+<header class="contabai-header bandabou-header<?php echo $overlayHeader ? ' is-overlay' : ''; ?><?php echo $stickyHeader ? ' is-sticky' : ''; ?>"
         x-data="{ scrolled: false }" x-on:scroll.window="scrolled = scrolled ? window.scrollY > 4 : window.scrollY > 40" x-bind:class="scrolled ? 'is-scrolled' : ''">
     <div class="bandabou-header-inner">
         <a href="<?php echo esc_url(home_url()); ?>" class="flex min-w-0 items-center gap-2.5 no-underline lg:gap-3.5">

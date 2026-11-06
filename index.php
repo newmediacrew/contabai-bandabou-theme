@@ -1,8 +1,11 @@
+<?php set_query_var('contabai_overlay_header', true); ?>
 <?php get_header(); ?>
-<?php while (have_posts()) : the_post(); ?>
-    <div class="mx-auto max-w-7xl px-4 py-10">
-        <h1 class="contabai-heading contabai-display text-4xl text-[color:var(--heading-color,#0B4F6C)]"><?php the_title(); ?></h1>
-        <div class="entry-content mt-6"><?php the_content(); ?></div>
-    </div>
-<?php endwhile; ?>
+<?php
+get_template_part('template-parts/photo-hero', null, [
+    'image'  => \BandabouTheme\PhotoHero::image(0),
+    'title'  => __('News', 'contabai-bandabou-theme'),
+    'crumbs' => [['label' => __('Home', 'contabai-bandabou-theme'), 'url' => home_url('/')], ['label' => __('News', 'contabai-bandabou-theme'), 'url' => null]],
+]);
+get_template_part('template-parts/post-list');
+?>
 <?php get_footer(); ?>

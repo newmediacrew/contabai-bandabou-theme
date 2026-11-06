@@ -3,6 +3,7 @@
 
 use Contabai\Controllers\AiSeoRenderer;
 
+set_query_var('contabai_overlay_header', true);
 get_header();
 ?>
 <?php while (have_posts()) : the_post(); ?>
@@ -15,13 +16,18 @@ get_header();
         $crumbs[] = ['label' => get_the_title($ancestorId), 'url' => get_permalink($ancestorId)];
     }
     $crumbs[] = ['label' => get_the_title(), 'url' => null];
-    $titleTag = $generated ? 'p' : 'h1';
+
+    get_template_part('template-parts/photo-hero', null, [
+        'image'    => \BandabouTheme\PhotoHero::image($id),
+        'alt'      => \BandabouTheme\PhotoHero::alt($id),
+        'title'    => get_the_title(),
+        'tag'      => $generated ? 'p' : 'h1',
+        'subtitle' => (! $generated && has_excerpt()) ? get_the_excerpt() : '',
+        'crumbs'   => $crumbs,
+        'search'   => true,
+    ]);
     ?>
-    <div class="mx-auto max-w-7xl px-4 pt-6">
-        <?php echo \Contabai\View::render('components.breadcrumb', ['crumbs' => $crumbs]); ?>
-        <<?php echo $titleTag; ?> class="contabai-heading contabai-display text-4xl text-[color:var(--heading-color,#0B4F6C)]"><?php the_title(); ?></<?php echo $titleTag; ?>>
-    </div>
-    <?php the_content(); ?>
+    <div class="bandabou-results"><?php the_content(); ?></div>
     <?php if ($generated) : ?>
         <?php
         echo AiSeoRenderer::content($id, \BandabouTheme\PhotoHero::image(0));

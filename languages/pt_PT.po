@@ -1,0 +1,806 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: contabai-bandabou-theme\n"
+"Language: pt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "100% width"
+msgstr "100 % de largura"
+
+msgid "A private pool at every villa"
+msgstr "Piscina privada em cada villa"
+
+msgid "A question about the villa, your arrival or a tip for a beach? Just send a message."
+msgstr "Uma pergunta sobre a villa, a chegada ou uma dica de praia? Envia-nos uma mensagem."
+
+msgid "About Bandabou"
+msgstr "Sobre Bandabou"
+
+msgid "About Bandabou & Fontein"
+msgstr "Sobre Bandabou e Fontein"
+
+msgid "About Fontein"
+msgstr "Sobre Fontein"
+
+msgid "Address"
+msgstr "Morada"
+
+msgid "Advanced"
+msgstr "Avançado"
+
+msgid "All %d photos"
+msgstr "Todas as %d fotos"
+
+msgid "All on Villapark Fontein, all with their own pool. Choose the villa that suits your group."
+msgstr "Todas em Villapark Fontein, todas com piscina própria. Escolhe a villa ideal para o teu grupo."
+
+msgid "All villas"
+msgstr "Todas as villas"
+
+msgid "Always"
+msgstr "Sempre"
+
+msgid "Angled soft"
+msgstr "Inclinado suave"
+
+msgid "Arrival"
+msgstr "Chegada"
+
+msgid "Ask about the options"
+msgstr "Pergunta pelas opções"
+
+msgid "Auto"
+msgstr "Automático"
+
+msgid "Back to home"
+msgstr "Voltar ao início"
+
+msgid "Background"
+msgstr "Fundo"
+
+msgid "Background animation"
+msgstr "Animação de fundo"
+
+msgid "Badge 1 icon"
+msgstr "Ícone do selo 1"
+
+msgid "Badge 1 icon color"
+msgstr "Cor do ícone do selo 1"
+
+msgid "Badge 1 text"
+msgstr "Texto do selo 1"
+
+msgid "Badge 2 icon"
+msgstr "Ícone do selo 2"
+
+msgid "Badge 2 icon color"
+msgstr "Cor do ícone do selo 2"
+
+msgid "Badge 2 text"
+msgstr "Texto do selo 2"
+
+msgid "Badge 3 icon"
+msgstr "Ícone do selo 3"
+
+msgid "Badge 3 icon color"
+msgstr "Cor do ícone do selo 3"
+
+msgid "Badge 3 text"
+msgstr "Texto do selo 3"
+
+msgid "Bandabou & Fontein"
+msgstr "Bandabou e Fontein"
+
+msgid "Bandabou is the green, hilly west of the island. Here you will find hiking trails through Christoffelpark, small bays with clear water and beaches like Cas Abou, Grote Knip and Playa Lagun, where you can snorkel straight from the shore."
+msgstr "Bandabou é o oeste verde e montanhoso da ilha. Aqui encontras trilhos pelo Christoffelpark, pequenas baías de águas límpidas e praias como Cas Abou, Grote Knip e Playa Lagun, onde podes fazer snorkeling a partir da margem."
+
+msgid "Bandabou Theme"
+msgstr "Bandabou Theme"
+
+msgid "Base font size"
+msgstr "Tamanho de letra base"
+
+msgid "Beaches nearby"
+msgstr "Praias nas proximidades"
+
+msgid "Body font"
+msgstr "Tipo de letra do corpo"
+
+msgid "Body text color"
+msgstr "Cor do texto"
+
+msgid "Bold"
+msgstr "Negrito"
+
+msgid "Bold, italic and links are kept; the top bar is a single line, so paragraphs and lists are not."
+msgstr "Negrito, itálico e links são mantidos; a barra superior é de uma só linha, por isso parágrafos e listas não."
+
+msgid "Book"
+msgstr "Reservar"
+
+msgid "Booked directly with us"
+msgstr "Reserva diretamente connosco"
+
+msgid "Bottom center"
+msgstr "Centro inferior"
+
+msgid "Bottom left"
+msgstr "Inferior esquerdo"
+
+msgid "Bottom right"
+msgstr "Inferior direito"
+
+msgid "Bottom to top"
+msgstr "De baixo para cima"
+
+msgid "Branding"
+msgstr "Marca"
+
+msgid "Breadcrumbs"
+msgstr "Trilho de navegação"
+
+msgid "Breathe"
+msgstr "Respiração"
+
+msgid "Call-to-action button"
+msgstr "Botão de call to action"
+
+msgid "Carefully furnished villas on Villapark Fontein, with views over the hills and the Caribbean Sea. You book directly with us, the local Bandabou Curaçao team."
+msgstr "Villas cuidadosamente mobiladas em Villapark Fontein, com vista para as colinas e o mar das Caraíbas. Reservas diretamente connosco, a equipa local da Bandabou Curaçao."
+
+msgid "Center"
+msgstr "Centro"
+
+msgid "Chats"
+msgstr "Conversas"
+
+msgid "Check availability"
+msgstr "Ver disponibilidade"
+
+msgid "Check now"
+msgstr "Verificar agora"
+
+msgid "Check-in"
+msgstr "Check-in"
+
+msgid "Check-out"
+msgstr "Check-out"
+
+msgid "Choose file"
+msgstr "Escolher ficheiro"
+
+msgid "City"
+msgstr "Cidade"
+
+msgid "Classic editor"
+msgstr "Editor clássico"
+
+msgid "Close"
+msgstr "Fechar"
+
+msgid "Color"
+msgstr "Cor"
+
+msgid "Column %d icon"
+msgstr "Ícone da coluna %d"
+
+msgid "Column %d icon color"
+msgstr "Cor do ícone da coluna %d"
+
+msgid "Column %d text"
+msgstr "Texto da coluna %d"
+
+msgid "Column %d title"
+msgstr "Título da coluna %d"
+
+msgid "Compare all villas"
+msgstr "Compara todas as villas"
+
+msgid "Contact"
+msgstr "Contacto"
+
+msgid "Contact form"
+msgstr "Formulário de contacto"
+
+msgid "Contain"
+msgstr "Conter"
+
+msgid "Content opacity"
+msgstr "Opacidade do conteúdo"
+
+msgid "Cool off whenever you like, with sun loungers and a covered porch for the hottest hours."
+msgstr "Refresca-te quando quiseres, com espreguiçadeiras e um alpendre coberto para as horas de mais calor."
+
+msgid "Cover"
+msgstr "Cobrir"
+
+msgid "Covered porch of Villa Moreno with a view over green Bandabou"
+msgstr "Alpendre coberto da Villa Moreno com vista para o verde Bandabou"
+
+msgid "Crossfade only"
+msgstr "Apenas fundido"
+
+msgid "CTA label"
+msgstr "Etiqueta do CTA"
+
+msgid "CTA URL"
+msgstr "URL do CTA"
+
+msgid "Departure"
+msgstr "Partida"
+
+msgid "Deposit"
+msgstr "Caução"
+
+msgid "Deposit, settled after your stay"
+msgstr "Caução, acertada após a tua estadia"
+
+msgid "Development mode"
+msgstr "Modo de desenvolvimento"
+
+msgid "Development mode is on (Advanced tab), so updates are switched off."
+msgstr "O modo de desenvolvimento está ativo (separador Avançado), por isso as atualizações estão desativadas."
+
+msgid "Development mode is on, so this update is not installed."
+msgstr "O modo de desenvolvimento está ativo, por isso esta atualização não é instalada."
+
+msgid "Diagonal"
+msgstr "Diagonal"
+
+msgid "Diagonal drift"
+msgstr "Deriva diagonal"
+
+msgid "Do you own a home in Bandabou?"
+msgstr "Tens uma casa em Bandabou?"
+
+msgid "Dual tone"
+msgstr "Dois tons"
+
+msgid "E.g. Villa Cuchita, 12 to 19 January"
+msgstr "Por ex. Villa Cuchita, de 12 a 19 de janeiro"
+
+msgid "Email"
+msgstr "E-mail"
+
+msgid "Enable"
+msgstr "Ativar"
+
+msgid "Extra bold"
+msgstr "Extra-negrito"
+
+msgid "Eyebrow"
+msgstr "Sobretítulo"
+
+msgid "Eyebrow color"
+msgstr "Cor do sobretítulo"
+
+msgid "Facebook"
+msgstr "Facebook"
+
+msgid "Free parking at the villa"
+msgstr "Estacionamento gratuito na villa"
+
+msgid "from %s"
+msgstr "a partir das %s"
+
+msgid "Gated villa park"
+msgstr "Parque de villas fechado"
+
+msgid "GitHub answered with HTTP %d."
+msgstr "O GitHub respondeu com HTTP %d."
+
+msgid "GitHub is not reachable: %s"
+msgstr "O GitHub não está acessível: %s"
+
+msgid "GitHub refused the request (rate limit). Try again later."
+msgstr "O GitHub recusou o pedido (limite atingido). Tenta mais tarde."
+
+msgid "GitHub sent an unexpected answer."
+msgstr "O GitHub enviou uma resposta inesperada."
+
+msgid "Good to know"
+msgstr "Bom saber"
+
+msgid "Gradient"
+msgstr "Gradiente"
+
+msgid "Guests"
+msgstr "Hóspedes"
+
+msgid "Header navigation"
+msgstr "Navegação do cabeçalho"
+
+msgid "Heading"
+msgstr "Título"
+
+msgid "Heading color"
+msgstr "Cor do título"
+
+msgid "Heading font"
+msgstr "Tipo de letra dos títulos"
+
+msgid "Heading line height"
+msgstr "Altura da linha do título"
+
+msgid "Heading weight"
+msgstr "Espessura do título"
+
+msgid "Help during your stay"
+msgstr "Ajuda durante a tua estadia"
+
+msgid "Hero"
+msgstr "Hero"
+
+msgid "Hiking and snorkelling"
+msgstr "Caminhadas e snorkeling"
+
+msgid "Home"
+msgstr "Início"
+
+msgid "If something goes wrong, we sort it out. Cleaning during your stay is available on request."
+msgstr "Se algo correr mal, nós tratamos disso. A limpeza durante a estadia está disponível a pedido."
+
+msgid "Image"
+msgstr "Imagem"
+
+msgid "Information"
+msgstr "Informações"
+
+msgid "Instagram"
+msgstr "Instagram"
+
+msgid "Installed version"
+msgstr "Versão instalada"
+
+msgid "Ken Burns — zoom in"
+msgstr "Ken Burns — aproximar"
+
+msgid "Ken Burns — zoom out"
+msgstr "Ken Burns — afastar"
+
+msgid "Language"
+msgstr "Idioma"
+
+msgid "Last check"
+msgstr "Última verificação"
+
+msgid "Last error"
+msgstr "Último erro"
+
+msgid "Latest release"
+msgstr "Versão mais recente"
+
+msgid "Leave empty to use the Bandabou logo."
+msgstr "Deixa vazio para usar o logótipo da Bandabou."
+
+msgid "Left"
+msgstr "Esquerda"
+
+msgid "Left center"
+msgstr "Centro à esquerda"
+
+msgid "Left to right"
+msgstr "Da esquerda para a direita"
+
+msgid "Line height"
+msgstr "Altura da linha"
+
+msgid "Link color"
+msgstr "Cor da ligação"
+
+msgid "Link underline"
+msgstr "Sublinhado da ligação"
+
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+msgid "List your home?"
+msgstr "Arrendar a tua casa?"
+
+msgid "Local team in Julianadorp"
+msgstr "Equipa local em Julianadorp"
+
+msgid "Location"
+msgstr "Localização"
+
+msgid "Logo"
+msgstr "Logótipo"
+
+msgid "Logo height"
+msgstr "Altura do logótipo"
+
+msgid "Main menu"
+msgstr "Menu principal"
+
+msgid "Map: %s"
+msgstr "Mapa: %s"
+
+msgid "Medium"
+msgstr "Médio"
+
+msgid "Menu"
+msgstr "Menu"
+
+msgid "Mesh subtle"
+msgstr "Malha subtil"
+
+msgid "Message"
+msgstr "Mensagem"
+
+msgid "min. %d nights"
+msgstr "mín. %d noites"
+
+msgid "My hub"
+msgstr "A minha área"
+
+msgid "Name"
+msgstr "Nome"
+
+msgid "Never"
+msgstr "Nunca"
+
+msgid "News"
+msgstr "Notícias"
+
+msgid "Next"
+msgstr "Seguinte"
+
+msgid "No booking platform in between: you arrange everything directly with the team that knows the villas."
+msgstr "Sem plataforma de reservas pelo meio: tratas de tudo diretamente com a equipa que conhece as villas."
+
+msgid "No posts found."
+msgstr "Nenhum artigo encontrado."
+
+msgid "No release published yet."
+msgstr "Ainda não foi publicada nenhuma versão."
+
+msgid "No repeat"
+msgstr "Sem repetição"
+
+msgid "None"
+msgstr "Nenhum"
+
+msgid "Normal"
+msgstr "Normal"
+
+msgid "Number of slides"
+msgstr "Número de diapositivos"
+
+msgid "On arrival you are welcomed in person by our local team in Bandabou."
+msgstr "À chegada, és recebido pessoalmente pela nossa equipa local em Bandabou."
+
+msgid "On hover"
+msgstr "Ao passar o rato"
+
+msgid "Our team hands you the key and shows you the villa. Check-in from 15:00, check-out until 11:00."
+msgstr "A nossa equipa entrega-te a chave e mostra-te a villa. Check-in a partir das 15:00, check-out até às 11:00."
+
+msgid "Our villas"
+msgstr "As nossas villas"
+
+msgid "Our villas are on Villapark Fontein: a quiet, gated park on a hill, with wide views and a Caribbean sunset from your own terrace in the evening."
+msgstr "As nossas villas ficam em Villapark Fontein: um parque tranquilo e fechado numa colina, com vistas amplas e, ao fim do dia, um pôr do sol caribenho no teu próprio terraço."
+
+msgid "Overlay color"
+msgstr "Cor da sobreposição"
+
+msgid "Overlay opacity"
+msgstr "Opacidade da sobreposição"
+
+msgid "Owner, Bandabou Curaçao"
+msgstr "Proprietário, Bandabou Curaçao"
+
+msgid "Page not found"
+msgstr "Página não encontrada"
+
+msgid "Pan down"
+msgstr "Deslocar para baixo"
+
+msgid "Pan left"
+msgstr "Deslocar para a esquerda"
+
+msgid "Pan right"
+msgstr "Deslocar para a direita"
+
+msgid "Pan up"
+msgstr "Deslocar para cima"
+
+msgid "Paragraph spacing"
+msgstr "Espaçamento de parágrafo"
+
+msgid "Payoff"
+msgstr "Slogan"
+
+msgid "Personal contact, from booking to departure"
+msgstr "Contacto pessoal, da reserva à partida"
+
+msgid "Phone"
+msgstr "Telefone"
+
+msgid "Pick a date"
+msgstr "Escolhe uma data"
+
+msgid "Position"
+msgstr "Posição"
+
+msgid "Powered by Contabai"
+msgstr "Powered by Contabai"
+
+msgid "Previous"
+msgstr "Anterior"
+
+msgid "Privacy"
+msgstr "Privacidade"
+
+msgid "Privacy page slug"
+msgstr "Slug da página de privacidade"
+
+msgid "Privacy policy"
+msgstr "Política de privacidade"
+
+msgid "Question via the website"
+msgstr "Pergunta através do site"
+
+msgid "Question? WhatsApp us"
+msgstr "Dúvidas? Fala connosco no WhatsApp"
+
+msgid "Questions? We are happy to help"
+msgstr "Dúvidas? Temos todo o gosto em ajudar"
+
+msgid "Quick answers on WhatsApp"
+msgstr "Respostas rápidas no WhatsApp"
+
+msgid "Radial"
+msgstr "Radial"
+
+msgid "Read the full description"
+msgstr "Ler a descrição completa"
+
+msgid "Relaxed"
+msgstr "Amplo"
+
+msgid "Release %1$s has no %2$s."
+msgstr "A versão %1$s não tem %2$s."
+
+msgid "Release notes"
+msgstr "Notas da versão"
+
+msgid "Release tag %s is not a valid version."
+msgstr "A etiqueta %s não é uma versão válida."
+
+msgid "Remove"
+msgstr "Remover"
+
+msgid "Repeat"
+msgstr "Repetir"
+
+msgid "Repeat all"
+msgstr "Repetir tudo"
+
+msgid "Repeat horizontal"
+msgstr "Repetir na horizontal"
+
+msgid "Repeat vertical"
+msgstr "Repetir na vertical"
+
+msgid "Restore default design"
+msgstr "Repor o design predefinido"
+
+msgid "Restore the default design and typography? Your own colours and fonts will be replaced."
+msgstr "Repor o design e a tipografia predefinidos? As tuas próprias cores e tipos de letra serão substituídos."
+
+msgid "Right"
+msgstr "Direita"
+
+msgid "Right center"
+msgstr "Centro à direita"
+
+msgid "Section eyebrow color"
+msgstr "Cor do sobretítulo das secções"
+
+msgid "See our other villas too"
+msgstr "Vê também as nossas outras villas"
+
+msgid "Semibold"
+msgstr "Seminegrito"
+
+msgid "Send message"
+msgstr "Enviar mensagem"
+
+msgid "Send us a message or WhatsApp us directly. We usually reply the same day."
+msgstr "Envia-nos uma mensagem ou fala connosco no WhatsApp. Normalmente respondemos no próprio dia."
+
+msgid "Sets the colours, fonts, typography, background and hero look back to the theme's default design. Texts, logo, menus, links and all other settings stay as they are."
+msgstr "Repõe as cores, os tipos de letra, a tipografia, o fundo e o aspeto do hero no design predefinido do tema. Os textos, o logótipo, os menus, as ligações e todas as outras definições ficam como estão."
+
+msgid "Settings saved."
+msgstr "Definições guardadas."
+
+msgid "Show all %d amenities"
+msgstr "Ver as %d comodidades"
+
+msgid "Show brand text"
+msgstr "Mostrar texto da marca"
+
+msgid "Show hero on homepage"
+msgstr "Mostrar hero na página inicial"
+
+msgid "Show less"
+msgstr "Ver menos"
+
+msgid "Show top bar"
+msgstr "Mostrar barra superior"
+
+msgid "Shows the cover photos of random listings in the hero instead of the stock photos."
+msgstr "Mostra no hero as fotos de capa de alojamentos aleatórios em vez das fotos de banco de imagens."
+
+msgid "Site name"
+msgstr "Nome do site"
+
+msgid "Size"
+msgstr "Tamanho"
+
+msgid "Socials"
+msgstr "Redes sociais"
+
+msgid "Soft fade"
+msgstr "Desvanecimento suave"
+
+msgid "Static (no motion)"
+msgstr "Estático (sem movimento)"
+
+msgid "Status"
+msgstr "Estado"
+
+msgid "Sticky header"
+msgstr "Cabeçalho fixo"
+
+msgid "Subheading"
+msgstr "Subtítulo"
+
+msgid "Subheading color"
+msgstr "Cor do subtítulo"
+
+msgid "Switches off theme updates from GitHub. Turn ON for a local development site that is a git checkout. Leave OFF in production."
+msgstr "Desativa as atualizações do tema a partir do GitHub. LIGA para um site local de desenvolvimento que seja um checkout git. Deixa DESLIGADO em produção."
+
+msgid "Tell us what you are looking for"
+msgstr "Diz-nos o que procuras"
+
+msgid "Terms and conditions"
+msgstr "Termos e condições"
+
+msgid "Terms of service"
+msgstr "Termos de serviço"
+
+msgid "Terms page slug"
+msgstr "Slug da página de termos"
+
+msgid "Text alignment"
+msgstr "Alinhamento do texto"
+
+msgid "Text color"
+msgstr "Cor do texto"
+
+msgid "The default design and typography are restored."
+msgstr "O design e a tipografia predefinidos foram repostos."
+
+msgid "The quiet west side of Curaçao"
+msgstr "O tranquilo lado oeste de Curaçao"
+
+msgid "Theme color"
+msgstr "Cor do tema"
+
+msgid "This page does not exist (anymore). Our villas are still here."
+msgstr "Esta página não existe (ou já não existe). As nossas villas continuam aqui."
+
+msgid "Three stop"
+msgstr "Três paragens"
+
+msgid "Tight"
+msgstr "Compacto"
+
+msgid "TikTok"
+msgstr "TikTok"
+
+msgid "Top bar"
+msgstr "Barra superior"
+
+msgid "Top center"
+msgstr "Centro superior"
+
+msgid "Top left"
+msgstr "Superior esquerdo"
+
+msgid "Top right"
+msgstr "Superior direito"
+
+msgid "Top to bottom"
+msgstr "De cima para baixo"
+
+msgid "Type"
+msgstr "Tipo"
+
+msgid "Typography"
+msgstr "Tipografia"
+
+msgid "until %s"
+msgstr "até às %s"
+
+msgid "Update available"
+msgstr "Atualização disponível"
+
+msgid "Updates"
+msgstr "Atualizações"
+
+msgid "Use listing cover photos"
+msgstr "Usar as fotos de capa dos alojamentos"
+
+msgid "Villa and period"
+msgstr "Villa e período"
+
+msgid "Villapark Fontein · Bandabou · Curaçao"
+msgstr "Villapark Fontein · Bandabou · Curaçao"
+
+msgid "Villas"
+msgstr "Villas"
+
+msgid "Villas in one peaceful place"
+msgstr "Villas num só lugar tranquilo"
+
+msgid "We know every villa and every little beach in Bandabou. That personal contact makes the difference for our guests. Ayo, see you soon on Curaçao!"
+msgstr "Conhecemos cada villa e cada praia de Bandabou. Esse contacto pessoal faz a diferença para os nossos hóspedes. Ayo, até breve em Curaçao!"
+
+msgid "We live on the island and are there for you, from the key handover to your departure."
+msgstr "Vivemos na ilha e estamos aqui para ti, desde a entrega da chave até à tua partida."
+
+msgid "We take care of rentals and management: from the photos and the guests to cleaning and maintenance. You enjoy the income."
+msgstr "Tratamos do arrendamento e da gestão: das fotos e dos hóspedes à limpeza e à manutenção. Tu aproveitas o rendimento."
+
+msgid "We welcome you ourselves"
+msgstr "Recebemos-te pessoalmente"
+
+msgid "Welcome to the most beautiful side of the island."
+msgstr "Bem-vindo ao lado mais bonito da ilha."
+
+msgid "What this villa offers"
+msgstr "O que esta villa oferece"
+
+msgid "WhatsApp us"
+msgstr "Fala connosco"
+
+msgid "Which villa and period?"
+msgstr "Que villa e que período?"
+
+msgid "Why Bandabou Curaçao"
+msgstr "Porquê a Bandabou Curaçao"
+
+msgid "Why book with us"
+msgstr "Porquê reservar connosco"
+
+msgid "X"
+msgstr "X"
+
+msgid "You are not allowed to do this."
+msgstr "Não tens permissão para fazer isto."
+
+msgid "You book directly with Bandabou Curaçao. After your request you will receive the confirmation and payment details from us."
+msgstr "Reservas diretamente com a Bandabou Curaçao. Depois do teu pedido, recebes de nós a confirmação e os dados de pagamento."
+
+msgid "you@example.com"
+msgstr "tu@exemplo.pt"
+
+msgid "Your name"
+msgstr "O teu nome"
+
+msgid "Your trusted partner for an unforgettable stay on Curaçao."
+msgstr "O teu parceiro de confiança para uma estadia inesquecível em Curaçao."
+
+msgid "Your villa in peaceful Bandabou"
+msgstr "A tua villa na tranquila Bandabou"
+
+msgid "YouTube"
+msgstr "YouTube"

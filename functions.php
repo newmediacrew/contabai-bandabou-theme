@@ -80,3 +80,5 @@ add_filter('nav_menu_item_title', function ($title, $item) {
     }
     return $title;
 }, 10, 2);
+
+add_filter('get_the_archive_title_prefix', '__return_empty_string');

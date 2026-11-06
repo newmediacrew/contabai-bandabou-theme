@@ -151,6 +151,7 @@ class ThemeSettings
 
             ['bandabou_hero_enabled', __('Show hero on homepage', 'contabai-bandabou-theme'), 'checkbox', '1', 'hero'],
             ['bandabou_hero_listing_photos', __('Use listing cover photos', 'contabai-bandabou-theme'), 'checkbox', '1', 'hero', __('Shows the cover photos of random listings in the hero instead of the stock photos.', 'contabai-bandabou-theme')],
+            ['bandabou_hero_slides', __('Number of slides', 'contabai-bandabou-theme'), 'hero_slides', '5', 'hero'],
             ['bandabou_hero_eyebrow', __('Eyebrow', 'contabai-bandabou-theme'), 'text', __('Villapark Fontein · Bandabou · Curaçao', 'contabai-bandabou-theme'), 'hero'],
             ['bandabou_hero_eyebrow_color', __('Eyebrow color', 'contabai-bandabou-theme'), 'color', '#F4C22B', 'hero'],
             ['bandabou_hero_heading', __('Heading', 'contabai-bandabou-theme'), 'text', __('Your villa in peaceful Bandabou', 'contabai-bandabou-theme'), 'hero'],
@@ -204,7 +205,7 @@ class ThemeSettings
 
             ['bandabou_social_facebook', __('Facebook', 'contabai-bandabou-theme'), 'url', '', 'socials'],
             ['bandabou_social_x', __('X', 'contabai-bandabou-theme'), 'url', '', 'socials'],
-            ['bandabou_social_instagram', __('Instagram', 'contabai-bandabou-theme'), 'url', '', 'socials'],
+            ['bandabou_social_instagram', __('Instagram', 'contabai-bandabou-theme'), 'url', 'https://www.instagram.com/bandaboucuracao', 'socials'],
             ['bandabou_social_linkedin', __('LinkedIn', 'contabai-bandabou-theme'), 'url', '', 'socials'],
             ['bandabou_social_youtube', __('YouTube', 'contabai-bandabou-theme'), 'url', '', 'socials'],
             ['bandabou_social_tiktok', __('TikTok', 'contabai-bandabou-theme'), 'url', '', 'socials'],
@@ -586,6 +587,11 @@ class ThemeSettings
             'center' => __('Center', 'contabai-bandabou-theme'),
             'right' => __('Right', 'contabai-bandabou-theme'),
         ]);
+    }
+
+    public function render_field_hero_slides(array $args): void
+    {
+        $this->render_select($args['key'], $args['default'], ['1' => '1', '2' => '2', '3' => '3', '4' => '4', '5' => '5', '6' => '6', '7' => '7', '8' => '8']);
     }
 
     public function render_field_hero_overlay_opacity(array $args): void
