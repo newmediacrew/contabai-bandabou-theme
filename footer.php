@@ -97,7 +97,7 @@ foreach ($socialDefs as $def) {
     </div>
 
     <div class="mx-auto flex max-w-[1280px] flex-wrap items-center justify-between gap-3 border-t border-white/10 px-5 pb-7 pt-5 text-[13px] text-[#9FCBD6] md:px-8 lg:pb-[30px] lg:pt-[22px]">
-        <span class="flex flex-wrap items-center gap-x-2">
+        <span class="flex flex-wrap items-center gap-x-4">
             <span>&copy; <?php echo esc_html(date('Y')); ?> <?php echo esc_html($footerName); ?></span>
             <span aria-hidden="true">&middot;</span>
             <a href="https://www.contabai.network" target="_blank" rel="noopener noreferrer" class="text-[#9FCBD6] no-underline transition hover:text-white"><?php esc_html_e('Powered by Contabai', 'contabai-bandabou-theme'); ?></a>
