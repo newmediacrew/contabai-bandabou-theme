@@ -57,7 +57,7 @@ add_action('after_switch_theme', [DefaultMenu::class, 'create']);
 add_action('admin_init', [DefaultMenu::class, 'create']);
 
 add_action('wp_enqueue_scripts', function () {
-    wp_enqueue_style('contabai-bandabou-theme-css', get_template_directory_uri() . '/assets/css/theme.css', [], '4');
+    wp_enqueue_style('contabai-bandabou-theme-css', get_template_directory_uri() . '/assets/css/theme.css', [], '5');
 });
 
 add_action('wp_head', function () {
