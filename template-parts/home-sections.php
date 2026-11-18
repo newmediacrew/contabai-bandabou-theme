@@ -77,8 +77,8 @@ $reasons = [
 <section class="bandabou-why py-16 text-white lg:py-24">
     <div class="bandabou-container grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-[72px]">
         <div>
-            <p class="bandabou-eyebrow !text-bandabou-gold"><?php esc_html_e('Why book with us', 'contabai-bandabou-theme'); ?></p>
-            <h2 class="bandabou-section-title mt-2.5 !text-white"><?php esc_html_e('Personal contact, from booking to departure', 'contabai-bandabou-theme'); ?></h2>
+            <p class="bandabou-eyebrow text-bandabou-gold!"><?php esc_html_e('Why book with us', 'contabai-bandabou-theme'); ?></p>
+            <h2 class="bandabou-section-title mt-2.5 text-white!"><?php esc_html_e('Personal contact, from booking to departure', 'contabai-bandabou-theme'); ?></h2>
             <div class="mt-8 flex flex-col gap-3.5">
                 <?php foreach ($reasons as $reason) : ?>
                     <div class="flex items-start gap-4 rounded-[18px] border border-white/15 bg-white/5 px-5 py-[18px]">
@@ -113,7 +113,7 @@ $reasons = [
                 <h2 class="bandabou-section-title bandabou-section-title-sm mt-2.5"><?php esc_html_e('Do you own a home in Bandabou?', 'contabai-bandabou-theme'); ?></h2>
                 <p class="mt-3.5 text-[17px] leading-[1.6] text-[color:var(--content-text-color,#3A4A52)]"><?php esc_html_e('We take care of rentals and management: from the photos and the guests to cleaning and maintenance. You enjoy the income.', 'contabai-bandabou-theme'); ?></p>
             </div>
-            <a href="#contact" class="bandabou-cta min-h-14 justify-center !rounded-[14px] px-7"><?php esc_html_e('Ask about the options', 'contabai-bandabou-theme'); ?></a>
+            <a href="#contact" class="bandabou-cta min-h-14 justify-center rounded-[14px]! px-7"><?php esc_html_e('Ask about the options', 'contabai-bandabou-theme'); ?></a>
         </div>
     </div>
 </section>

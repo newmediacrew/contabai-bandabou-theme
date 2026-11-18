@@ -41,7 +41,7 @@ $instagramName  = $instagramUrl !== '' ? '@' . basename((string) wp_parse_url($i
             <div aria-hidden="true" class="absolute -left-[9999px] h-px w-px overflow-hidden">
                 <label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
             </div>
-            <button type="submit" class="bandabou-cta min-h-14 self-start !rounded-[14px] border-0 px-[30px] text-base"><?php esc_html_e('Send message', 'contabai-bandabou-theme'); ?></button>
+            <button type="submit" class="bandabou-cta min-h-14 self-start rounded-[14px]! border-0 px-[30px] text-base"><?php esc_html_e('Send message', 'contabai-bandabou-theme'); ?></button>
         </form>
     </div>
 </section>

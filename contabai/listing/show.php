@@ -178,7 +178,7 @@ if ($depositCents > 0) {
             </div>
             <div class="bandabou-villa-pricebox">
                 <p class="m-0 whitespace-nowrap text-[15px]"><?php echo esc_html__('from', 'contabai'); ?> <strong class="contabai-display text-[34px] leading-none lg:text-[38px]"><?php echo esc_html($priceLabel); ?></strong> <?php echo esc_html__('/ night', 'contabai'); ?></p>
-                <a href="#beschikbaarheid" class="bandabou-cta min-h-[52px] justify-center !rounded-[14px] px-6 text-base"><?php esc_html_e('Check availability', 'contabai-bandabou-theme'); ?></a>
+                <a href="#beschikbaarheid" class="bandabou-cta min-h-[52px] justify-center rounded-[14px]! px-6 text-base"><?php esc_html_e('Check availability', 'contabai-bandabou-theme'); ?></a>
             </div>
         </div>
     </section>
@@ -199,7 +199,6 @@ if ($depositCents > 0) {
         </div>
     <?php endif; ?>
 
-    <!-- lightbox (teleported to body) -->
     <template x-teleport="body">
         <div x-show="lbOpen" x-cloak x-on:click="lbOpen = false"
              x-on:keydown.escape.window="lbOpen = false"
@@ -274,7 +273,7 @@ if ($depositCents > 0) {
                                 <div class="text-xs text-[#5A5348]"><?php echo esc_html__('Additional costs calculated at booking', 'contabai'); ?></div>
                             <?php endif; ?>
                         </div>
-                        <button type="button" x-on:click="startBooking()" class="bandabou-cta min-h-12 flex-none !rounded-[14px] px-5 text-[15px]">
+                        <button type="button" x-on:click="startBooking()" class="bandabou-cta min-h-12 flex-none rounded-[14px]! px-5 text-[15px]">
                             <span x-show="isLoggedIn"><?php esc_html_e('Book', 'contabai-bandabou-theme'); ?></span>
                             <span x-show="! isLoggedIn"><?php echo esc_html__('Log in to book', 'contabai'); ?></span>
                         </button>
@@ -336,7 +335,7 @@ if ($depositCents > 0) {
                     <div class="mt-[22px]">
                         <div x-data="contabaiReviews()">
                             <?php if ($reviewRecent): ?>
-                            <ul x-show="! reviews.length" class="flex flex-col gap-5 !m-0 !list-none !p-0">
+                            <ul x-show="! reviews.length" class="flex flex-col gap-5 m-0! list-none! p-0!">
                                 <?php foreach ($reviewRecent as $review): ?>
                                     <li>
                                         <div class="flex flex-wrap items-center gap-2">
@@ -364,7 +363,7 @@ if ($depositCents > 0) {
                             <?php else: ?>
                             <div x-show="loading && reviews.length === 0" class="py-6 text-center text-sm text-neutral-400"><?php echo esc_html__('Loading…', 'contabai'); ?></div>
                             <?php endif; ?>
-                            <ul x-show="reviews.length > 0" class="flex flex-col gap-5 !m-0 !list-none !p-0">
+                            <ul x-show="reviews.length > 0" class="flex flex-col gap-5 m-0! list-none! p-0!">
                                 <template x-for="r in reviews" x-bind:key="r.id">
                                     <li>
                                         <div class="flex flex-wrap items-center gap-2">
@@ -392,7 +391,7 @@ if ($depositCents > 0) {
             <?php endif; ?>
 
             <?php if ($mapOn) : ?>
-                <section class="bandabou-villa-section !border-b-0 !pb-0">
+                <section class="bandabou-villa-section border-b-0! pb-0!">
                     <h2 class="bandabou-villa-h2"><?php esc_html_e('Location', 'contabai-bandabou-theme'); ?></h2>
                     <p class="mt-2.5 text-[17px] leading-[1.7] text-[color:var(--content-text-color,#3A4A52)]"><?php echo esc_html(implode(', ', array_filter([(string) ($listing['address'] ?? ''), (string) ($listing['region_name'] ?? ''), (string) ($listing['country_name'] ?? '')]))); ?></p>
                     <div id="bandabou-villa-map" class="bandabou-villa-map" role="img" aria-label="<?php echo esc_attr(sprintf(__('Map: %s', 'contabai-bandabou-theme'), (string) ($listing['title'] ?? ''))); ?>"></div>
@@ -438,7 +437,7 @@ if ($depositCents > 0) {
 <?php if ($otherVillas !== []) : ?>
     <section class="mt-16 bg-bandabou-sand pb-16 pt-14 lg:mt-[88px] lg:pb-24 lg:pt-20">
         <div class="bandabou-container">
-            <h2 class="bandabou-section-title !text-[36px] lg:!text-[44px]"><?php esc_html_e('See our other villas too', 'contabai-bandabou-theme'); ?></h2>
+            <h2 class="bandabou-section-title text-[36px]! lg:text-[44px]!"><?php esc_html_e('See our other villas too', 'contabai-bandabou-theme'); ?></h2>
             <div class="mt-8 grid grid-cols-1 gap-6 md:grid-cols-3">
                 <?php foreach ($otherVillas as $villa) :
                     $villaGuests = (int) ($villa['max_guests'] ?? 0);

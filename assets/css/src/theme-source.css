@@ -87,7 +87,6 @@
 .bandabou-section-title { margin-bottom: 0; font-size: 36px; font-weight: var(--heading-weight, 600); line-height: 1.05; color: var(--heading-color, #0B4F6C); }
 .bandabou-small-title { margin: 0; font-family: var(--theme-font), system-ui, sans-serif; font-weight: 700; }
 
-/* Home hero */
 .bandabou-hero { position: relative; display: flex; flex-direction: column; justify-content: flex-end; min-height: 860px; }
 .bandabou-hero-media { position: absolute; inset: 0; isolation: isolate; overflow: hidden; background: #062636; }
 .bandabou-hero-slide { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 1.4s ease; }
@@ -136,7 +135,6 @@
 .bandabou-search-submit:hover { filter: brightness(1.06); }
 .bandabou-search.is-compact { box-shadow: 0 1px 2px rgba(11, 58, 76, .06), 0 10px 30px rgba(11, 58, 76, .07); }
 
-/* Villa cards */
 .bandabou-card { display: flex; flex-direction: column; height: 100%; overflow: hidden; border-radius: 20px; background: #fff; box-shadow: 0 1px 2px rgba(11, 58, 76, .06), 0 10px 30px rgba(11, 58, 76, .07); }
 .bandabou-card-body { display: flex; flex: 1; flex-direction: column; gap: 10px; padding: 20px 20px 22px; color: inherit; text-decoration: none; }
 .bandabou-card-title { display: block; font-family: var(--theme-heading-font, var(--theme-font)), Georgia, serif; font-size: 27px; font-weight: 700; line-height: 1.1; color: var(--heading-color, #0B4F6C); }
@@ -148,7 +146,6 @@
 .bandabou-villas > div { max-width: none; padding: 0; }
 .bandabou-villas .contabai-listings-grid { gap: 20px; grid-template-columns: minmax(0, 1fr); }
 
-/* Home sections */
 .bandabou-welcome { position: absolute; right: 16px; bottom: -24px; max-width: 250px; padding: 22px 26px; border-radius: 22px; background: linear-gradient(135deg, #F6A623 0%, var(--theme-color, #EE6A3C) 100%); color: #fff; box-shadow: 0 16px 36px rgba(11, 79, 108, .3); }
 .bandabou-why { background: linear-gradient(135deg, #0B5A6E 0%, #0E8C96 60%, #12A7A3 100%); }
 .bandabou-contact-icon { display: flex; flex: none; align-items: center; justify-content: center; width: 48px; height: 48px; border: 1.5px solid #C9A65A; border-radius: 9999px; color: var(--heading-color, #0B4F6C); }
@@ -175,7 +172,6 @@ body .contabai-accent-bg { background: linear-gradient(135deg, #F6A623 0%, var(-
 .bandabou-pagination .page-numbers { display: inline-flex; align-items: center; min-height: 44px; padding-inline: 16px; border: 1px solid #EADFCB; border-radius: 12px; background: #fff; color: var(--heading-color, #0B4F6C); font-weight: 600; text-decoration: none; }
 .bandabou-pagination .page-numbers.current { border-color: var(--heading-color, #0B4F6C); background: var(--heading-color, #0B4F6C); color: #fff; }
 
-/* Villa page */
 .bandabou-villa-hero { position: relative; display: flex; flex-direction: column; justify-content: flex-end; min-height: 640px; }
 .bandabou-villa-hero-inner { position: relative; display: flex; flex-direction: column; gap: 1.375rem; width: 100%; max-width: 1280px; margin-inline: auto; padding: calc(var(--bandabou-header-h, 86px) + 2rem) 1.25rem 110px; }
 .bandabou-villa-hero nav[aria-label="breadcrumb"] { margin-bottom: 0; }

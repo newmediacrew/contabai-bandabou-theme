@@ -8,6 +8,6 @@ get_template_part('template-parts/photo-hero', null, [
 ]);
 ?>
 <div class="flex justify-center px-5 py-12">
-    <a href="<?php echo esc_url(home_url()); ?>" class="bandabou-cta min-h-[52px] justify-center !rounded-[14px] px-7"><?php esc_html_e('Back to home', 'contabai-bandabou-theme'); ?></a>
+    <a href="<?php echo esc_url(home_url()); ?>" class="bandabou-cta min-h-[52px] justify-center rounded-[14px]! px-7"><?php esc_html_e('Back to home', 'contabai-bandabou-theme'); ?></a>
 </div>
 <?php get_footer(); ?>
