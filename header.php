@@ -91,7 +91,7 @@ if (get_option('bandabou_topbar_enabled', '0') === '1') {
 
             <?php if ($ctaShow) : ?>
                 <span class="hidden md:inline-flex"><a href="<?php echo esc_url($ctaUrl); ?>" title="<?php echo esc_attr($ctaLabel); ?>" aria-label="<?php echo esc_attr($ctaLabel); ?>" class="bandabou-header-icon">
-                    <?php echo Heroicon::outline('chat-bubble-oval-left', 'w-5 h-5'); ?>
+                    <?php echo Heroicon::render('whatsapp', 'brands', 'w-5 h-5'); ?>
                 </a></span>
             <?php endif; ?>
 

@@ -4,7 +4,7 @@ namespace BandabouTheme;
 
 class Languages
 {
-    private const CODES = ['en', 'nl', 'de', 'es', 'fr', 'pt'];
+    private const CODES = ['nl', 'en', 'de', 'es', 'fr', 'pt'];
 
     public static function links(): array
     {
@@ -21,7 +21,7 @@ class Languages
         foreach (self::CODES as $code) {
             $links[] = [
                 'code'    => strtoupper($code),
-                'url'     => $base . '/' . ($code === 'en' ? '' : $code . '/') . $path,
+                'url'     => $base . '/' . ($code === 'nl' ? '' : $code . '/') . $path,
                 'current' => $code === $current,
             ];
         }

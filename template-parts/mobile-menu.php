@@ -64,7 +64,7 @@ $mmPhoto      = \BandabouTheme\PhotoHero::image(0);
                 <div class="mt-6 flex flex-col gap-2.5 md:flex-row">
                     <?php if ($mmCtaShow) : ?>
                         <a href="<?php echo esc_url($mmCtaUrl); ?>" class="bandabou-cta h-13 justify-center px-7 text-base">
-                            <?php echo Heroicon::outline('chat-bubble-oval-left', 'w-5 h-5'); ?><?php echo esc_html($mmCtaLabel); ?>
+                            <?php echo Heroicon::render('whatsapp', 'brands', 'w-5 h-5'); ?><?php echo esc_html($mmCtaLabel); ?>
                         </a>
                     <?php endif; ?>
                     <a href="<?php echo esc_url($mmAccountUrl); ?>" class="hidden h-13 items-center md:inline-flex justify-center gap-2 rounded-full border border-white/45 px-7 bg-white/10 text-base font-semibold text-white no-underline backdrop-blur-sm transition hover:bg-white/20">
