@@ -163,7 +163,6 @@ body .contabai-accent-bg { background: linear-gradient(135deg, #F6A623 0%, var(-
 .bandabou-results [x-ref="searchBar"] { position: relative; max-width: 1280px; margin-top: -130px; padding: 0 1.25rem; }
 .bandabou-results .contabai-toolbar .max-w-7xl { max-width: 1280px; padding-inline: 1.25rem; }
 .bandabou-results > div > .max-w-7xl { max-width: 1280px; padding-inline: 1.25rem; }
-@media (min-width: 80rem) { .bandabou-results .contabai-results-body:not(.is-split) .contabai-results-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 .bandabou-pagination { margin-top: 2.5rem; }
 .bandabou-pagination .nav-links { display: flex; flex-wrap: wrap; justify-content: center; gap: .5rem; }
 .bandabou-pagination .page-numbers { display: inline-flex; align-items: center; min-height: 44px; padding-inline: 16px; border: 1px solid #EADFCB; border-radius: 12px; background: #fff; color: var(--heading-color, #0B4F6C); font-weight: 600; text-decoration: none; }
@@ -261,6 +260,9 @@ body .contabai-accent-bg { background: linear-gradient(135deg, #F6A623 0%, var(-
     .bandabou-villas .contabai-listings-grid { gap: 24px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
     .bandabou-welcome { right: -28px; bottom: -28px; }
     .bandabou-contact-form { padding: 40px; }
+}
+@media (min-width: 80rem) {
+    .bandabou-villas .contabai-listings-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 }
 
 .entry-content { font-size: var(--content-font-size, 16px); }

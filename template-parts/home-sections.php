@@ -47,7 +47,7 @@ $reasons = [
             </div>
             <a href="<?php echo esc_url($listingsUrl); ?>" class="inline-flex min-h-11 items-center gap-1.5 text-[15px] font-bold text-[color:var(--content-link-color,#0B6E6C)] no-underline"><?php esc_html_e('Compare all villas', 'contabai-bandabou-theme'); ?><?php echo Heroicon::outline('chevron-right', 'w-[18px] h-[18px]'); ?></a>
         </div>
-        <div class="bandabou-villas mt-11"><?php echo do_shortcode('[contabai_random_listings count="9"]'); ?></div>
+        <div class="bandabou-villas mt-11"><?php echo do_shortcode('[contabai_random_listings count="12"]'); ?></div>
     </div>
 </section>
 
