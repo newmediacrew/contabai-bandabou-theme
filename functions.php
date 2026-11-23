@@ -21,38 +21,45 @@ add_action('after_switch_theme', function () {
 });
 
 $legalPages = function () {
-    if (get_option('bandabou_legal_pages') !== false) {
+    $missing = [];
+    foreach (['privacy', 'terms'] as $key) {
+        $pageSlug = sanitize_title((string) get_option('bandabou_' . $key . '_page_slug', $key));
+        if (! get_page_by_path($pageSlug)) {
+            $missing[$key] = $pageSlug;
+        }
+    }
+    if ($missing === []) {
         return;
     }
+    $switched = switch_to_locale(get_locale());
 
-    $pages = [
+    $titles = [
         'privacy' => __('Privacy policy', 'contabai-bandabou-theme'),
         'terms'   => __('Terms of service', 'contabai-bandabou-theme'),
     ];
-    $ids = [];
-    foreach ($pages as $slug => $title) {
-        $pageSlug = sanitize_title((string) get_option('bandabou_' . $slug . '_page_slug', $slug));
-        $page = get_page_by_path($pageSlug);
-        $ids[$slug] = $page ? $page->ID : wp_insert_post([
+    foreach ($missing as $key => $pageSlug) {
+        $id = wp_insert_post([
             'post_type'   => 'page',
             'post_name'   => $pageSlug,
-            'post_title'  => $title,
+            'post_title'  => $titles[$key],
             'post_status' => 'draft',
         ]);
+        if ($key === 'privacy' && ! (int) get_option('wp_page_for_privacy_policy')) {
+            update_option('wp_page_for_privacy_policy', $id);
+        }
     }
-
-    if (! (int) get_option('wp_page_for_privacy_policy')) {
-        update_option('wp_page_for_privacy_policy', $ids['privacy']);
+    if ($switched) {
+        restore_previous_locale();
     }
-    add_option('bandabou_legal_pages', $ids);
 };
 add_action('after_switch_theme', $legalPages);
 add_action('admin_init', $legalPages);
 
 $aboutPage = function () {
-    if (get_option('bandabou_about_page') !== false) {
+    if (get_page_by_path('about')) {
         return;
     }
+    $switched = switch_to_locale(get_locale());
 
     $items = '';
     foreach ([__('Secure resorts', 'contabai-bandabou-theme'), __('Beaches nearby', 'contabai-bandabou-theme'), __('Hiking, cycling & diving', 'contabai-bandabou-theme'), __('Free parking at the villa', 'contabai-bandabou-theme')] as $item) {
@@ -63,23 +70,25 @@ $aboutPage = function () {
         . "<!-- wp:paragraph -->\n<p>" . esc_html__('Our holiday homes and villas are spread across special places in Bandabou, including Villapark Fontein, Coral Estate, Bario Bandabou in San Sebastian and Cas Abou. Every spot has its own character: from a relaxed stay among the green hills to a villa overlooking the Caribbean Sea. Choose the surroundings and facilities that suit your holiday and enjoy outdoor living on the west side of Curaçao.', 'contabai-bandabou-theme') . "</p>\n<!-- /wp:paragraph -->\n\n"
         . "<!-- wp:list -->\n<ul class=\"wp-block-list\">" . $items . "</ul>\n<!-- /wp:list -->";
 
-    $page = get_page_by_path('about');
-    $id = $page ? $page->ID : wp_insert_post([
+    wp_insert_post([
         'post_type'    => 'page',
         'post_name'    => 'about',
         'post_title'   => __('About Bandabou', 'contabai-bandabou-theme'),
         'post_status'  => 'draft',
         'post_content' => $content,
     ]);
-    add_option('bandabou_about_page', $id);
+    if ($switched) {
+        restore_previous_locale();
+    }
 };
 add_action('after_switch_theme', $aboutPage);
 add_action('admin_init', $aboutPage);
 
 $rentOutPage = function () {
-    if (get_option('bandabou_rent_out_page') !== false) {
+    if (get_page_by_path('rent-out')) {
         return;
     }
+    $switched = switch_to_locale(get_locale());
 
     $listItems = function (array $items): string {
         $html = '';
@@ -117,15 +126,16 @@ $rentOutPage = function () {
         "<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"" . esc_url(home_url('/#contact')) . "\">" . esc_html__('Ask about the options', 'contabai-bandabou-theme') . "</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->",
     ]);
 
-    $page = get_page_by_path('rent-out');
-    $id = $page ? $page->ID : wp_insert_post([
+    wp_insert_post([
         'post_type'    => 'page',
         'post_name'    => 'rent-out',
         'post_title'   => __('Rent out your home', 'contabai-bandabou-theme'),
         'post_status'  => 'draft',
         'post_content' => $content,
     ]);
-    add_option('bandabou_rent_out_page', $id);
+    if ($switched) {
+        restore_previous_locale();
+    }
 };
 add_action('after_switch_theme', $rentOutPage);
 add_action('admin_init', $rentOutPage);
