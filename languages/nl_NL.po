@@ -271,6 +271,9 @@ msgstr "Borg"
 msgid "Deposit, settled after your stay"
 msgstr "Borg, verrekend na je verblijf"
 
+msgid "Destinations"
+msgstr "Bestemmingen"
+
 msgid "Development mode"
 msgstr "Ontwikkelmodus"
 
@@ -658,8 +661,17 @@ msgstr "Horizontaal herhalen"
 msgid "Repeat vertical"
 msgstr "Verticaal herhalen"
 
+msgid "Replace the current menu with the default menu? Your changes to the menu will be lost."
+msgstr "Het huidige menu vervangen door het standaardmenu? Je wijzigingen aan het menu gaan verloren."
+
+msgid "Replaces the header menu with the default menu in this site's language: Villas, Destinations (the areas with villas), About Bandabou, How to book, Rent out your home and Contact."
+msgstr "Vervangt het headermenu door het standaardmenu in de taal van deze site: Villa's, Bestemmingen (de gebieden met villa's), Over Bandabou, Zo boek je, Je woning verhuren en Contact."
+
 msgid "Restore default design"
 msgstr "Standaardontwerp herstellen"
+
+msgid "Restore default menu"
+msgstr "Standaardmenu herstellen"
 
 msgid "Restore the default design and typography? Your own colours and fonts will be replaced."
 msgstr "Standaardontwerp en typografie herstellen? Je eigen kleuren en lettertypen worden vervangen."
@@ -765,6 +777,9 @@ msgstr "Tekstkleur"
 
 msgid "The default design and typography are restored."
 msgstr "Het standaardontwerp en de typografie zijn hersteld."
+
+msgid "The default menu is restored."
+msgstr "Het standaardmenu is hersteld."
 
 msgid "The quiet west side of Curaçao"
 msgstr "De rustige westkant van Curaçao"

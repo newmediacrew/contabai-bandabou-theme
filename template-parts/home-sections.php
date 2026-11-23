@@ -38,7 +38,7 @@ $wave = function (string $fill, string $back = 'transparent', bool $alt = false)
     return '<div aria-hidden="true" class="leading-[0]" style="background: ' . esc_attr($back) . ';"><svg viewBox="0 0 1440 70" preserveAspectRatio="none" class="block h-11 w-full md:h-[70px]">' . $defs . '<path d="' . $rear . '" fill="rgba(15,163,163,0.2)"></path><path d="' . $front . '" fill="' . esc_attr($fill) . '"></path></svg></div>';
 };
 ?>
-<section aria-label="<?php esc_attr_e('Why Bandabou Curaçao', 'contabai-bandabou-theme'); ?>" class="border-b border-[#EFE4D1] bg-white">
+<section id="highlights" aria-label="<?php esc_attr_e('Why Bandabou Curaçao', 'contabai-bandabou-theme'); ?>" class="scroll-mt-24 border-b border-[#EFE4D1] bg-white">
     <div class="bandabou-container grid grid-cols-1 gap-6 py-8 md:grid-cols-3 md:gap-5 lg:gap-8 lg:py-10">
         <?php foreach ($strip as $item) : ?>
             <div class="flex items-start gap-4">
@@ -92,7 +92,7 @@ $wave = function (string $fill, string $back = 'transparent', bool $alt = false)
 </section>
 
 <?php echo $wave('url(#bandabou-why-wave)', '#FFFFFF', true); ?>
-<section class="bandabou-why py-16 text-white lg:py-24">
+<section id="how-we-work" class="bandabou-why scroll-mt-24 py-16 text-white lg:py-24">
     <div class="bandabou-container">
         <div>
             <p class="bandabou-eyebrow text-bandabou-gold!"><?php esc_html_e('This is how we work', 'contabai-bandabou-theme'); ?></p>
@@ -111,8 +111,9 @@ $wave = function (string $fill, string $back = 'transparent', bool $alt = false)
         </div>
     </div>
 </section>
+<?php echo $wave($pageBg, 'linear-gradient(90deg, #0D7584 0%, #0E8C96 40%, #12A7A3 100%)'); ?>
 
-<section class="pb-16 pt-16 lg:pb-24 lg:pt-24">
+<section id="how-to-book" class="scroll-mt-24 pb-16 pt-16 lg:pb-24 lg:pt-24">
     <div class="bandabou-container">
         <div class="bandabou-journey">
             <div class="flex flex-wrap items-end justify-between gap-6">
@@ -142,7 +143,7 @@ $wave = function (string $fill, string $back = 'transparent', bool $alt = false)
 </section>
 
 <?php echo $wave('#EAF5F2'); ?>
-<section class="bg-[#EAF5F2] pb-14 pt-8 lg:pb-20 lg:pt-12">
+<section id="team" class="scroll-mt-24 bg-[#EAF5F2] pb-14 pt-8 lg:pb-20 lg:pt-12">
     <div class="bandabou-container">
         <figure class="bandabou-quote-card m-0 grid grid-cols-1 overflow-hidden lg:grid-cols-[2fr_3fr]">
             <img src="<?php echo esc_url(get_theme_file_uri('assets/img/bandabou-moreno-pool.webp')); ?>" alt="" loading="lazy" decoding="async" class="block aspect-[16/10] h-full w-full object-cover lg:aspect-auto">

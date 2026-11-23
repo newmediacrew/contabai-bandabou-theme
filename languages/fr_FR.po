@@ -271,6 +271,9 @@ msgstr "Caution"
 msgid "Deposit, settled after your stay"
 msgstr "Caution, réglée après ton séjour"
 
+msgid "Destinations"
+msgstr "Destinations"
+
 msgid "Development mode"
 msgstr "Mode développement"
 
@@ -658,8 +661,17 @@ msgstr "Répéter horizontalement"
 msgid "Repeat vertical"
 msgstr "Répéter verticalement"
 
+msgid "Replace the current menu with the default menu? Your changes to the menu will be lost."
+msgstr "Remplacer le menu actuel par le menu par défaut ? Tes modifications du menu seront perdues."
+
+msgid "Replaces the header menu with the default menu in this site's language: Villas, Destinations (the areas with villas), About Bandabou, How to book, Rent out your home and Contact."
+msgstr "Remplace le menu de l'en-tête par le menu par défaut dans la langue de ce site : Villas, Destinations (les zones avec des villas), À propos de Bandabou, Comment réserver, Mettre ta maison en location et Contact."
+
 msgid "Restore default design"
 msgstr "Restaurer le design par défaut"
+
+msgid "Restore default menu"
+msgstr "Restaurer le menu par défaut"
 
 msgid "Restore the default design and typography? Your own colours and fonts will be replaced."
 msgstr "Restaurer le design et la typographie par défaut ? Tes propres couleurs et polices seront remplacées."
@@ -765,6 +777,9 @@ msgstr "Couleur du texte"
 
 msgid "The default design and typography are restored."
 msgstr "Le design et la typographie par défaut sont restaurés."
+
+msgid "The default menu is restored."
+msgstr "Le menu par défaut a été restauré."
 
 msgid "The quiet west side of Curaçao"
 msgstr "L'ouest paisible de Curaçao"

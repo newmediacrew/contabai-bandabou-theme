@@ -65,6 +65,7 @@ class ThemeSettings
         add_filter('use_block_editor_for_post', [$this, 'maybe_classic_editor']);
         add_action('wp_enqueue_scripts', [$this, 'maybe_dequeue_block_css'], 100);
         add_action('admin_post_bandabou_theme_reset_design', [$this, 'handle_reset_design']);
+        add_action('admin_post_bandabou_theme_reset_menu', [$this, 'handle_reset_menu']);
     }
 
     public function handle_reset_design(): void
@@ -85,6 +86,19 @@ class ThemeSettings
         }
 
         wp_safe_redirect(add_query_arg(['page' => 'bandabou-theme-options', 'tab' => 'advanced', 'design-reset' => '1'], admin_url('admin.php')));
+        exit;
+    }
+
+    public function handle_reset_menu(): void
+    {
+        if (! current_user_can('edit_theme_options')) {
+            wp_die(esc_html__('You are not allowed to do this.', 'contabai-bandabou-theme'), 403);
+        }
+        check_admin_referer('bandabou_theme_reset_menu', 'bandabou_theme_reset_menu_nonce');
+
+        \BandabouTheme\DefaultMenu::restore();
+
+        wp_safe_redirect(add_query_arg(['page' => 'bandabou-theme-options', 'tab' => 'advanced', 'menu-reset' => '1'], admin_url('admin.php')));
         exit;
     }
 
@@ -333,6 +347,9 @@ class ThemeSettings
         if (isset($_GET['design-reset'])) {
             add_settings_error('bandabou_theme_messages', 'design-reset', __('The default design and typography are restored.', 'contabai-bandabou-theme'), 'updated');
         }
+        if (isset($_GET['menu-reset'])) {
+            add_settings_error('bandabou_theme_messages', 'menu-reset', __('The default menu is restored.', 'contabai-bandabou-theme'), 'updated');
+        }
 
         ?>
         <div class="wrap contabai-admin">
@@ -363,6 +380,13 @@ class ThemeSettings
                     <input type="hidden" name="action" value="bandabou_theme_reset_design">
                     <?php wp_nonce_field('bandabou_theme_reset_design', 'bandabou_theme_reset_design_nonce'); ?>
                     <?php submit_button(__('Restore default design', 'contabai-bandabou-theme'), 'secondary', 'bandabou-theme-reset-design', false); ?>
+                </form>
+                <h2><?php esc_html_e('Restore default menu', 'contabai-bandabou-theme'); ?></h2>
+                <p class="description"><?php esc_html_e('Replaces the header menu with the default menu in this site\'s language: Villas, Destinations (the areas with villas), About Bandabou, How to book, Rent out your home and Contact.', 'contabai-bandabou-theme'); ?></p>
+                <form method="post" action="<?php echo esc_url(admin_url('admin-post.php')); ?>" onsubmit="return window.confirm('<?php echo esc_js(__('Replace the current menu with the default menu? Your changes to the menu will be lost.', 'contabai-bandabou-theme')); ?>');">
+                    <input type="hidden" name="action" value="bandabou_theme_reset_menu">
+                    <?php wp_nonce_field('bandabou_theme_reset_menu', 'bandabou_theme_reset_menu_nonce'); ?>
+                    <?php submit_button(__('Restore default menu', 'contabai-bandabou-theme'), 'secondary', 'bandabou-theme-reset-menu', false); ?>
                 </form>
             <?php endif; ?>
             <?php endif; ?>

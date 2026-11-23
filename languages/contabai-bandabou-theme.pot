@@ -270,6 +270,9 @@ msgstr ""
 msgid "Deposit, settled after your stay"
 msgstr ""
 
+msgid "Destinations"
+msgstr ""
+
 msgid "Development mode"
 msgstr ""
 
@@ -657,7 +660,16 @@ msgstr ""
 msgid "Repeat vertical"
 msgstr ""
 
+msgid "Replace the current menu with the default menu? Your changes to the menu will be lost."
+msgstr ""
+
+msgid "Replaces the header menu with the default menu in this site's language: Villas, Destinations (the areas with villas), About Bandabou, How to book, Rent out your home and Contact."
+msgstr ""
+
 msgid "Restore default design"
+msgstr ""
+
+msgid "Restore default menu"
 msgstr ""
 
 msgid "Restore the default design and typography? Your own colours and fonts will be replaced."
@@ -763,6 +775,9 @@ msgid "Text color"
 msgstr ""
 
 msgid "The default design and typography are restored."
+msgstr ""
+
+msgid "The default menu is restored."
 msgstr ""
 
 msgid "The quiet west side of Curaçao"
