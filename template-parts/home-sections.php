@@ -22,6 +22,21 @@ $reasons = [
     ['icon' => 'key', 'title' => __('We welcome you ourselves', 'contabai-bandabou-theme'), 'text' => __('Our team hands you the key and shows you the villa. Check-in from 15:00, check-out until 11:00.', 'contabai-bandabou-theme')],
     ['icon' => 'shield-check', 'title' => __('Help during your stay', 'contabai-bandabou-theme'), 'text' => __('If something goes wrong, we sort it out. Cleaning during your stay is available on request.', 'contabai-bandabou-theme')],
 ];
+
+$steps = [
+    ['title' => __('Create an account and choose your villa', 'contabai-bandabou-theme'), 'text' => __('Create a free account, find the villa that suits your group and pick your travel dates in the calendar.', 'contabai-bandabou-theme')],
+    ['title' => __('Check the costs', 'contabai-bandabou-theme'), 'text' => __('Before you book, you see the full price of your stay.', 'contabai-bandabou-theme')],
+    ['title' => __('Book your stay', 'contabai-bandabou-theme'), 'text' => __('Confirm your booking online. You book directly with us, no platform in between.', 'contabai-bandabou-theme')],
+    ['title' => __('Personal contact', 'contabai-bandabou-theme'), 'text' => __('After booking, our team gets in touch personally about your arrival, the key handover and any wishes.', 'contabai-bandabou-theme')],
+];
+
+$pageBg = sanitize_hex_color((string) get_option('bandabou_bg_color', '#FBF5EA')) ?: '#FBF5EA';
+$wave = function (string $fill, string $back = 'transparent', bool $alt = false): string {
+    $rear  = $alt ? 'M0 30 C 240 0 520 64 760 36 S 1200 6 1440 34 V70 H0 Z' : 'M0 38 C 260 70 520 6 780 30 S 1220 66 1440 24 V70 H0 Z';
+    $front = $alt ? 'M0 46 C 320 70 620 18 920 42 S 1300 62 1440 40 V70 H0 Z' : 'M0 50 C 300 20 600 76 900 46 S 1280 30 1440 44 V70 H0 Z';
+    $defs  = str_starts_with($fill, 'url(') ? '<defs><linearGradient id="bandabou-why-wave" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#0B5A6E"/><stop offset="1" stop-color="#109A9D"/></linearGradient></defs>' : '';
+    return '<div aria-hidden="true" class="leading-[0]" style="background: ' . esc_attr($back) . ';"><svg viewBox="0 0 1440 70" preserveAspectRatio="none" class="block h-11 w-full md:h-[70px]">' . $defs . '<path d="' . $rear . '" fill="rgba(15,163,163,0.2)"></path><path d="' . $front . '" fill="' . esc_attr($fill) . '"></path></svg></div>';
+};
 ?>
 <section aria-label="<?php esc_attr_e('Why Bandabou Curaçao', 'contabai-bandabou-theme'); ?>" class="border-b border-[#EFE4D1] bg-white">
     <div class="bandabou-container grid grid-cols-1 gap-6 py-8 md:grid-cols-3 md:gap-5 lg:gap-8 lg:py-10">
@@ -45,13 +60,15 @@ $reasons = [
                 <h2 class="bandabou-section-title mt-2.5"><?php esc_html_e('Villas across Bandabou', 'contabai-bandabou-theme'); ?></h2>
                 <p class="mt-3.5 text-[17px] leading-[1.6] text-[#5A5348]"><?php esc_html_e('Wake up between green hills and quiet bays on the west side of Curaçao. Find the villa that suits your group.', 'contabai-bandabou-theme'); ?></p>
             </div>
-            <a href="<?php echo esc_url($listingsUrl); ?>" class="inline-flex min-h-11 items-center gap-1.5 text-[15px] font-bold text-[color:var(--content-link-color,#0B6E6C)] no-underline"><?php esc_html_e('Compare all villas', 'contabai-bandabou-theme'); ?><?php echo Heroicon::outline('chevron-right', 'w-[18px] h-[18px]'); ?></a>
+            <a href="<?php echo esc_url($listingsUrl); ?>" class="inline-flex min-h-11 items-center gap-1.5 text-[15px] font-bold text-[color:var(--content-link-color,#0B6E6C)] no-underline"><?php esc_html_e('Explore available villas', 'contabai-bandabou-theme'); ?><?php echo Heroicon::outline('chevron-right', 'w-[18px] h-[18px]'); ?></a>
         </div>
         <div class="bandabou-villas mt-11"><?php echo do_shortcode('[contabai_random_listings count="12"]'); ?></div>
     </div>
 </section>
 
-<section id="bandabou" class="scroll-mt-24 pb-[72px] lg:pb-[104px]">
+<?php echo $wave('#FFFFFF'); ?>
+
+<section id="bandabou" class="scroll-mt-24 bg-white pb-[72px] pt-10 lg:pb-[104px] lg:pt-14">
     <div class="bandabou-container grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-[72px]">
         <div class="relative">
             <img src="<?php echo esc_url(get_theme_file_uri('assets/img/bandabou-porch.webp')); ?>" alt="<?php esc_attr_e('Covered porch of Villa Moreno with a view over green Bandabou', 'contabai-bandabou-theme'); ?>" loading="lazy" decoding="async" class="block aspect-[5/4] w-full rounded-[28px] object-cover">
@@ -74,6 +91,7 @@ $reasons = [
     </div>
 </section>
 
+<?php echo $wave('url(#bandabou-why-wave)', '#FFFFFF', true); ?>
 <section class="bandabou-why py-16 text-white lg:py-24">
     <div class="bandabou-container">
         <div>
@@ -94,7 +112,37 @@ $reasons = [
     </div>
 </section>
 
-<section class="pt-16 lg:pt-24">
+<section class="pb-16 pt-16 lg:pb-24 lg:pt-24">
+    <div class="bandabou-container">
+        <div class="bandabou-journey">
+            <div class="flex flex-wrap items-end justify-between gap-6">
+                <div class="max-w-[640px]">
+                    <p class="bandabou-eyebrow"><?php esc_html_e('How to book', 'contabai-bandabou-theme'); ?></p>
+                    <h2 class="bandabou-section-title mt-2.5"><?php esc_html_e('Your villa booked in four steps', 'contabai-bandabou-theme'); ?></h2>
+                </div>
+                <a href="<?php echo esc_url($listingsUrl); ?>" class="bandabou-cta min-h-13 justify-center rounded-[14px]! px-6 text-[15px]"><?php esc_html_e('Explore available villas', 'contabai-bandabou-theme'); ?><?php echo Heroicon::outline('chevron-right', 'w-[18px] h-[18px]'); ?></a>
+            </div>
+            <div class="relative mt-12 lg:mt-14">
+                <svg aria-hidden="true" viewBox="0 0 1000 80" preserveAspectRatio="none" class="bandabou-journey-trail"><path d="M60 40 C 180 -10 280 90 380 40 S 580 -10 640 40 S 840 90 940 40" fill="none" stroke="currentColor" stroke-width="2.5" stroke-dasharray="2 10" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg>
+                <ol class="relative grid list-none grid-cols-1 gap-10 p-0 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
+                    <?php foreach ($steps as $stepIndex => $step) : ?>
+                        <li class="flex flex-col items-center text-center">
+                            <span class="bandabou-journey-stop">
+                                <img src="<?php echo esc_url(get_theme_file_uri('assets/img/steps/step-' . ($stepIndex + 1) . '.webp')); ?>" alt="" loading="lazy" decoding="async" width="360" height="360">
+                                <span class="bandabou-journey-number"><?php echo (int) $stepIndex + 1; ?></span>
+                            </span>
+                            <h3 class="contabai-display mt-6 text-[25px] font-semibold leading-[1.15] text-[color:var(--heading-color,#0B4F6C)]"><?php echo esc_html($step['title']); ?></h3>
+                            <p class="mt-2.5 max-w-[260px] text-[15px] leading-[1.6] text-[#5A5348]"><?php echo esc_html($step['text']); ?></p>
+                        </li>
+                    <?php endforeach; ?>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+<?php echo $wave('#EAF5F2'); ?>
+<section class="bg-[#EAF5F2] pb-14 pt-8 lg:pb-20 lg:pt-12">
     <div class="bandabou-container">
         <figure class="bandabou-quote-card m-0 grid grid-cols-1 overflow-hidden lg:grid-cols-[2fr_3fr]">
             <img src="<?php echo esc_url(get_theme_file_uri('assets/img/bandabou-moreno-pool.webp')); ?>" alt="" loading="lazy" decoding="async" class="block aspect-[16/10] h-full w-full object-cover lg:aspect-auto">
@@ -112,3 +160,4 @@ $reasons = [
         </figure>
     </div>
 </section>
+<?php echo $wave($pageBg, '#EAF5F2', true); ?>

@@ -28,6 +28,9 @@ msgstr "Dirección"
 msgid "Advanced"
 msgstr "Avanzado"
 
+msgid "After booking, our team gets in touch personally about your arrival, the key handover and any wishes."
+msgstr "Después de reservar, nuestro equipo se pone en contacto contigo para hablar de tu llegada, la entrega de llaves y lo que necesites."
+
 msgid "All %d photos"
 msgstr "Las %d fotos"
 
@@ -100,6 +103,9 @@ msgstr "Tamaño de fuente base"
 msgid "Beaches nearby"
 msgstr "Playas cercanas"
 
+msgid "Before you book, you see the full price of your stay."
+msgstr "Antes de reservar, ves el precio completo de tu estancia."
+
 msgid "Body font"
 msgstr "Fuente del cuerpo"
 
@@ -114,6 +120,9 @@ msgstr "Se mantienen la negrita, la cursiva y los enlaces; la barra superior es 
 
 msgid "Book"
 msgstr "Reservar"
+
+msgid "Book your stay"
+msgstr "Reserva tu estancia"
 
 msgid "Booked directly with us"
 msgstr "Reserva directamente con nosotros"
@@ -157,6 +166,9 @@ msgstr "Ver disponibilidad"
 msgid "Check now"
 msgstr "Comprobar ahora"
 
+msgid "Check the costs"
+msgstr "Consulta los costes"
+
 msgid "Check-in"
 msgstr "Entrada"
 
@@ -190,8 +202,8 @@ msgstr "Texto de la columna %d"
 msgid "Column %d title"
 msgstr "Título de la columna %d"
 
-msgid "Compare all villas"
-msgstr "Compara todas las villas"
+msgid "Confirm your booking online. You book directly with us, no platform in between."
+msgstr "Confirma tu reserva online. Reservas directamente con nosotros, sin plataformas de por medio."
 
 msgid "Contact"
 msgstr "Contacto"
@@ -210,6 +222,12 @@ msgstr "Cubrir"
 
 msgid "Covered porch of Villa Moreno with a view over green Bandabou"
 msgstr "Porche cubierto de Villa Moreno con vistas al verde Bandabou"
+
+msgid "Create a free account, find the villa that suits your group and pick your travel dates in the calendar."
+msgstr "Crea una cuenta gratuita, encuentra la villa ideal para tu grupo y elige tus fechas en el calendario."
+
+msgid "Create an account and choose your villa"
+msgstr "Crea tu cuenta y elige tu villa"
 
 msgid "Crossfade only"
 msgstr "Solo fundido"
@@ -258,6 +276,9 @@ msgstr "Correo electrónico"
 
 msgid "Enable"
 msgstr "Activar"
+
+msgid "Explore available villas"
+msgstr "Descubre las villas disponibles"
 
 msgid "Extra bold"
 msgstr "Extranegrita"
@@ -327,6 +348,9 @@ msgstr "Senderismo y esnórquel"
 
 msgid "Home"
 msgstr "Inicio"
+
+msgid "How to book"
+msgstr "Cómo reservar"
 
 msgid "If something goes wrong, we sort it out. Cleaning during your stay is available on request."
 msgstr "Si algo va mal, nosotros lo solucionamos. La limpieza durante la estancia está disponible bajo petición."
@@ -510,6 +534,9 @@ msgstr "Eslogan"
 
 msgid "Peace and space"
 msgstr "Paz y espacio"
+
+msgid "Personal contact"
+msgstr "Contacto personal"
 
 msgid "Personal contact, from booking to departure"
 msgstr "Contacto personal, desde la reserva hasta la salida"
@@ -801,6 +828,9 @@ msgstr "Tu nombre"
 
 msgid "Your trusted partner for an unforgettable stay on Curaçao."
 msgstr "Tu socio de confianza para una estancia inolvidable en Curaçao."
+
+msgid "Your villa booked in four steps"
+msgstr "Tu villa reservada en cuatro pasos"
 
 msgid "Your villa in peaceful Bandabou"
 msgstr "Tu villa en el tranquilo Bandabou"

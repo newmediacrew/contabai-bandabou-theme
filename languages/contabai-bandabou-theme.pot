@@ -27,6 +27,9 @@ msgstr ""
 msgid "Advanced"
 msgstr ""
 
+msgid "After booking, our team gets in touch personally about your arrival, the key handover and any wishes."
+msgstr ""
+
 msgid "All %d photos"
 msgstr ""
 
@@ -99,6 +102,9 @@ msgstr ""
 msgid "Beaches nearby"
 msgstr ""
 
+msgid "Before you book, you see the full price of your stay."
+msgstr ""
+
 msgid "Body font"
 msgstr ""
 
@@ -112,6 +118,9 @@ msgid "Bold, italic and links are kept; the top bar is a single line, so paragra
 msgstr ""
 
 msgid "Book"
+msgstr ""
+
+msgid "Book your stay"
 msgstr ""
 
 msgid "Booked directly with us"
@@ -156,6 +165,9 @@ msgstr ""
 msgid "Check now"
 msgstr ""
 
+msgid "Check the costs"
+msgstr ""
+
 msgid "Check-in"
 msgstr ""
 
@@ -189,7 +201,7 @@ msgstr ""
 msgid "Column %d title"
 msgstr ""
 
-msgid "Compare all villas"
+msgid "Confirm your booking online. You book directly with us, no platform in between."
 msgstr ""
 
 msgid "Contact"
@@ -208,6 +220,12 @@ msgid "Cover"
 msgstr ""
 
 msgid "Covered porch of Villa Moreno with a view over green Bandabou"
+msgstr ""
+
+msgid "Create a free account, find the villa that suits your group and pick your travel dates in the calendar."
+msgstr ""
+
+msgid "Create an account and choose your villa"
 msgstr ""
 
 msgid "Crossfade only"
@@ -256,6 +274,9 @@ msgid "Email"
 msgstr ""
 
 msgid "Enable"
+msgstr ""
+
+msgid "Explore available villas"
 msgstr ""
 
 msgid "Extra bold"
@@ -325,6 +346,9 @@ msgid "Hiking and snorkelling"
 msgstr ""
 
 msgid "Home"
+msgstr ""
+
+msgid "How to book"
 msgstr ""
 
 msgid "If something goes wrong, we sort it out. Cleaning during your stay is available on request."
@@ -508,6 +532,9 @@ msgid "Payoff"
 msgstr ""
 
 msgid "Peace and space"
+msgstr ""
+
+msgid "Personal contact"
 msgstr ""
 
 msgid "Personal contact, from booking to departure"
@@ -799,6 +826,9 @@ msgid "Your name"
 msgstr ""
 
 msgid "Your trusted partner for an unforgettable stay on Curaçao."
+msgstr ""
+
+msgid "Your villa booked in four steps"
 msgstr ""
 
 msgid "Your villa in peaceful Bandabou"
