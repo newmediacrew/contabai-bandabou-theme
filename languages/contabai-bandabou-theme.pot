@@ -9,10 +9,16 @@ msgstr ""
 msgid "100% width"
 msgstr ""
 
+msgid "A personal welcome"
+msgstr ""
+
 msgid "A porch, sun loungers and an outdoor dining area at every villa, and a private pool at most of them."
 msgstr ""
 
 msgid "A question about the villa, your arrival or a tip for a beach? Just send a message."
+msgstr ""
+
+msgid "A strong presentation"
 msgstr ""
 
 msgid "About Bandabou"
@@ -28,6 +34,9 @@ msgid "Advanced"
 msgstr ""
 
 msgid "After booking, our team gets in touch personally about your arrival, the key handover and any wishes."
+msgstr ""
+
+msgid "After every stay your home is fresh and ready again, and small jobs such as replacing a light bulb are taken care of right away."
 msgstr ""
 
 msgid "All %d photos"
@@ -102,6 +111,9 @@ msgstr ""
 msgid "Beaches nearby"
 msgstr ""
 
+msgid "Beautiful photos and a clear description, so guests immediately see what makes your home special."
+msgstr ""
+
 msgid "Before you book, you see the full price of your stay."
 msgstr ""
 
@@ -124,6 +136,12 @@ msgid "Book your stay"
 msgstr ""
 
 msgid "Booked directly with us"
+msgstr ""
+
+msgid "Bookings and guests"
+msgstr ""
+
+msgid "Bookings, welcome, cleaning and questions during the stay."
 msgstr ""
 
 msgid "Bottom center"
@@ -183,6 +201,9 @@ msgstr ""
 msgid "Classic editor"
 msgstr ""
 
+msgid "Cleaning and small maintenance"
+msgstr ""
+
 msgid "Close"
 msgstr ""
 
@@ -235,6 +256,9 @@ msgid "CTA label"
 msgstr ""
 
 msgid "CTA URL"
+msgstr ""
+
+msgid "Curious what we can do for your home?"
 msgstr ""
 
 msgid "Departure"
@@ -297,6 +321,9 @@ msgstr ""
 msgid "from %s"
 msgstr ""
 
+msgid "Get acquainted"
+msgstr ""
+
 msgid "GitHub answered with HTTP %d."
 msgstr ""
 
@@ -307,6 +334,9 @@ msgid "GitHub refused the request (rate limit). Try again later."
 msgstr ""
 
 msgid "GitHub sent an unexpected answer."
+msgstr ""
+
+msgid "Going online"
 msgstr ""
 
 msgid "Good to know"
@@ -345,7 +375,13 @@ msgstr ""
 msgid "Hiking and snorkelling"
 msgstr ""
 
+msgid "Hiking, cycling & diving"
+msgstr ""
+
 msgid "Home"
+msgstr ""
+
+msgid "How it works"
 msgstr ""
 
 msgid "How to book"
@@ -492,7 +528,16 @@ msgstr ""
 msgid "On hover"
 msgstr ""
 
+msgid "One calendar for everything"
+msgstr ""
+
+msgid "Our holiday homes and villas are spread across special places in Bandabou, including Villapark Fontein, Coral Estate, Bario Bandabou in San Sebastian and Cas Abou. Every spot has its own character: from a relaxed stay among the green hills to a villa overlooking the Caribbean Sea. Choose the surroundings and facilities that suit your holiday and enjoy outdoor living on the west side of Curaçao."
+msgstr ""
+
 msgid "Our team hands you the key and shows you the villa. Check-in from 15:00, check-out until 11:00."
+msgstr ""
+
+msgid "Our team welcomes your guests, hands over the key and shows them the home."
 msgstr ""
 
 msgid "Our villas"
@@ -597,6 +642,9 @@ msgstr ""
 msgid "Remove"
 msgstr ""
 
+msgid "Rent out your home"
+msgstr ""
+
 msgid "Repeat"
 msgstr ""
 
@@ -622,6 +670,9 @@ msgid "Right center"
 msgstr ""
 
 msgid "Section eyebrow color"
+msgstr ""
+
+msgid "Secure resorts"
 msgstr ""
 
 msgid "See our other villas too"
@@ -783,10 +834,22 @@ msgstr ""
 msgid "Wake up between green hills and quiet bays on the west side of Curaçao. Find the villa that suits your group."
 msgstr ""
 
+msgid "We answer questions, handle bookings and stay in touch with your guests, from their first question until after they leave."
+msgstr ""
+
+msgid "We get your home ready for rental and put it online."
+msgstr ""
+
+msgid "We handle the guests"
+msgstr ""
+
 msgid "We know every villa and every little beach in Bandabou. That personal contact makes the difference for our guests. Ayo, see you soon on Curaçao!"
 msgstr ""
 
 msgid "We live on the island and are there for you, from the key handover to your departure."
+msgstr ""
+
+msgid "We live on the island and know Bandabou like no one else. Guests book directly with us, with no platform in between, and get personal contact from booking to departure. You notice it in happy guests and a home that is in good hands."
 msgstr ""
 
 msgid "We take care of rentals and management: from the photos and the guests to cleaning and maintenance. You enjoy the income."
@@ -798,6 +861,9 @@ msgstr ""
 msgid "What this villa offers"
 msgstr ""
 
+msgid "What we arrange for you"
+msgstr ""
+
 msgid "WhatsApp us"
 msgstr ""
 
@@ -805,6 +871,9 @@ msgid "Which villa and period?"
 msgstr ""
 
 msgid "Why Bandabou Curaçao"
+msgstr ""
+
+msgid "Without worrying about the day-to-day running."
 msgstr ""
 
 msgid "X"
@@ -816,7 +885,19 @@ msgstr ""
 msgid "You book directly with Bandabou Curaçao. After your request you will receive the confirmation and payment details from us."
 msgstr ""
 
+msgid "You enjoy the income"
+msgstr ""
+
+msgid "You tell us about your home and your wishes."
+msgstr ""
+
 msgid "you@example.com"
+msgstr ""
+
+msgid "Your availability is correct everywhere, on our own site and on the platforms where your home is listed, without double bookings."
+msgstr ""
+
+msgid "Your holiday home on Curaçao deserves guests who enjoy it as much as you do. We take the rental and management off your hands, from the first photo to the last clean. You keep your peace of mind, we make sure everything runs smoothly."
 msgstr ""
 
 msgid "Your holiday starts with a place that suits you. From a cosy holiday home among the green hills to a luxury villa with a sea view: we help you choose and are ready for you on Curaçao. Book directly with us and enjoy personal attention, local tips and a warm welcome. This is where your Curaçao begins."

@@ -10,11 +10,17 @@ msgstr ""
 msgid "100% width"
 msgstr "100 % de largura"
 
+msgid "A personal welcome"
+msgstr "Receção personalizada"
+
 msgid "A porch, sun loungers and an outdoor dining area at every villa, and a private pool at most of them."
 msgstr "Alpendre, espreguiçadeiras e zona de refeições exterior em cada villa, e piscina privada na maioria."
 
 msgid "A question about the villa, your arrival or a tip for a beach? Just send a message."
 msgstr "Uma pergunta sobre a villa, a chegada ou uma dica de praia? Envia-nos uma mensagem."
+
+msgid "A strong presentation"
+msgstr "Uma apresentação forte"
 
 msgid "About Bandabou"
 msgstr "Sobre Bandabou"
@@ -30,6 +36,9 @@ msgstr "Avançado"
 
 msgid "After booking, our team gets in touch personally about your arrival, the key handover and any wishes."
 msgstr "Depois de reservares, a nossa equipa contacta-te pessoalmente sobre a tua chegada, a entrega das chaves e os teus desejos."
+
+msgid "After every stay your home is fresh and ready again, and small jobs such as replacing a light bulb are taken care of right away."
+msgstr "Depois de cada estadia, a tua casa volta a ficar impecável, e pequenos trabalhos como trocar uma lâmpada são resolvidos de imediato."
 
 msgid "All %d photos"
 msgstr "Todas as %d fotos"
@@ -103,6 +112,9 @@ msgstr "Tamanho de letra base"
 msgid "Beaches nearby"
 msgstr "Praias nas proximidades"
 
+msgid "Beautiful photos and a clear description, so guests immediately see what makes your home special."
+msgstr "Fotografias bonitas e uma descrição clara, para que os hóspedes vejam logo o que torna a tua casa especial."
+
 msgid "Before you book, you see the full price of your stay."
 msgstr "Antes de reservar, vês o preço completo da tua estadia."
 
@@ -126,6 +138,12 @@ msgstr "Reserva a tua estadia"
 
 msgid "Booked directly with us"
 msgstr "Reserva diretamente connosco"
+
+msgid "Bookings and guests"
+msgstr "Reservas e hóspedes"
+
+msgid "Bookings, welcome, cleaning and questions during the stay."
+msgstr "Reservas, receção, limpeza e perguntas durante a estadia."
 
 msgid "Bottom center"
 msgstr "Centro inferior"
@@ -184,6 +202,9 @@ msgstr "Cidade"
 msgid "Classic editor"
 msgstr "Editor clássico"
 
+msgid "Cleaning and small maintenance"
+msgstr "Limpeza e pequena manutenção"
+
 msgid "Close"
 msgstr "Fechar"
 
@@ -237,6 +258,9 @@ msgstr "Etiqueta do CTA"
 
 msgid "CTA URL"
 msgstr "URL do CTA"
+
+msgid "Curious what we can do for your home?"
+msgstr "Queres saber o que podemos fazer pela tua casa?"
 
 msgid "Departure"
 msgstr "Partida"
@@ -298,6 +322,9 @@ msgstr "Estacionamento gratuito na villa"
 msgid "from %s"
 msgstr "a partir das %s"
 
+msgid "Get acquainted"
+msgstr "Conhecermo-nos"
+
 msgid "GitHub answered with HTTP %d."
 msgstr "O GitHub respondeu com HTTP %d."
 
@@ -309,6 +336,9 @@ msgstr "O GitHub recusou o pedido (limite atingido). Tenta mais tarde."
 
 msgid "GitHub sent an unexpected answer."
 msgstr "O GitHub enviou uma resposta inesperada."
+
+msgid "Going online"
+msgstr "Colocar online"
 
 msgid "Good to know"
 msgstr "Bom saber"
@@ -346,8 +376,14 @@ msgstr "Hero"
 msgid "Hiking and snorkelling"
 msgstr "Caminhadas e snorkeling"
 
+msgid "Hiking, cycling & diving"
+msgstr "Caminhadas, ciclismo e mergulho"
+
 msgid "Home"
 msgstr "Início"
+
+msgid "How it works"
+msgstr "Como funciona"
 
 msgid "How to book"
 msgstr "Como reservar"
@@ -493,8 +529,17 @@ msgstr "À chegada, és recebido pessoalmente pela nossa equipa local em Bandabo
 msgid "On hover"
 msgstr "Ao passar o rato"
 
+msgid "One calendar for everything"
+msgstr "Um só calendário para tudo"
+
+msgid "Our holiday homes and villas are spread across special places in Bandabou, including Villapark Fontein, Coral Estate, Bario Bandabou in San Sebastian and Cas Abou. Every spot has its own character: from a relaxed stay among the green hills to a villa overlooking the Caribbean Sea. Choose the surroundings and facilities that suit your holiday and enjoy outdoor living on the west side of Curaçao."
+msgstr "As nossas casas de férias e villas estão espalhadas por locais especiais de Bandabou, como Villapark Fontein, Coral Estate, Bario Bandabou em San Sebastian e Cas Abou. Cada local tem o seu próprio carácter: desde uma estadia descontraída entre colinas verdes até uma villa com vista para o mar das Caraíbas. Escolhe o ambiente e as comodidades que combinam com as tuas férias e desfruta da vida ao ar livre no lado oeste de Curaçao."
+
 msgid "Our team hands you the key and shows you the villa. Check-in from 15:00, check-out until 11:00."
 msgstr "A nossa equipa entrega-te a chave e mostra-te a villa. Check-in a partir das 15:00, check-out até às 11:00."
+
+msgid "Our team welcomes your guests, hands over the key and shows them the home."
+msgstr "A nossa equipa recebe os teus hóspedes, entrega a chave e mostra-lhes a casa."
 
 msgid "Our villas"
 msgstr "As nossas villas"
@@ -598,6 +643,9 @@ msgstr "A etiqueta %s não é uma versão válida."
 msgid "Remove"
 msgstr "Remover"
 
+msgid "Rent out your home"
+msgstr "Arrenda a tua casa"
+
 msgid "Repeat"
 msgstr "Repetir"
 
@@ -624,6 +672,9 @@ msgstr "Centro à direita"
 
 msgid "Section eyebrow color"
 msgstr "Cor do sobretítulo das secções"
+
+msgid "Secure resorts"
+msgstr "Resorts seguros"
 
 msgid "See our other villas too"
 msgstr "Vê também as nossas outras villas"
@@ -784,11 +835,23 @@ msgstr "Villas por todo o Bandabou"
 msgid "Wake up between green hills and quiet bays on the west side of Curaçao. Find the villa that suits your group."
 msgstr "Acorda entre colinas verdes e baías tranquilas, no oeste de Curaçao. Encontra a villa ideal para o teu grupo."
 
+msgid "We answer questions, handle bookings and stay in touch with your guests, from their first question until after they leave."
+msgstr "Respondemos a perguntas, tratamos das reservas e mantemos contacto com os teus hóspedes, desde a primeira pergunta até depois da partida."
+
+msgid "We get your home ready for rental and put it online."
+msgstr "Preparamos a tua casa para arrendamento e colocamo-la online."
+
+msgid "We handle the guests"
+msgstr "Tratamos dos hóspedes"
+
 msgid "We know every villa and every little beach in Bandabou. That personal contact makes the difference for our guests. Ayo, see you soon on Curaçao!"
 msgstr "Conhecemos cada villa e cada praia de Bandabou. Esse contacto pessoal faz a diferença para os nossos hóspedes. Ayo, até breve em Curaçao!"
 
 msgid "We live on the island and are there for you, from the key handover to your departure."
 msgstr "Vivemos na ilha e estamos aqui para ti, desde a entrega da chave até à tua partida."
+
+msgid "We live on the island and know Bandabou like no one else. Guests book directly with us, with no platform in between, and get personal contact from booking to departure. You notice it in happy guests and a home that is in good hands."
+msgstr "Vivemos na ilha e conhecemos Bandabou como ninguém. Os hóspedes reservam diretamente connosco, sem plataformas pelo meio, e têm contacto pessoal desde a reserva até à partida. Nota-se em hóspedes satisfeitos e numa casa em boas mãos."
 
 msgid "We take care of rentals and management: from the photos and the guests to cleaning and maintenance. You enjoy the income."
 msgstr "Tratamos do arrendamento e da gestão: das fotos e dos hóspedes à limpeza e à manutenção. Tu aproveitas o rendimento."
@@ -799,6 +862,9 @@ msgstr "Recebemos-te pessoalmente"
 msgid "What this villa offers"
 msgstr "O que esta villa oferece"
 
+msgid "What we arrange for you"
+msgstr "O que tratamos por ti"
+
 msgid "WhatsApp us"
 msgstr "Fala connosco"
 
@@ -807,6 +873,9 @@ msgstr "Que villa e que período?"
 
 msgid "Why Bandabou Curaçao"
 msgstr "Porquê a Bandabou Curaçao"
+
+msgid "Without worrying about the day-to-day running."
+msgstr "Sem preocupações com o dia a dia."
 
 msgid "X"
 msgstr "X"
@@ -817,8 +886,20 @@ msgstr "Não tens permissão para fazer isto."
 msgid "You book directly with Bandabou Curaçao. After your request you will receive the confirmation and payment details from us."
 msgstr "Reservas diretamente com a Bandabou Curaçao. Depois do teu pedido, recebes de nós a confirmação e os dados de pagamento."
 
+msgid "You enjoy the income"
+msgstr "Tu aproveitas os rendimentos"
+
+msgid "You tell us about your home and your wishes."
+msgstr "Falas-nos da tua casa e dos teus desejos."
+
 msgid "you@example.com"
 msgstr "tu@exemplo.pt"
+
+msgid "Your availability is correct everywhere, on our own site and on the platforms where your home is listed, without double bookings."
+msgstr "A tua disponibilidade está sempre certa, no nosso próprio site e nas plataformas onde a tua casa está anunciada, sem reservas duplicadas."
+
+msgid "Your holiday home on Curaçao deserves guests who enjoy it as much as you do. We take the rental and management off your hands, from the first photo to the last clean. You keep your peace of mind, we make sure everything runs smoothly."
+msgstr "A tua casa de férias em Curaçao merece hóspedes que a aproveitem tanto como tu. Tratamos do arrendamento e da gestão, desde a primeira fotografia até à última limpeza. Tu ficas descansado, nós garantimos que tudo corre bem."
 
 msgid "Your holiday starts with a place that suits you. From a cosy holiday home among the green hills to a luxury villa with a sea view: we help you choose and are ready for you on Curaçao. Book directly with us and enjoy personal attention, local tips and a warm welcome. This is where your Curaçao begins."
 msgstr "As tuas férias começam com um lugar à tua medida. De uma casa de férias acolhedora entre colinas verdes a uma villa de luxo com vista para o mar: ajudamos-te a escolher e estamos à tua espera em Curaçao. Reserva diretamente connosco e desfruta de atenção personalizada, dicas locais e uma receção calorosa. Aqui começa o teu Curaçao."

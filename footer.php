@@ -42,7 +42,7 @@ foreach ($socialDefs as $def) {
         <div class="flex max-w-[640px] flex-col gap-[18px]">
             <div class="flex items-center gap-3">
                 <img src="<?php echo esc_url($footerLogo); ?>" alt="" loading="lazy" class="h-[52px] w-auto">
-                <span class="contabai-display text-[26px] font-bold leading-[1.05] text-white"><?php echo implode('<br>', array_map('esc_html', explode(' ', $footerName, 2))); ?></span>
+                <span class="contabai-display text-[26px] font-bold leading-[1.05] text-white"><?php echo esc_html($footerName); ?></span>
             </div>
             <p class="m-0 text-[15px] leading-[1.6]"><?php esc_html_e('Your trusted partner for an unforgettable stay on Curaçao.', 'contabai-bandabou-theme'); ?> <strong class="text-bandabou-gold">Ayo!</strong></p>
         </div>
