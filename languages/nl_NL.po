@@ -10,17 +10,14 @@ msgstr ""
 msgid "100% width"
 msgstr "100% breedte"
 
-msgid "A private pool at every villa"
-msgstr "Privézwembad bij elke villa"
+msgid "A porch, sun loungers and an outdoor dining area at every villa, and a private pool at most of them."
+msgstr "Elke villa heeft een porch, ligbedden en een plek om buiten te eten. Bij de meeste duik je zo je eigen zwembad in."
 
 msgid "A question about the villa, your arrival or a tip for a beach? Just send a message."
 msgstr "Een vraag over de villa, de aankomst of een tip voor een strand? Stuur een appje."
 
 msgid "About Bandabou"
 msgstr "Over Bandabou"
-
-msgid "About Bandabou & Fontein"
-msgstr "Over Bandabou & Fontein"
 
 msgid "About Fontein"
 msgstr "Over Fontein"
@@ -33,9 +30,6 @@ msgstr "Geavanceerd"
 
 msgid "All %d photos"
 msgstr "Alle %d foto's"
-
-msgid "All on Villapark Fontein, all with their own pool. Choose the villa that suits your group."
-msgstr "Allemaal op Villapark Fontein, allemaal met eigen zwembad. Kies de villa die bij jouw gezelschap past."
 
 msgid "All villas"
 msgstr "Alle villa's"
@@ -211,9 +205,6 @@ msgstr "Passend"
 msgid "Content opacity"
 msgstr "Dekking inhoud"
 
-msgid "Cool off whenever you like, with sun loungers and a covered porch for the hottest hours."
-msgstr "Verkoeling wanneer je wilt, met ligbedden en een overdekte porch voor de warmste uren."
-
 msgid "Cover"
 msgstr "Vullend"
 
@@ -285,9 +276,6 @@ msgstr "Gratis parkeren bij de villa"
 
 msgid "from %s"
 msgstr "vanaf %s"
-
-msgid "Gated villa park"
-msgstr "Afgesloten villapark"
 
 msgid "GitHub answered with HTTP %d."
 msgstr "GitHub antwoordde met HTTP %d."
@@ -400,8 +388,11 @@ msgstr "LinkedIn"
 msgid "List your home?"
 msgstr "Ook verhuren?"
 
-msgid "Local team in Julianadorp"
-msgstr "Lokaal team in Julianadorp"
+msgid "Local team in Bandabou"
+msgstr "Lokaal team in Bandabou"
+
+msgid "Locally trusted. Personally arranged."
+msgstr "Lokaal vertrouwd. Persoonlijk geregeld."
 
 msgid "Location"
 msgstr "Ligging"
@@ -411,6 +402,9 @@ msgstr "Logo"
 
 msgid "Logo height"
 msgstr "Logohoogte"
+
+msgid "Made for outdoor living"
+msgstr "Het leven speelt zich buiten af"
 
 msgid "Main menu"
 msgstr "Hoofdmenu"
@@ -481,8 +475,8 @@ msgstr "Ons team geeft de sleutel en laat je de villa zien. Inchecken vanaf 15:0
 msgid "Our villas"
 msgstr "Onze villa's"
 
-msgid "Our villas are on Villapark Fontein: a quiet, gated park on a hill, with wide views and a Caribbean sunset from your own terrace in the evening."
-msgstr "Onze villa's liggen op Villapark Fontein: een rustig, afgesloten park op een heuvel, met wijds uitzicht en 's avonds een Caribische zonsondergang vanaf je eigen terras."
+msgid "Our villas are tucked away in the green hills of Bandabou: quiet, close to the beaches, and in the evening a Caribbean sunset from your terrace."
+msgstr "Onze villa's liggen verscholen tussen de groene heuvels van Bandabou: rustig, vlak bij de stranden, en 's avonds de Caribische zonsondergang vanaf je terras."
 
 msgid "Overlay color"
 msgstr "Overlay-kleur"
@@ -513,6 +507,9 @@ msgstr "Alinea-afstand"
 
 msgid "Payoff"
 msgstr "Slogan"
+
+msgid "Peace and space"
+msgstr "Rust en ruimte"
 
 msgid "Personal contact, from booking to departure"
 msgstr "Persoonlijk contact, van boeking tot vertrek"
@@ -667,6 +664,9 @@ msgstr "Subkopkleur"
 msgid "Switches off theme updates from GitHub. Turn ON for a local development site that is a git checkout. Leave OFF in production."
 msgstr "Schakelt thema-updates vanaf GitHub uit. Zet AAN voor een lokale ontwikkelsite die een git-checkout is. Laat UIT in productie."
 
+msgid "Team Bandabou Curaçao"
+msgstr "Team Bandabou Curaçao"
+
 msgid "Tell us what you are looking for"
 msgstr "Vertel ons wat je zoekt"
 
@@ -693,6 +693,9 @@ msgstr "De rustige westkant van Curaçao"
 
 msgid "Theme color"
 msgstr "Themakleur"
+
+msgid "This is how we work"
+msgstr "Zo werken wij"
 
 msgid "This page does not exist (anymore). Our villas are still here."
 msgstr "Deze pagina bestaat niet (meer). Onze villa's zijn er nog wel."
@@ -748,8 +751,11 @@ msgstr "Villapark Fontein · Bandabou · Curaçao"
 msgid "Villas"
 msgstr "Villa's"
 
-msgid "Villas in one peaceful place"
-msgstr "Villa's op één rustige plek"
+msgid "Villas across Bandabou"
+msgstr "Villa's verspreid over Bandabou"
+
+msgid "Wake up between green hills and quiet bays on the west side of Curaçao. Find the villa that suits your group."
+msgstr "Wakker worden tussen groene heuvels en rustige baaien, aan de westkant van Curaçao. Vind de villa die bij jouw gezelschap past."
 
 msgid "We know every villa and every little beach in Bandabou. That personal contact makes the difference for our guests. Ayo, see you soon on Curaçao!"
 msgstr "We kennen elke villa en elk strandje in Bandabou. Dat persoonlijke contact maakt het verschil voor onze gasten. Ayo, tot snel op Curaçao!"
@@ -763,9 +769,6 @@ msgstr "Wij verzorgen de verhuur en het beheer: van de foto's en de gasten tot d
 msgid "We welcome you ourselves"
 msgstr "We ontvangen je zelf"
 
-msgid "Welcome to the most beautiful side of the island."
-msgstr "Welkom aan de mooiste kant van het eiland."
-
 msgid "What this villa offers"
 msgstr "Wat deze villa biedt"
 
@@ -778,9 +781,6 @@ msgstr "Welke villa en periode?"
 msgid "Why Bandabou Curaçao"
 msgstr "Waarom Bandabou Curaçao"
 
-msgid "Why book with us"
-msgstr "Waarom bij ons boeken"
-
 msgid "X"
 msgstr "X"
 
@@ -792,6 +792,9 @@ msgstr "Je reserveert rechtstreeks bij Bandabou Curaçao. Na je aanvraag ontvang
 
 msgid "you@example.com"
 msgstr "jij@voorbeeld.nl"
+
+msgid "Your holiday starts with a place that suits you. From a cosy holiday home among the green hills to a luxury villa with a sea view: we help you choose and are ready for you on Curaçao. Book directly with us and enjoy personal attention, local tips and a warm welcome. This is where your Curaçao begins."
+msgstr "Jouw vakantie begint met een plek die bij je past. Van een knus vakantiehuis tussen de groene heuvels tot een luxe villa met uitzicht op zee: wij helpen je kiezen en staan op Curaçao voor je klaar. Boek rechtstreeks bij ons en geniet van persoonlijke aandacht, lokale tips en een warm welkom. Hier begint jouw Curaçao."
 
 msgid "Your name"
 msgstr "Je naam"

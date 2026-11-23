@@ -63,7 +63,7 @@ $mmPhoto      = \BandabouTheme\PhotoHero::image(0);
                 </div>
                 <div class="mt-6 flex flex-col gap-2.5 md:flex-row">
                     <?php if ($mmCtaShow) : ?>
-                        <a href="<?php echo esc_url($mmCtaUrl); ?>" class="bandabou-cta h-13 justify-center px-7 text-base">
+                        <a href="<?php echo esc_url($mmCtaUrl); ?>" target="_blank" rel="noopener noreferrer" class="bandabou-cta h-13 justify-center px-7 text-base">
                             <?php echo Heroicon::render('whatsapp', 'brands', 'w-5 h-5'); ?><?php echo esc_html($mmCtaLabel); ?>
                         </a>
                     <?php endif; ?>

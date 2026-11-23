@@ -10,17 +10,14 @@ msgstr ""
 msgid "100% width"
 msgstr "100 % de largura"
 
-msgid "A private pool at every villa"
-msgstr "Piscina privada em cada villa"
+msgid "A porch, sun loungers and an outdoor dining area at every villa, and a private pool at most of them."
+msgstr "Alpendre, espreguiçadeiras e zona de refeições exterior em cada villa, e piscina privada na maioria."
 
 msgid "A question about the villa, your arrival or a tip for a beach? Just send a message."
 msgstr "Uma pergunta sobre a villa, a chegada ou uma dica de praia? Envia-nos uma mensagem."
 
 msgid "About Bandabou"
 msgstr "Sobre Bandabou"
-
-msgid "About Bandabou & Fontein"
-msgstr "Sobre Bandabou e Fontein"
 
 msgid "About Fontein"
 msgstr "Sobre Fontein"
@@ -33,9 +30,6 @@ msgstr "Avançado"
 
 msgid "All %d photos"
 msgstr "Todas as %d fotos"
-
-msgid "All on Villapark Fontein, all with their own pool. Choose the villa that suits your group."
-msgstr "Todas em Villapark Fontein, todas com piscina própria. Escolhe a villa ideal para o teu grupo."
 
 msgid "All villas"
 msgstr "Todas as villas"
@@ -211,9 +205,6 @@ msgstr "Conter"
 msgid "Content opacity"
 msgstr "Opacidade do conteúdo"
 
-msgid "Cool off whenever you like, with sun loungers and a covered porch for the hottest hours."
-msgstr "Refresca-te quando quiseres, com espreguiçadeiras e um alpendre coberto para as horas de mais calor."
-
 msgid "Cover"
 msgstr "Cobrir"
 
@@ -285,9 +276,6 @@ msgstr "Estacionamento gratuito na villa"
 
 msgid "from %s"
 msgstr "a partir das %s"
-
-msgid "Gated villa park"
-msgstr "Parque de villas fechado"
 
 msgid "GitHub answered with HTTP %d."
 msgstr "O GitHub respondeu com HTTP %d."
@@ -400,8 +388,11 @@ msgstr "LinkedIn"
 msgid "List your home?"
 msgstr "Arrendar a tua casa?"
 
-msgid "Local team in Julianadorp"
-msgstr "Equipa local em Julianadorp"
+msgid "Local team in Bandabou"
+msgstr "Equipa local em Bandabou"
+
+msgid "Locally trusted. Personally arranged."
+msgstr "Confiança local. Atendimento pessoal."
 
 msgid "Location"
 msgstr "Localização"
@@ -411,6 +402,9 @@ msgstr "Logótipo"
 
 msgid "Logo height"
 msgstr "Altura do logótipo"
+
+msgid "Made for outdoor living"
+msgstr "Feito para viver ao ar livre"
 
 msgid "Main menu"
 msgstr "Menu principal"
@@ -481,8 +475,8 @@ msgstr "A nossa equipa entrega-te a chave e mostra-te a villa. Check-in a partir
 msgid "Our villas"
 msgstr "As nossas villas"
 
-msgid "Our villas are on Villapark Fontein: a quiet, gated park on a hill, with wide views and a Caribbean sunset from your own terrace in the evening."
-msgstr "As nossas villas ficam em Villapark Fontein: um parque tranquilo e fechado numa colina, com vistas amplas e, ao fim do dia, um pôr do sol caribenho no teu próprio terraço."
+msgid "Our villas are tucked away in the green hills of Bandabou: quiet, close to the beaches, and in the evening a Caribbean sunset from your terrace."
+msgstr "As nossas villas escondem-se entre as colinas verdes de Bandabou: tranquilas, perto das praias e, ao fim do dia, um pôr do sol caribenho no teu terraço."
 
 msgid "Overlay color"
 msgstr "Cor da sobreposição"
@@ -513,6 +507,9 @@ msgstr "Espaçamento de parágrafo"
 
 msgid "Payoff"
 msgstr "Slogan"
+
+msgid "Peace and space"
+msgstr "Paz e espaço"
 
 msgid "Personal contact, from booking to departure"
 msgstr "Contacto pessoal, da reserva à partida"
@@ -667,6 +664,9 @@ msgstr "Cor do subtítulo"
 msgid "Switches off theme updates from GitHub. Turn ON for a local development site that is a git checkout. Leave OFF in production."
 msgstr "Desativa as atualizações do tema a partir do GitHub. LIGA para um site local de desenvolvimento que seja um checkout git. Deixa DESLIGADO em produção."
 
+msgid "Team Bandabou Curaçao"
+msgstr "A equipa Bandabou Curaçao"
+
 msgid "Tell us what you are looking for"
 msgstr "Diz-nos o que procuras"
 
@@ -693,6 +693,9 @@ msgstr "O tranquilo lado oeste de Curaçao"
 
 msgid "Theme color"
 msgstr "Cor do tema"
+
+msgid "This is how we work"
+msgstr "É assim que trabalhamos"
 
 msgid "This page does not exist (anymore). Our villas are still here."
 msgstr "Esta página não existe (ou já não existe). As nossas villas continuam aqui."
@@ -748,8 +751,11 @@ msgstr "Villapark Fontein · Bandabou · Curaçao"
 msgid "Villas"
 msgstr "Villas"
 
-msgid "Villas in one peaceful place"
-msgstr "Villas num só lugar tranquilo"
+msgid "Villas across Bandabou"
+msgstr "Villas por todo o Bandabou"
+
+msgid "Wake up between green hills and quiet bays on the west side of Curaçao. Find the villa that suits your group."
+msgstr "Acorda entre colinas verdes e baías tranquilas, no oeste de Curaçao. Encontra a villa ideal para o teu grupo."
 
 msgid "We know every villa and every little beach in Bandabou. That personal contact makes the difference for our guests. Ayo, see you soon on Curaçao!"
 msgstr "Conhecemos cada villa e cada praia de Bandabou. Esse contacto pessoal faz a diferença para os nossos hóspedes. Ayo, até breve em Curaçao!"
@@ -763,9 +769,6 @@ msgstr "Tratamos do arrendamento e da gestão: das fotos e dos hóspedes à limp
 msgid "We welcome you ourselves"
 msgstr "Recebemos-te pessoalmente"
 
-msgid "Welcome to the most beautiful side of the island."
-msgstr "Bem-vindo ao lado mais bonito da ilha."
-
 msgid "What this villa offers"
 msgstr "O que esta villa oferece"
 
@@ -778,9 +781,6 @@ msgstr "Que villa e que período?"
 msgid "Why Bandabou Curaçao"
 msgstr "Porquê a Bandabou Curaçao"
 
-msgid "Why book with us"
-msgstr "Porquê reservar connosco"
-
 msgid "X"
 msgstr "X"
 
@@ -792,6 +792,9 @@ msgstr "Reservas diretamente com a Bandabou Curaçao. Depois do teu pedido, rece
 
 msgid "you@example.com"
 msgstr "tu@exemplo.pt"
+
+msgid "Your holiday starts with a place that suits you. From a cosy holiday home among the green hills to a luxury villa with a sea view: we help you choose and are ready for you on Curaçao. Book directly with us and enjoy personal attention, local tips and a warm welcome. This is where your Curaçao begins."
+msgstr "As tuas férias começam com um lugar à tua medida. De uma casa de férias acolhedora entre colinas verdes a uma villa de luxo com vista para o mar: ajudamos-te a escolher e estamos à tua espera em Curaçao. Reserva diretamente connosco e desfruta de atenção personalizada, dicas locais e uma receção calorosa. Aqui começa o teu Curaçao."
 
 msgid "Your name"
 msgstr "O teu nome"

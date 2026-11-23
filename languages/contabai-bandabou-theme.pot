@@ -9,16 +9,13 @@ msgstr ""
 msgid "100% width"
 msgstr ""
 
-msgid "A private pool at every villa"
+msgid "A porch, sun loungers and an outdoor dining area at every villa, and a private pool at most of them."
 msgstr ""
 
 msgid "A question about the villa, your arrival or a tip for a beach? Just send a message."
 msgstr ""
 
 msgid "About Bandabou"
-msgstr ""
-
-msgid "About Bandabou & Fontein"
 msgstr ""
 
 msgid "About Fontein"
@@ -31,9 +28,6 @@ msgid "Advanced"
 msgstr ""
 
 msgid "All %d photos"
-msgstr ""
-
-msgid "All on Villapark Fontein, all with their own pool. Choose the villa that suits your group."
 msgstr ""
 
 msgid "All villas"
@@ -210,9 +204,6 @@ msgstr ""
 msgid "Content opacity"
 msgstr ""
 
-msgid "Cool off whenever you like, with sun loungers and a covered porch for the hottest hours."
-msgstr ""
-
 msgid "Cover"
 msgstr ""
 
@@ -283,9 +274,6 @@ msgid "Free parking at the villa"
 msgstr ""
 
 msgid "from %s"
-msgstr ""
-
-msgid "Gated villa park"
 msgstr ""
 
 msgid "GitHub answered with HTTP %d."
@@ -399,7 +387,10 @@ msgstr ""
 msgid "List your home?"
 msgstr ""
 
-msgid "Local team in Julianadorp"
+msgid "Local team in Bandabou"
+msgstr ""
+
+msgid "Locally trusted. Personally arranged."
 msgstr ""
 
 msgid "Location"
@@ -409,6 +400,9 @@ msgid "Logo"
 msgstr ""
 
 msgid "Logo height"
+msgstr ""
+
+msgid "Made for outdoor living"
 msgstr ""
 
 msgid "Main menu"
@@ -480,7 +474,7 @@ msgstr ""
 msgid "Our villas"
 msgstr ""
 
-msgid "Our villas are on Villapark Fontein: a quiet, gated park on a hill, with wide views and a Caribbean sunset from your own terrace in the evening."
+msgid "Our villas are tucked away in the green hills of Bandabou: quiet, close to the beaches, and in the evening a Caribbean sunset from your terrace."
 msgstr ""
 
 msgid "Overlay color"
@@ -511,6 +505,9 @@ msgid "Paragraph spacing"
 msgstr ""
 
 msgid "Payoff"
+msgstr ""
+
+msgid "Peace and space"
 msgstr ""
 
 msgid "Personal contact, from booking to departure"
@@ -666,6 +663,9 @@ msgstr ""
 msgid "Switches off theme updates from GitHub. Turn ON for a local development site that is a git checkout. Leave OFF in production."
 msgstr ""
 
+msgid "Team Bandabou Curaçao"
+msgstr ""
+
 msgid "Tell us what you are looking for"
 msgstr ""
 
@@ -691,6 +691,9 @@ msgid "The quiet west side of Curaçao"
 msgstr ""
 
 msgid "Theme color"
+msgstr ""
+
+msgid "This is how we work"
 msgstr ""
 
 msgid "This page does not exist (anymore). Our villas are still here."
@@ -747,7 +750,10 @@ msgstr ""
 msgid "Villas"
 msgstr ""
 
-msgid "Villas in one peaceful place"
+msgid "Villas across Bandabou"
+msgstr ""
+
+msgid "Wake up between green hills and quiet bays on the west side of Curaçao. Find the villa that suits your group."
 msgstr ""
 
 msgid "We know every villa and every little beach in Bandabou. That personal contact makes the difference for our guests. Ayo, see you soon on Curaçao!"
@@ -762,9 +768,6 @@ msgstr ""
 msgid "We welcome you ourselves"
 msgstr ""
 
-msgid "Welcome to the most beautiful side of the island."
-msgstr ""
-
 msgid "What this villa offers"
 msgstr ""
 
@@ -777,9 +780,6 @@ msgstr ""
 msgid "Why Bandabou Curaçao"
 msgstr ""
 
-msgid "Why book with us"
-msgstr ""
-
 msgid "X"
 msgstr ""
 
@@ -790,6 +790,9 @@ msgid "You book directly with Bandabou Curaçao. After your request you will rec
 msgstr ""
 
 msgid "you@example.com"
+msgstr ""
+
+msgid "Your holiday starts with a place that suits you. From a cosy holiday home among the green hills to a luxury villa with a sea view: we help you choose and are ready for you on Curaçao. Book directly with us and enjoy personal attention, local tips and a warm welcome. This is where your Curaçao begins."
 msgstr ""
 
 msgid "Your name"

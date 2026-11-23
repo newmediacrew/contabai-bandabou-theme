@@ -30,6 +30,8 @@
 
 .bandabou-cta { display: inline-flex; align-items: center; gap: .5rem; border-radius: 9999px; background: linear-gradient(135deg, #F6A623 0%, var(--theme-color, #EE6A3C) 100%); color: #fff; font-weight: 700; text-decoration: none; box-shadow: 0 8px 22px color-mix(in srgb, var(--theme-color, #EE6A3C) 45%, transparent); transition: filter .15s ease; }
 .bandabou-cta:hover { color: #fff; filter: brightness(1.06); }
+.bandabou-whatsapp-fab { position: fixed; right: 20px; bottom: calc(20px + env(safe-area-inset-bottom)); z-index: 45; display: flex; align-items: center; justify-content: center; width: 56px; height: 56px; border-radius: 9999px; background: #25D366; color: #fff; box-shadow: 0 8px 22px rgba(6, 38, 54, .28); transition: transform .15s ease; }
+.bandabou-whatsapp-fab:hover { color: #fff; transform: scale(1.06); }
 .bandabou-eyebrow-on-dark { font-size: .78rem; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--hero-eyebrow-color, #F4C22B); }
 
 .bandabou-topbar { background: var(--topbar-bg, #0B5A6E); color: var(--topbar-text, #fff); }
@@ -145,6 +147,7 @@
 
 .bandabou-welcome { position: absolute; right: 16px; bottom: -24px; max-width: 250px; padding: 22px 26px; border-radius: 22px; background: linear-gradient(135deg, #F6A623 0%, var(--theme-color, #EE6A3C) 100%); color: #fff; box-shadow: 0 16px 36px rgba(11, 79, 108, .3); }
 .bandabou-why { background: linear-gradient(135deg, #0B5A6E 0%, #0E8C96 60%, #12A7A3 100%); }
+.bandabou-quote-card { border-radius: 28px; background: #fff; box-shadow: 0 1px 2px rgba(11, 58, 76, .06), 0 18px 40px rgba(11, 58, 76, .1); }
 .bandabou-contact-icon { display: flex; flex: none; align-items: center; justify-content: center; width: 48px; height: 48px; border: 1.5px solid #C9A65A; border-radius: 9999px; color: var(--heading-color, #0B4F6C); }
 .bandabou-contact-form { padding: 28px; border-radius: 28px; background: #fff; box-shadow: 0 1px 2px rgba(11, 58, 76, .06), 0 14px 34px rgba(11, 58, 76, .08); }
 .bandabou-contact-label { display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 600; color: var(--content-text-color, #3A4A52); }

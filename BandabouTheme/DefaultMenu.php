@@ -9,7 +9,6 @@ class DefaultMenu
         return [
             ['label' => __('Villas', 'contabai-bandabou-theme'), 'url' => home_url('/#villas')],
             ['label' => __('Bandabou & Fontein', 'contabai-bandabou-theme'), 'url' => home_url('/#bandabou')],
-            ['label' => __('List your home?', 'contabai-bandabou-theme'), 'url' => home_url('/#verhuren')],
             ['label' => __('Contact', 'contabai-bandabou-theme'), 'url' => home_url('/#contact')],
         ];
     }
