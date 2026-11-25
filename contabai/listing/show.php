@@ -102,18 +102,22 @@ $reviewsEndpoint  = rest_url('contabai/v1/sanctum/listing/reviews/' . $reviewsLi
             $unavailableDates[] = gmdate('Y-m-d', strtotime($windowFrom . ' +' . $day . ' days'));
         }
     }
+    $prepDays         = (int) ($availability['preparation_days'] ?? 0);
     $occupiedNights   = $availability['unavailable_dates'] ?? [];
     $disabledSet      = array_flip($unavailableDates);
     $checkoutOnly     = [];
-    foreach ($occupiedNights as $night) {
-        $prev = gmdate('Y-m-d', strtotime($night . ' -1 day'));
-        if ($windowFrom && $prev >= $windowFrom && ! isset($disabledSet[$prev])) {
-            $checkoutOnly[] = $night;
+    if ($prepDays === 0) {
+        foreach ($occupiedNights as $night) {
+            $prev = gmdate('Y-m-d', strtotime($night . ' -1 day'));
+            if ($windowFrom && $prev >= $windowFrom && ! isset($disabledSet[$prev])) {
+                $checkoutOnly[] = $night;
+            }
         }
     }
     $unavailableDates = array_values(array_diff($unavailableDates, $checkoutOnly));
     $windowTo         = $availability['window']['to'] ?? null;
     $minNights        = (int) ($listing['min_nights'] ?? 1);
+    $bookableFrom     = $windowFrom ? gmdate('Y-m-d', strtotime($windowFrom . ' +' . $leadDays . ' days')) : null;
     $maxNights        = (int) ($listing['max_nights'] ?? 0);
     $rangeErrorMsg    = ($minNights && $maxNights)
         ? sprintf(__('Stay must be between %1$d and %2$d nights.', 'contabai'), $minNights, $maxNights)
@@ -257,8 +261,18 @@ if ($depositCents > 0) {
 
             <section id="beschikbaarheid" class="bandabou-villa-section scroll-mt-24">
                 <h2 class="bandabou-villa-h2"><?php echo esc_html__('Availability', 'contabai'); ?></h2>
-                <div class="mt-[22px] rounded-[22px] border border-[#EADFCB] bg-white p-4 sm:p-5">
+                <div class="contabai-availability mt-[22px] rounded-[22px] border border-[#EADFCB] bg-white p-4 sm:p-5">
                     <div x-ref="cal"></div>
+                    <template x-ref="clearTpl">
+                        <button type="button" class="contabai-clear-date" aria-label="<?php esc_attr_e('Clear dates', 'contabai'); ?>"><span class="contabai-clear-date-x"><?php echo \Contabai\Heroicon::outline('x-mark', 'w-3 h-3'); ?></span><?php echo esc_html__('Clear', 'contabai'); ?></button>
+                    </template>
+                    <div class="mt-5 border-t border-[#F0E6D5] pt-4">
+                        <ul class="m-0! grid list-none! grid-cols-2 gap-x-4 gap-y-2.5 p-0! text-sm text-[#5A5348] sm:grid-cols-3">
+                            <li class="flex items-center gap-2"><span class="contabai-cal-key is-pick" aria-hidden="true">8</span><?php echo esc_html__('Arrival or departure', 'contabai'); ?></li>
+                            <li class="flex items-center gap-2"><span class="contabai-cal-key is-no-pick" aria-hidden="true">8</span><?php echo esc_html__('No arrival or departure', 'contabai'); ?></li>
+                            <li class="flex items-center gap-2"><span class="contabai-cal-key is-booked" aria-hidden="true">8</span><?php echo esc_html__('Occupied', 'contabai'); ?></li>
+                        </ul>
+                    </div>
                 </div>
                 <div x-show="nights" x-cloak
                      x-effect="document.body.style.paddingBottom = (nights && ! window.matchMedia('(min-width: 1024px)').matches) ? '104px' : ''"
@@ -297,7 +311,7 @@ if ($depositCents > 0) {
                     <?php endforeach; ?>
                 </dl>
                 <?php if (! empty($listing['utility_rates'])) : ?>
-                    <p class="mt-4 text-[15px] leading-[1.6] text-[#5A5348]"><?php echo esc_html__('Read at check-out and settled from your deposit.', 'contabai'); ?></p>
+                    <p class="mt-4 text-[15px] leading-[1.6] text-[#5A5348]"><?php echo esc_html__('Read at check-in and check-out and, where applicable, settled from your deposit.', 'contabai'); ?></p>
                 <?php endif; ?>
                 <div class="mt-5 space-y-3" x-data="{ open: '', toggle(k) { this.open = this.open === k ? '' : k } }">
                     <?php
@@ -527,6 +541,10 @@ if ($depositCents > 0) {
                 windowMax: <?php echo wp_json_encode($windowTo); ?>,               // booking horizon (today + booking_window_months), or null
                 minNights: <?php echo $minNights; ?>,
                 maxNights: <?php echo $maxNights; ?>,                               // 0 = no max
+                prepDays: <?php echo $prepDays; ?>,                                 // layover nights after a stay
+                bookableFrom: <?php echo wp_json_encode($bookableFrom); ?>,         // first possible arrival (today + notice days)
+                noArrivalErr: '<?php echo esc_js(sprintf(__('A stay of at least %d nights does not fit from this date. Pick an underlined arrival date.', 'contabai'), $minNights)); ?>',
+                layoverErr: '<?php echo esc_js(__('The host needs time to prepare the home for the next guest. Pick an underlined departure date.', 'contabai')); ?>',
                 nightsLabel: '<?php echo esc_js(__('nights', 'contabai')); ?>',
                 nightLabel: '<?php echo esc_js(__('night', 'contabai')); ?>',
                 rangeErr: '<?php echo esc_js($rangeErrorMsg); ?>',
@@ -568,8 +586,24 @@ if ($depositCents > 0) {
                         selectedTheme: 'light',
                         onClickDate: function (cal) { component.handleSelect(cal); },
                         onCreateDateEls: function (cal, dateEl) {
-                            if (! component.checkoutOnly[dateEl.getAttribute('data-vc-date')]) return;
-                            dateEl.setAttribute('data-contabai-checkout-only', '');
+                            let date = dateEl.getAttribute('data-vc-date');
+                            if ((component.windowFrom && date < component.windowFrom) || (component.windowMax && date > component.windowMax)) {
+                                dateEl.setAttribute('data-contabai-closed', '');
+                                return;
+                            }
+                            let parts = date.split('-').map(Number);
+                            let prev = new Date(Date.UTC(parts[0], parts[1] - 1, parts[2] - 1)).toISOString().slice(0, 10);
+                            if (component.occupied[date] && component.occupied[prev]) {
+                                dateEl.setAttribute('data-contabai-booked', '');
+                                return;
+                            }
+                            if (component.occupied[date]) {
+                                dateEl.setAttribute('data-contabai-arrival', '');
+                            } else if (component.occupied[prev]) {
+                                dateEl.setAttribute('data-contabai-departure', '');
+                            }
+                            component.markDay(dateEl);
+                            if (! component.checkoutOnly[date]) return;
                             let btn = dateEl.querySelector('[data-vc-date-btn]');
                             if (btn) { btn.setAttribute('title', component.checkoutOnlyLabel); }
                         }
@@ -589,8 +623,13 @@ if ($depositCents > 0) {
                             this.rejectRange(cal, this.checkoutOnlyErr);
                             return;
                         }
+                        if (dates[0] && ! this.canArrive(dates[0])) {
+                            this.rejectRange(cal, this.noArrivalErr);
+                            return;
+                        }
                         this.arrival = dates[0] || ''; this.departure = ''; this.nights = 0;
                         this.quote = null;
+                        this.refreshMarks();
                         return;
                     }
                     let firstDate = dates[0], lastDate = dates[dates.length - 1];
@@ -603,14 +642,26 @@ if ($depositCents > 0) {
                         this.rejectRange(cal, this.occupiedErr);
                         return;
                     }
+                    if (! this.nightsFree(lastDate, this.prepDays)) {
+                        this.rejectRange(cal, this.layoverErr);
+                        return;
+                    }
                     this.arrival = firstDate; this.departure = lastDate; this.nights = nights;
+                    this.refreshMarks();
                     this.fetchQuote();   // public quote — real price for everyone
                 },
                 rejectRange: function (cal, message) {
                     this.arrival = ''; this.departure = ''; this.nights = 0;
                     this.quote = null;
-                    cal.set({ selectedDates: [] });
+                    cal.set({ selectedDates: [] }, { month: false, year: false });
+                    this.refreshMarks();
                     if (window.contabaiToast && message) contabaiToast(message, 'warning');
+                },
+                clearDates: function () {
+                    this.arrival = ''; this.departure = ''; this.nights = 0;
+                    this.quote = null;
+                    this.calendar.set({ selectedDates: [] }, { month: false, year: false });
+                    this.refreshMarks();
                 },
                 hasOccupiedNight: function (firstDate, lastDate) {
                     let parts = firstDate.split('-').map(Number);
@@ -622,6 +673,52 @@ if ($depositCents > 0) {
                         night = cursor.toISOString().slice(0, 10);
                     }
                     return false;
+                },
+                addDays: function (date, days) {
+                    let parts = date.split('-').map(Number);
+                    return new Date(Date.UTC(parts[0], parts[1] - 1, parts[2] + days)).toISOString().slice(0, 10);
+                },
+                nightsFree: function (from, count) {
+                    for (let i = 0; i < count; i++) {
+                        if (this.occupied[this.addDays(from, i)]) return false;
+                    }
+                    return true;
+                },
+                canArrive: function (date) {
+                    if (this.bookableFrom && date < this.bookableFrom) return false;
+                    if (this.windowMax && date > this.windowMax) return false;
+                    return this.nightsFree(date, this.minNights) && this.nightsFree(this.addDays(date, this.minNights), this.prepDays);
+                },
+                canDepart: function (arrival, date) {
+                    let nights = Math.round((new Date(date) - new Date(arrival)) / 86400000);
+                    if (nights < this.minNights || (this.maxNights && nights > this.maxNights)) return false;
+                    return this.nightsFree(arrival, nights) && this.nightsFree(date, this.prepDays);
+                },
+                markDay: function (dateEl) {
+                    let self = this;
+                    dateEl.removeAttribute('data-contabai-can-pick');
+                    dateEl.removeAttribute('data-contabai-no-pick');
+                    let oldClear = dateEl.querySelector('.contabai-clear-date');
+                    if (oldClear) { oldClear.remove(); }
+                    if (! dateEl.querySelector('[data-vc-date-btn]') || dateEl.hasAttribute('data-contabai-closed') || dateEl.hasAttribute('data-contabai-booked')) return;
+                    let date = dateEl.getAttribute('data-vc-date');
+                    if (this.arrival && date === this.arrival) {
+                        let clear = this.$refs.clearTpl.content.firstElementChild.cloneNode(true);
+                        clear.addEventListener('click', function (event) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                            self.clearDates();
+                        });
+                        dateEl.appendChild(clear);
+                    }
+                    let picking = this.arrival && ! this.departure;
+                    if (picking && date === this.arrival) return;
+                    let ok = picking ? (date > this.arrival && this.canDepart(this.arrival, date)) : this.canArrive(date);
+                    dateEl.setAttribute(ok ? 'data-contabai-can-pick' : 'data-contabai-no-pick', '');
+                },
+                refreshMarks: function () {
+                    let self = this;
+                    self.$refs.cal.querySelectorAll('[data-vc-date]').forEach(function (el) { self.markDay(el); });
                 },
                 fmt: function (d) {
                     try { return new Date(d + 'T00:00:00').toLocaleDateString(this.locale, { weekday: 'short', day: 'numeric', month: 'short' }); }
@@ -659,7 +756,8 @@ if ($depositCents > 0) {
                 quoteFailed: function (status) {
                     this.arrival = ''; this.departure = ''; this.nights = 0;
                     this.quote = null;
-                    if (this.calendar) { this.calendar.set({ selectedDates: [] }); }
+                    if (this.calendar) { this.calendar.set({ selectedDates: [] }, { month: false, year: false }); }
+                    this.refreshMarks();
                     if (window.contabaiToast) { contabaiToast(contabaiStatusText(status, this.quoteErr), 'danger'); }
                 },
                 startBooking: function () {
@@ -678,7 +776,7 @@ if ($depositCents > 0) {
                     self.calendar.init();
                     window.addEventListener('resize', function () {
                         let months = self.monthsForWidth();
-                        if (months !== self.cols) { self.cols = months; self.calendar.set(self.options(months)); }
+                        if (months !== self.cols) { self.cols = months; self.calendar.set(self.options(months), { month: false, year: false, dates: false }); }
                     });
                 }
             };
