@@ -128,24 +128,40 @@ $reviewsEndpoint  = rest_url('contabai/v1/sanctum/listing/reviews/' . $reviewsLi
     $loginUrl      = home_url('/' . CONTABAI_LOGIN_PAGE_SLUG);
     $bookUrl       = home_url('/' . CONTABAI_BOOK_PAGE_SLUG . '/');
     $listingCosts  = $listing['listing_costs'] ?? [];
+    $baseGuests    = (int) ($listing['base_price_guests'] ?? 0);
 
-$costList = '';
-foreach ($listingCosts as $c) {
-    $cLabel    = $c['label'] ?: ($labels['additional_cost_types'][$c['type_key']] ?? $c['type_key']);
-    $isPercent = strpos((string) $c['billing_unit'], 'percent_') === 0;
-    $rate      = $isPercent ? number_format(((int) $c['amount_cents']) / 100, 2, '.', '') . '%' : $moneyLabel($c['amount_cents']);
-    $unit      = $labels['cost_billing_units'][$c['billing_unit']] ?? $c['billing_unit'];
-    if (($c['type_key'] ?? '') === 'extra_person' && isset($listing['base_price_guests'])) {
-        $cLabel .= ' (' . sprintf(_n('Above %d guest', 'Above %d guests', (int) $listing['base_price_guests'], 'contabai'), (int) $listing['base_price_guests']) . ')';
-    } elseif (($c['type_key'] ?? '') === 'pet') {
-        $cLabel .= ' (' . __('Only with pets', 'contabai') . ')';
+$totalCosts      = [];
+$costList        = '';
+$notIncludedRows = '';
+foreach ($listingCosts as $cost) {
+    $costLabel = $cost['label'] ?: ($labels['additional_cost_types'][$cost['type_key']] ?? $cost['type_key']);
+    $isPercent = strpos((string) $cost['billing_unit'], 'percent_') === 0;
+    $rate      = $isPercent ? number_format(((int) $cost['amount_cents']) / 100, 2, '.', '') . '%' : $moneyLabel($cost['amount_cents']);
+    $unit      = $labels['cost_billing_units'][$cost['billing_unit']] ?? $cost['billing_unit'];
+    if (($cost['classification'] ?? '') !== 'mandatory' || in_array($cost['type_key'] ?? '', ['extra_person', 'pet'], true)) {
+        if (($cost['type_key'] ?? '') === 'extra_person') {
+            $costLabel .= ' (' . sprintf(_n('Above %d guest', 'Above %d guests', $baseGuests, 'contabai'), $baseGuests) . ')';
+        } elseif (($cost['type_key'] ?? '') === 'pet') {
+            $costLabel .= ' (' . __('Only with pets', 'contabai') . ')';
+        } else {
+            $unit .= ' · ' . ($labels['cost_classifications'][$cost['classification']] ?? $cost['classification']);
+        }
+        $notIncludedRows .= '<div class="flex justify-between gap-3"><span class="min-w-0">' . esc_html($costLabel) . '</span><span class="text-right font-semibold"><span class="whitespace-nowrap">' . esc_html($rate) . '</span> <span class="block whitespace-nowrap text-[13px] font-normal text-[#5A5348]">' . esc_html($unit) . '</span></span></div>';
+        continue;
     }
-    $costList .= '<div class="flex justify-between gap-3"><dt class="min-w-0 text-[color:var(--content-text-color,#3A4A52)]">' . esc_html($cLabel) . '</dt><dd class="m-0 min-w-0 text-right font-semibold"><span class="whitespace-nowrap">' . esc_html($rate) . '</span> <span class="block text-sm font-normal text-[#5A5348]">' . esc_html($unit) . '</span></dd></div>';
+    $costIndex    = count($totalCosts);
+    $costSubline  = $isPercent ? sprintf(__('%s of the rent', 'contabai'), $rate) : ($cost['billing_unit'] === 'per_stay' ? $unit : $rate . ' · ' . $unit);
+    $totalCosts[] = ['billing_unit' => $cost['billing_unit'], 'amount_cents' => (int) $cost['amount_cents']];
+    $costList    .= '<div class="flex justify-between gap-3"><dt class="min-w-0 text-[color:var(--content-text-color,#3A4A52)]">' . esc_html($costLabel) . '</dt><dd class="m-0 text-right font-semibold"><span class="whitespace-nowrap" x-text="quote ? money(costCents(' . $costIndex . ')) : ' . esc_attr(wp_json_encode($rate)) . '">' . esc_html($rate) . '</span> <span class="block text-sm font-normal text-[#5A5348]" x-text="quote ? ' . esc_attr(wp_json_encode($costSubline)) . ' : ' . esc_attr(wp_json_encode($unit)) . '">' . esc_html($unit) . '</span></dd></div>';
 }
 $depositCents = (int) ($listing['deposit_cents'] ?? 0);
-if ($depositCents > 0) {
-    $costList .= '<div class="flex justify-between gap-3"><dt class="text-[color:var(--content-text-color,#3A4A52)]">' . esc_html__('Deposit, settled after your stay', 'contabai-bandabou-theme') . '</dt><dd class="m-0 whitespace-nowrap font-semibold">' . esc_html($moneyLabel($depositCents)) . '</dd></div>';
-}
+$depositRow   = $depositCents > 0
+    ? '<div class="flex justify-between gap-3"><dt class="text-[color:var(--content-text-color,#3A4A52)]">' . esc_html__('Deposit, settled after your stay', 'contabai-bandabou-theme') . '</dt><dd class="m-0 whitespace-nowrap font-semibold">' . esc_html($moneyLabel($depositCents)) . '</dd></div>'
+    : '';
+$forGuests      = sprintf(_n('for %d guest', 'for %d guests', $baseGuests, 'contabai'), $baseGuests);
+$totalRow       = '<div x-show="quote" x-cloak class="mt-1 flex justify-between gap-3 border-t border-[#F0E6D5] pt-3"><dt class="font-bold text-[color:var(--heading-color,#0B4F6C)]">' . esc_html__('Total', 'contabai') . ' <span class="block text-sm font-normal text-[#5A5348]">' . esc_html($forGuests) . '</span></dt><dd class="m-0 whitespace-nowrap text-lg font-bold text-[color:var(--heading-color,#0B4F6C)]" x-text="quote ? money(totalCents()) : \'\'"></dd></div>';
+$costDetails    = $costList !== '' || $depositRow !== '' || $notIncludedRows !== '';
+$notIncludedBox = $notIncludedRows === '' ? '' :'<div class="mt-4 rounded-xl bg-bandabou-cream p-3.5 text-sm leading-normal text-[color:var(--content-text-color,#3A4A52)]"><p class="m-0 flex items-center gap-1.5 font-bold text-[color:var(--heading-color,#0B4F6C)]">' . \Contabai\Heroicon::outline('information-circle', 'w-[18px] h-[18px] shrink-0') . esc_html__('Not included yet', 'contabai') . '</p><p class="m-0 mt-0.5 text-[13px] text-[#5A5348]">' . esc_html__('Calculated when you book.', 'contabai') . '</p><div class="mt-2.5 flex flex-col gap-2.5 border-t border-[#EADFCB] pt-2.5">' . $notIncludedRows . '</div></div>';
 ?>
 <div x-data='{
         images: <?php echo esc_attr(wp_json_encode($photos)); ?>,
@@ -275,23 +291,36 @@ if ($depositCents > 0) {
                     </div>
                 </div>
                 <div x-show="nights" x-cloak
-                     x-effect="document.body.style.paddingBottom = (nights && ! window.matchMedia('(min-width: 1024px)').matches) ? '104px' : ''"
+                     x-effect="document.body.style.paddingBottom = (nights && ! window.matchMedia('(min-width: 1024px)').matches) ? '<?php echo (104 + ($costDetails ? 46 : 0) + ($isLoggedIn ? 0 : 24)) . 'px'; ?>' : ''"
                      x-transition:enter="transition ease-out duration-200" x-transition:enter-start="translate-y-full" x-transition:enter-end="translate-y-0"
                      x-transition:leave="transition ease-in duration-150" x-transition:leave-start="translate-y-0" x-transition:leave-end="translate-y-full"
                      class="fixed inset-x-0 bottom-0 z-40 border-t border-[#EADFCB] bg-white lg:hidden">
+                    <?php if ($costDetails) : ?>
+                        <button type="button" x-on:click="showDetails = ! showDetails" class="flex w-full items-center justify-center gap-1 border-b border-[#EADFCB] py-3 text-sm font-semibold text-[color:var(--heading-color,#0B4F6C)]">
+                            <?php echo esc_html__('Additional costs', 'contabai'); ?>
+                            <span class="transition" x-bind:class="showDetails ? 'rotate-180' : ''"><?php echo \Contabai\Heroicon::outline('chevron-down', 'w-4 h-4'); ?></span>
+                        </button>
+                        <div x-show="showDetails" x-collapse x-cloak class="border-b border-[#EADFCB]">
+                            <div class="bandabou-container max-h-[38vh] overflow-y-auto py-4">
+                                <dl class="m-0 flex flex-col gap-2.5 text-[15px]"><?php echo $costList . $depositRow; ?></dl>
+                                <?php echo $notIncludedBox; ?>
+                            </div>
+                        </div>
+                    <?php endif; ?>
                     <div class="bandabou-container flex items-center justify-between gap-4 py-3">
                         <div class="min-w-0">
                             <div class="truncate text-sm font-medium" x-text="rangeLabel()"></div>
-                            <div class="text-xl font-bold text-[color:var(--heading-color,#0B4F6C)]" x-text="quote ? money(quote.accommodation_cents) : '…'"></div>
-                            <?php if (! empty($listingCosts)) : ?>
-                                <div class="text-xs text-[#5A5348]"><?php echo esc_html__('Additional costs calculated at booking', 'contabai'); ?></div>
-                            <?php endif; ?>
+                            <div class="text-xl font-bold text-[color:var(--heading-color,#0B4F6C)]" x-text="quote ? money(totalCents()) : '…'"></div>
+                            <div class="text-xs text-[#5A5348]"><?php echo esc_html(__('Total', 'contabai') . ' ' . $forGuests); ?></div>
                         </div>
                         <button type="button" x-on:click="startBooking()" class="bandabou-cta min-h-12 flex-none rounded-[14px]! px-5 text-[15px]">
                             <span x-show="isLoggedIn"><?php esc_html_e('Book', 'contabai-bandabou-theme'); ?></span>
-                            <span x-show="! isLoggedIn"><?php echo esc_html__('Log in to book', 'contabai'); ?></span>
+                            <span x-show="! isLoggedIn"><?php echo esc_html__('Log in', 'contabai'); ?></span>
                         </button>
                     </div>
+                    <template x-if="! isLoggedIn">
+                        <p class="bandabou-container m-0 -mt-1 flex items-start gap-1 pb-3 text-xs text-[#5A5348]"><?php echo \Contabai\Heroicon::outline('lock-closed', 'w-4 h-4 shrink-0'); ?> <?php echo esc_html__('Booking requires a verified account', 'contabai'); ?></p>
+                    </template>
                 </div>
             </section>
 
@@ -423,7 +452,7 @@ if ($depositCents > 0) {
                 <button type="button" x-show="! nights" x-on:click="$refs.cal.scrollIntoView({ behavior: 'smooth', block: 'center' })" class="bandabou-book-submit"><?php esc_html_e('Check availability', 'contabai-bandabou-theme'); ?></button>
                 <button type="button" x-show="nights" x-cloak x-on:click="startBooking()" class="bandabou-book-submit">
                     <span x-show="isLoggedIn"><?php esc_html_e('Book', 'contabai-bandabou-theme'); ?></span>
-                    <span x-show="! isLoggedIn"><?php echo esc_html__('Log in to book', 'contabai'); ?></span>
+                    <span x-show="! isLoggedIn"><?php echo esc_html__('Log in', 'contabai'); ?></span>
                 </button>
                 <template x-if="! isLoggedIn">
                     <p class="mt-3 flex items-start gap-1 text-xs text-[#5A5348]"><?php echo \Contabai\Heroicon::outline('lock-closed', 'w-4 h-4 shrink-0'); ?> <?php echo esc_html__('Booking requires a verified account', 'contabai'); ?></p>
@@ -433,8 +462,9 @@ if ($depositCents > 0) {
                         <dt class="text-[color:var(--content-text-color,#3A4A52)]" x-text="nights + ' ' + (nights === 1 ? nightLabel : nightsLabel)"></dt>
                         <dd class="m-0 font-semibold" x-text="quote ? money(quote.accommodation_cents) : '…'"></dd>
                     </div>
-                    <?php echo $costList; ?>
+                    <?php echo $costList . $depositRow . $totalRow; ?>
                 </dl>
+                <?php echo $notIncludedBox; ?>
                 <p class="mt-[18px] text-sm leading-[1.55] text-[#5A5348]"><?php esc_html_e('You book directly with Bandabou Curaçao. After your request you will receive the confirmation and payment details from us.', 'contabai-bandabou-theme'); ?></p>
                 <?php if ($contactPhone !== '') : ?>
                     <a href="<?php echo esc_url($contactWhatsapp); ?>" class="bandabou-outline-button mt-[18px] w-full justify-center gap-2.5 text-center no-underline"><?php echo \BandabouTheme\Heroicon::render('whatsapp', 'brands', 'w-[19px] h-[19px]'); ?><?php esc_html_e('Question? WhatsApp us', 'contabai-bandabou-theme'); ?></a>
@@ -561,6 +591,22 @@ if ($depositCents > 0) {
                 listingId: <?php echo $listingId; ?>,
                 currency: '<?php echo esc_js($currency); ?>',
                 quote: null,
+                totalCosts: <?php echo wp_json_encode($totalCosts); ?>,
+                baseGuests: <?php echo $baseGuests; ?>,
+                costCents: function (costIndex) {
+                    let cost = this.totalCosts[costIndex], quote = this.quote;
+                    if (cost.billing_unit === 'per_stay') return cost.amount_cents;
+                    if (cost.billing_unit === 'per_night') return cost.amount_cents * quote.nights;
+                    if (cost.billing_unit === 'per_person') return cost.amount_cents * this.baseGuests;
+                    if (cost.billing_unit === 'per_person_per_night') return cost.amount_cents * this.baseGuests * quote.nights;
+                    if (cost.billing_unit === 'percent_per_stay') return Math.round(quote.accommodation_cents * cost.amount_cents / 10000);
+                    return 0;
+                },
+                totalCents: function () {
+                    let sum = this.quote.accommodation_cents + this.quote.deposit_cents;
+                    for (let costIndex = 0; costIndex < this.totalCosts.length; costIndex++) { sum += this.costCents(costIndex); }
+                    return sum;
+                },
                 loadingQuote: false,
                 showDetails: false,   // top-of-bar "See details" cost-breakdown expander
                 // 1 month on mobile, 2 from md (≥768)
